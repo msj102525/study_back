@@ -15,6 +15,10 @@
 	 %>
 	 <h3>jsp 페이지 오류 : <%= exception.getMessage() %></h3>
 	 <%
+	 	} else {
+	 %>
+	 <h3>Sevlet 오류 : <%= request.getAttribute("message") %></h3>	
+	 <%
 	 	}
 	 %>
 	 <a href="/first/index.jsp">시작페이지로 이동</a>
