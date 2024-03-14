@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testWebSocket</title>
+</head>
+<body>
+<h1>WebSecket API 활용하기</h1>
+<h2><a href="./unicast.jsp">1:1 통신 (unicast)</a></h2>
+</body>
+</html>
