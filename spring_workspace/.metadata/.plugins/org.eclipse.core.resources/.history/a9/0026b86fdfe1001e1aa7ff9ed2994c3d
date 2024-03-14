@@ -1,0 +1,6 @@
+package org.myweb.first.member.model.service;
+
+// 스프링에서는 비즈니스 모델의 서비스 클래스는 인터페이스로 만들도록 정해져 있음
+public interface MemberService {
+	
+}

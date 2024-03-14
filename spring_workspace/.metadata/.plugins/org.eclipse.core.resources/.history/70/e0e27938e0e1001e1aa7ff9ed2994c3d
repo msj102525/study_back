@@ -1,0 +1,90 @@
+package org.myweb.first.member.model.service;
+
+import java.util.ArrayList;
+
+import org.myweb.first.common.SearchDate;
+import org.myweb.first.member.model.vo.Member;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MemberServiceImpl implements MemberService {
+
+	@Override
+	public Member selectLogin(Member member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insertMember(Member member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Member selectMember(String userid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int updateMember(Member member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteMember(String userid) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ArrayList<Member> selectList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int updateLoginOK(Member member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ArrayList<Member> selectSearchUserid(String keyword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Member> selectSearchGender(String keyword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Member> selectSearchAge(int keyword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Member> selectSearchEnrollDate(SearchDate searchDate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Member> selectSearchLoginOK(String keyword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int selectCheckId(String userid) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
