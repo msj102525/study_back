@@ -6,3 +6,10 @@
 1710394484960	Move file
 1710394558503	Rename resource 'mybatis-mapper.xml'
 1710405652355	Rename type 'MemberService'
+1710489167413	Rename package 'org.myweb.first.common.Intercepter'
+1710489560511	Delete element
+1710491960479	Delete element
+1710492550988	Rename type 'noticeService'
+1710492860054	Rename type 'noticeDao'
+1710492920953	Rename resource 'mybatis-mapper.xml'
+1710493933376	Delete element

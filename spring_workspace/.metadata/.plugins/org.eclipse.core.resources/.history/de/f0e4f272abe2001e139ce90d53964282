@@ -1,0 +1,13 @@
+package org.myweb.first.notice.controller;
+
+import org.myweb.first.notice.model.service.NoticeServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class NoticeController {
+	
+	@Autowired
+	private NoticeService noticeService;
+	
+}

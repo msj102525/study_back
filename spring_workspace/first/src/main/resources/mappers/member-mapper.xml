@@ -25,7 +25,7 @@
 		<result property="userId" column="USERID" />
 		<result property="userPwd" column="USERPWD" />
 		<result property="userName" column="USERNAME" />
-		<result property="gender" column=GENDER />
+		<result property="gender" column="GENDER" />
 		<result property="age" column="AGE" />
 		<result property="phone" column="PHONE" />
 		<result property="email" column="EMAIL" />
@@ -49,7 +49,7 @@
 
 	<!-- 관리자용 회원 목록 검색용 쿼리 -->
 	<select id="selectList" resultMap="resultList">
-		select * from member where admin = 'N'
+		select * from member where admin_YN = 'N'
 	</select>
 
 	<select id="selectSearchUserid" parameterType="string" resultMap="resultList">

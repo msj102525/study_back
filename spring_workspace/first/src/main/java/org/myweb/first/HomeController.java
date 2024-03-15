@@ -39,6 +39,7 @@ public class HomeController {
 	// index.jsp 가 웰컴 요청될 때 포워딩된 요청을 받아서, common/main.jsp 를 내보내기 위한 메소드
 	@RequestMapping("main.do")
 	public String forwardMainView() {
+		
 		return "common/main";
 	}
 	

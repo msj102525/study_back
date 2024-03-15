@@ -16,9 +16,11 @@
 	<typeAliases>
 		<typeAlias type="org.myweb.first.member.model.vo.Member" alias="Member" />
 		<typeAlias type="org.myweb.first.common.SearchDate" alias="SearchDate" />
+		<typeAlias type="org.myweb.first.notice.model.vo.Notice" alias="Notice" />
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mappers/member-mapper.xml" />
+		<mapper resource="mappers/notice-mapper.xml" />
 	</mappers>
 </configuration>

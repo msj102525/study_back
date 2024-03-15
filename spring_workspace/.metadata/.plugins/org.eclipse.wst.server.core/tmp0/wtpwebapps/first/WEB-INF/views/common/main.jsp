@@ -62,7 +62,7 @@ $(function(){
 	$.ajax({
 		//url: "/first/ntop3",
 		url: "ntop3.do",
-		type: "get",
+		type: "post",
 		dataType: "json",
 		success: function(data){
 			console.log("success : " + data);
@@ -76,7 +76,7 @@ $(function(){
 			values = "";			
 			for(var i in json.nlist){
 				values += "<tr><td>" + json.nlist[i].no 
-						+ "</td><td><a href='/first/ndetail?no=" 
+						+ "</td><td><a href='ndetail.do?no=" 
 						+ json.nlist[i].no + "'>"
 						+ decodeURIComponent(json.nlist[i].title).replace(/\+/gi, " ") 
 						+ "</a></td><td>"
@@ -135,13 +135,13 @@ $(function(){
 
 <%-- 메뉴바 표시 --%>
 <%-- <%@ include file="./views/common/menubar.jsp" %> --%>
-<c:import url="WEB-INF/views/common/menubar.jsp" />
+<c:import url="/WEB-INF/views/common/menubar.jsp" />
 <%-- 속성 url 은 브라우저에 표시되는 페이지 경로에 대한 url 임
 		기본 웰컴 페이지 url이 http://localhost:8080/first 이므로
 		기본 url 뒤에 표기될 페이지 경로를 입력하면 됨
 		전체 url 이 http://localhost:8080/first/WEB-INF/views/common/menubar.jsp
 		또는 기본 url 은 생략할 수 있으므로
-		WEB-INF/views/common/menubar.jsp 만 표기해도 됨
+		/WEB-INF/views/common/menubar.jsp 만 표기해도 됨
  --%> 
 
 
@@ -167,7 +167,7 @@ $(function(){
 	<div id="loginBox" class="lineA">
 		<%-- <%= loginMember.getUserName() %> 님. &nbsp; --%>
 		${ sessionScope.loginMember.userName } 님. &nbsp;
-		<a href="/first/logout">로그아웃</a> <br>
+		<a href="logout.do">로그아웃</a> <br>
 		<a>메일</a> &nbsp; <a>채팅</a> &nbsp; <a>쪽지</a><br>
 		<%-- <a href="/first/myinfo?userid=<%= loginMember.getUserId() %>">My Page</a> --%>
 		

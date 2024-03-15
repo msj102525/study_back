@@ -6,17 +6,40 @@
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
+	
+	<!-- 세션 자동 타임아웃 시간 설정 : 분단위 -->
+	<session-config>
+  		<session-timeout>30</session-timeout>
+  	</session-config>
 
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/spring/root-context.xml</param-value>
+		<param-value>classpath:root-context.xml</param-value>
 	</context-param>
 	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	
+	<!-- 
+	전송방식이 post 로 전송오는 한글데이터는 인코딩 처리를 위한 필터(Filter) 클래스 등록 설정 
+	원래 요청 처리 방식 : post 요청 - DispatcherServlet - 컨트롤러 - 한글인코딩처리
+	변경 : post 요청 - 인코딩처리필터 - DispatcherServlet - 컨트롤러		
+	-->
+	<filter>
+      <filter-name>encodingFilter</filter-name>
+      <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+      <init-param>
+         <param-name>encoding</param-name>
+         <param-value>utf-8</param-value>
+      </init-param>
+   </filter>
+   <filter-mapping>
+      <filter-name>encodingFilter</filter-name>
+      <url-pattern>*.do</url-pattern>
+   </filter-mapping>
 
 	<!-- Processes application requests -->
 	<servlet>
