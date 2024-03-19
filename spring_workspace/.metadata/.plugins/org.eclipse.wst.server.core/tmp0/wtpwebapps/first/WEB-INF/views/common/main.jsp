@@ -95,12 +95,12 @@ $(function(){
 	//조회수 많은 인기 게시글 상위 3개 조회 출력 처리
 	$.ajax({
 		url: "btop3.do",
-		type: "get",
+		type: "post",
 		dataType: "json",
 		success: function(data){
 			console.log("success : " + data);
 			
-			//object --> string
+			//object --> string // JSONString으로 보내지만 받으면 객체로 받아짐
 			var str = JSON.stringify(data);
 			
 			//string --> json
@@ -158,7 +158,7 @@ $(function(){
 		first 사이트 방문을 환영합니다.<br>
 		<button onclick="movePage();">로그인 하세요.</button><br>
 		<a>아이디 조회/비밀번호 조회</a> &nbsp;
-		<a href="/first/views/member/enrollPage.html">회원가입</a>
+		<a href="enrollPage.do">회원가입</a>
 	</div>
 	</c:if>
 	<%-- <% }else{ //로그인했다면 %> --%>
@@ -172,7 +172,7 @@ $(function(){
 		<%-- <a href="/first/myinfo?userid=<%= loginMember.getUserId() %>">My Page</a> --%>
 		
 		<c:url var="callMyInfo" value="myinfo.do">
-			<c:param name="userid" value="${ loginMember.userId }"></c:param>
+			<c:param name="userId" value="${ loginMember.userId }"></c:param>
 		</c:url>
 		<a href="${ callMyInfo }">My page</a>
 		

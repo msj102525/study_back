@@ -1,0 +1,17 @@
+package org.myweb.first.board.model.service;
+
+import java.util.ArrayList;
+
+import org.myweb.first.board.model.vo.Board;
+import org.springframework.stereotype.Service;
+
+@Service("boardSerivce")
+public class BoardServiceImpl implements BoardService {
+
+	@Override
+	public ArrayList<Board> selectTop3() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
