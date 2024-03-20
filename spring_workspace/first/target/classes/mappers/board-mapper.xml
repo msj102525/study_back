@@ -9,6 +9,21 @@
 		<result property="boardTitle" column="BOARD_TITLE" />
 		<result property="boardReadCount" column="BOARD_READCOUNT" />
 	</resultMap>
+	
+	<resultMap type="Board" id="resultList">
+		<result property="boardNum" column="BOARD_NUM" />
+		<result property="boardWriter" column="BOARD_WRITER" />
+		<result property="boardTitle" column="BOARD_TITLE" />
+		<result property="boardContent" column="BOARD_CONTENT" />
+		<result property="boardOriginalFileName" column="BOARD_ORIGINAL_FILENAME" />
+		<result property="boardRenameFileName" column="BOARD_RENAME_FILENAME" />
+		<result property="boardRef" column="BOARD_REF" />
+		<result property="boardReplyRef" column="BOARD_REPLY_REF" />
+		<result property="boardLev" column="BOARD_LEV" />
+		<result property="boardReplySeq" column="BOARD_REPLY_SEQ" />
+		<result property="boardReadCount" column="BOARD_READCOUNT" />
+		<result property="boardDate" column="BOARD_DATE" />
+	</resultMap>
 
 	<!-- 
 			비교연산자(<, >)를 쿼리문에 사용하면
@@ -25,6 +40,21 @@
 				order by board_readcount desc))
 		where rnum <= 3
 		]]>
+	</select>
+	
+	<select id="selectListCount" resultType="_int">
+		select count(*) from board
+	</select>
+	
+	<select id="selectList" parameterType="Paging" resultMap="resultList">
+		select * from    
+		    (select rownum rnum, board_num, board_writer, board_title, board_content, board_original_filename,
+		        board_rename_filename, board_ref, board_reply_ref, board_lev, board_reply_seq, board_readcount, board_date
+		        from
+		        (select * from board
+		        order by board_ref desc, board_reply_ref desc,
+		                board_lev asc, board_reply_seq asc))
+		where rnum between #{ startRow } and #{ endRow }
 	</select>
 
 </mapper>

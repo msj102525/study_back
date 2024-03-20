@@ -44,7 +44,7 @@
 
 	<!-- 마이페이지 출력용 조회 쿼리 -->
 	<select id="selectMember" parameterType="string" resultMap="resultMember">
-		select * from member where userid = #{ uId }
+		select * from member where userid = #{ uId } and login_ok = 'Y'
 	</select>
 
 	<!-- 관리자용 회원 목록 검색용 쿼리 -->
@@ -53,7 +53,7 @@
 	</select>
 
 	<select id="selectSearchUserid" parameterType="string" resultMap="resultList">
-		select * from member where admin_yn = 'N' and userid like #{keyword}
+		select * from member where admin_yn = 'N' and userid like '%${keyword}%'
 	</select>
 
 	<select id="selectSearchGender" parameterType="string" resultMap="resultList">
@@ -69,7 +69,7 @@
 			<![CDATA[	and age >= #{ keyword } ]]>
 		</if>
 		<if test="keyword != 60">
-			and age between #{ keyword } and #{ keyword + 9 }
+			and age between #{ keyword } and #{ keyword } + 9
 		</if>
 	</select>
 	

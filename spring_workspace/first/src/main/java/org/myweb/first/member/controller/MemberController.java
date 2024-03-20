@@ -2,12 +2,14 @@ package org.myweb.first.member.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Date;
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.myweb.first.common.SearchDate;
 import org.myweb.first.member.model.service.MemberService;
 import org.myweb.first.member.model.vo.Member;
 import org.slf4j.Logger;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller // 설정 xml에 해당 클래스를 Controller 로 자동 등록해 줌
 public class MemberController {
@@ -94,7 +97,7 @@ public class MemberController {
 			status.setComplete(); // 로그인 성공 요청 결과로 HttpStatus code 200 보냄
 			return "common/main";
 		} else {
-			model.addAttribute("message", "로그인 실패! 아이디나 암호를 다시 확인하세요.");
+			model.addAttribute("message", "로그인 실패! 아이디나 암호를 다시 확인하세요. 또는 로그인 제한된 회원");
 			return "common/error";
 		}
 
@@ -238,17 +241,102 @@ public class MemberController {
 	}
 	
 	// 관리자용 : 회원 관리용 회운전체목록 조회 처리용 메소드 - 반환형 String
+//	@RequestMapping("mlist.do")
+//	public String memberListViewMethod(Model model) {
+//		ArrayList<Member> list = memberService.selectList();
+//		
+//		if(list != null && list.size() > 0) {
+//			model.addAttribute("list", list);
+//			return "member/memberListView";
+//		} else {
+//			model.addAttribute("message", "회원 정보가 존재하지 않습니다.");
+//			return "common/error";
+//		}
+//	}
+	
 	@RequestMapping("mlist.do")
-	public String memberListViewMethod(Model model) {
+	public ModelAndView memberListViewMethod(ModelAndView mv) {
 		ArrayList<Member> list = memberService.selectList();
 		
 		if(list != null && list.size() > 0) {
-			model.addAttribute("list", list);
-			return "member/memberListView";
+			mv.addObject("list", list);
+			mv.setViewName("member/memberListView");
 		} else {
-			model.addAttribute("message", "회원 정보가 존재하지 않습니다.");
+			mv.addObject("message", "회원 정보가 존재하지 않습니다.");
+			mv.setViewName("common/error");
+		}
+		
+		return mv;
+	}
+	
+	// 관리자용 : 회원 로그인 제한/허용 처리용 메소드
+	@RequestMapping("loginok.do")
+	public String changeLoginOKMethod(Member member, Model model) {
+		if(memberService.updateLoginOK(member) > 0) {
+			return "redirect:mlist.do";
+		} else {
+			model.addAttribute("message", "로그인 제한/허용 처리 오류 발생.");
 			return "common/error";
 		}
+	}
+	
+	// 관리자용 : 회원 검색 처리용 메소드 : 페이징  처리 없는 코드
+	@RequestMapping(value="msearch.do")
+	public ModelAndView memberSearchMethod(HttpServletRequest request, ModelAndView mv) {
+		// 전송온 값 꺼내기
+		String action = request.getParameter("action");
+		// 필요한 변수 선언
+		String keyword = null, begin = null, end = null;
+		
+		if(action.equals("enrolldate")) {
+			begin = request.getParameter("begin");
+			end = request.getParameter("end");
+			
+		} else {
+			keyword = request.getParameter("keyword");
+		}
+		
+		// 서비스 메소드 호출하고 리턴 결과 받기
+		ArrayList<Member> list = null;
+		
+		switch(action) {
+		case "id": list = memberService.selectSearchUserid(keyword); 
+		break;
+		
+		case "gender": list = memberService.selectSearchGender(keyword);
+		break;
+		
+		case "age": list = memberService.selectSearchAge(Integer.parseInt(keyword)); 
+		break;
+		
+		case "enrolldate":
+			SearchDate searchDate = new SearchDate();
+			searchDate.setBegin(Date.valueOf(begin));
+			searchDate.setEnd(Date.valueOf(end));
+			
+			list = memberService.selectSearchEnrollDate(searchDate); 
+		break;
+		
+		case "loginok": list = memberService.selectSearchLoginOK(keyword); 
+		break;
+		
+		}
+		
+		// 받은 결과에 따라 성공/실패 페이지 내보내기
+		if(list != null && list.size() >0) {
+			mv.addObject("list", list);
+			mv.setViewName("member/memberListView");
+		} else {
+			if(keyword != null) {
+				mv.addObject("message", action + "에 대한" + keyword + " 검색결과가 존재하지 않습니다.");
+			} else {
+				mv.addObject("message", action + "에 대한 " + begin + " 부터 " + end 
+						+ "기간 사이에 가입한 회원 정보가 존재하지 않습니다.");
+			}
+			mv.setViewName("common/error");
+		}
+		
+		return mv;
 	}
 	
 

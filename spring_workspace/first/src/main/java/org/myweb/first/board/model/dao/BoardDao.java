@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.myweb.first.board.model.vo.Board;
+import org.myweb.first.common.Paging;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -20,6 +21,15 @@ public class BoardDao {
 		List<Board> list = sqlSessionTemplate.selectList("boardMapper.selectTop3");
 		return (ArrayList<Board>)list;
 		
+	}
+
+	public int selectListCount() {
+		return sqlSessionTemplate.selectOne("boardMapper.selectListCount");
+	}
+
+	public ArrayList<Board> selectList(Paging paging) {
+		List<Board> list = sqlSessionTemplate.selectList("boardMapper.selectList", paging);
+		return (ArrayList<Board>)list;
 	}
 	
 }

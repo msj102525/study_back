@@ -47,16 +47,21 @@ $(function(){
 function changeLogin(element){
 	//radio 의 체크 상태가 변경된(change) input 태그의 name 속성값에서 userid 를 분리 추출함
 	var userid = element.name.substring(8);
-	console.log("userid : " + userid);
+	// console.log("userid : " + userid);
+	alert("userid : " + userid);
 	
 	if(element.checked == true && element.value == 'false'){
 		//제한을 체크한 경우
-		console.log("로그인 제한을 체크함");
-		location.href = "/first/loginok?userid=" + userid + "&ok=false";
+		alert("로그인 제한을 체크함");
+		// location.href = "/first/loginok?userid=" + userid + "&ok=false";
+		location.href = "${ pageContext.servletContext.contextPath }/loginok.do?userId="
+				+ userid + "&loginOk=N";
 	}else{
 		//가능을 체크한 경우
-		console.log("로그인 가능을 체크함");
-		location.href = "/first/loginok?userid=" + userid + "&ok=true";
+		alert("로그인 가능을 체크함");
+		// location.href = "/first/loginok?userid=" + userid + "&ok=true";
+		location.href = "${ pageContext.servletContext.contextPath }/loginok.do?userId="
+			+ userid + "&loginOk=Y";
 	}
 }
 </script>
@@ -85,7 +90,7 @@ function changeLogin(element){
 
 <%-- 검색 항목별 값 입력 전송용 폼 만들기 --%>
 <%-- 회원 아이디 검색 폼 --%>
-<form id="idform" class="sform" action="/first/msearch" method="post">
+<form id="idform" class="sform" action="${ pageContext.servletContext.contextPath }/msearch.do" method="post">
 <input type="hidden" name="action" value="id">
 <fieldset>
 	<legend>검색할 아이디를 입력하세요.</legend>
@@ -95,7 +100,7 @@ function changeLogin(element){
 </form>
 
 <%-- 성별 검색 폼 --%>
-<form id="genderform" class="sform" action="/first/msearch" method="post">
+<form id="genderform" class="sform" action="${ pageContext.servletContext.contextPath }/msearch.do" method="post">
 <input type="hidden" name="action" value="gender">
 <fieldset>
 	<legend>검색할 성별을 선택하세요.</legend>
@@ -106,7 +111,7 @@ function changeLogin(element){
 </form>
 
 <%-- 연령대로 검색 폼 --%>
-<form id="ageform" class="sform" action="/first/msearch" method="post">
+<form id="ageform" class="sform" action="${ pageContext.servletContext.contextPath }/msearch.do" method="post">
 <input type="hidden" name="action" value="age">
 <fieldset>
 	<legend>검색할 연령대를 선택하세요.</legend>
@@ -120,7 +125,7 @@ function changeLogin(element){
 </form>
 
 <%-- 가입날짜 검색 폼 --%>
-<form id="enrollform" class="sform" action="/first/msearch" method="post">
+<form id="enrollform" class="sform" action="${ pageContext.servletContext.contextPath }/msearch.do" method="post">
 <input type="hidden" name="action" value="enrolldate">
 <fieldset>
 	<legend>검색할 가입날짜를 선택하세요.</legend>
@@ -130,7 +135,7 @@ function changeLogin(element){
 </form>
 
 <%-- 로그인 제한/허용 회원 검색 폼 --%>
-<form id="lokform" class="sform" action="/first/msearch" method="post">
+<form id="lokform" class="sform" action="${ pageContext.servletContext.contextPath }/msearch.do" method="post">
 <input type="hidden" name="action" value="loginok">
 <fieldset>
 	<legend>검색할 로그인 제한/가능을 선택하세요.</legend>
@@ -161,17 +166,21 @@ function changeLogin(element){
 			<td>${m.adminYN }</td>
 			<td>
 				<%-- 관리자가 회원의 로그인 제한을 설정할 수 있도록 함 --%>
-				<%-- <% if(m.getLoginOk().equals("Y")){ %>
-					<input type="radio" name="loginok_<%= m.getUserId() %>" value="true" 
+				<%-- <% if(m.getLoginOk().equals("Y")){ %> --%>
+				<c:if test="${ m.loginOk eq 'Y' }">
+					<input type="radio" name="loginok_${ m.userId }" value="true" 
 					onchange="changeLogin(this);" checked> 가능 &nbsp;
-					<input type="radio" name="loginok_<%= m.getUserId() %>" value="false" 
+					<input type="radio" name="loginok_${ m.userId }" value="false" 
 					onchange="changeLogin(this);" > 제한
-				<% }else{ %>
-					<input type="radio" name="loginok_<%= m.getUserId() %>" value="true" 
+				</c:if>
+				<%-- <% }else{ %> --%>
+				<c:if test="${ m.loginOk eq 'N' }">
+					<input type="radio" name="loginok_${ m.userId }" value="true" 
 					onchange="changeLogin(this);" > 가능 &nbsp;
-					<input type="radio" name="loginok_<%= m.getUserId() %>" value="false" 
+					<input type="radio" name="loginok_${ m.userId }" value="false" 
 					onchange="changeLogin(this);" checked> 제한
-				<% } %> --%>
+				</c:if>
+				<%-- <% } %> --%> 
 			</td>
 		</tr>
 	</c:forEach>
