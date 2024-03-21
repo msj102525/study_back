@@ -1,0 +1,36 @@
+package org.myweb.first.member.model.service;
+
+import java.util.ArrayList;
+
+import org.myweb.first.common.SearchDate;
+import org.myweb.first.member.model.vo.Member;
+
+// 스프링에서는 비즈니스 모델의 서비스 클래스는 인터페이스로 만들도록 정해져 있음
+public interface MemberService {
+	Member selectLogin(Member member);
+
+	int insertMember(Member member);
+
+	Member selectMember(String userid);
+
+	int updateMember(Member member);
+
+	int deleteMember(String userid);
+
+	ArrayList<Member> selectList();
+
+	int updateLoginOK(Member member);
+
+	ArrayList<Member> selectSearchUserid(String keyword);
+
+	ArrayList<Member> selectSearchGender(String keyword);
+
+	ArrayList<Member> selectSearchAge(int keyword);
+
+	ArrayList<Member> selectSearchEnrollDate(SearchDate searchDate);
+
+	ArrayList<Member> selectSearchLoginOK(String keyword);
+
+	int selectCheckId(String userid);
+
+}

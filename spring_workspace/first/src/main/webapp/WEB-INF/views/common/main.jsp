@@ -109,7 +109,7 @@ $(function(){
 			values = "";			
 			for(var i in json.list){
 				values += "<tr><td>" + json.list[i].bnum 
-						+ "</td><td><a href='/first/bdetail?bnum=" 
+						+ "</td><td><a href='bdetail.do?bnum=" 
 						+ json.list[i].bnum + "'>"
 						+ decodeURIComponent(json.list[i].btitle).replace(/\+/gi, " ") 
 						+ "</a></td><td>"

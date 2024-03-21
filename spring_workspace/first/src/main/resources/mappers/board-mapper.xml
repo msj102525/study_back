@@ -56,5 +56,23 @@
 		                board_lev asc, board_reply_seq asc))
 		where rnum between #{ startRow } and #{ endRow }
 	</select>
+	
+	<select id="selectBoard" parameterType="_int" resultMap="resultList">
+		select * from board where board_num = #{board_num}
+	</select>
+	
+	<!-- DML ************************************* -->
+	<insert id="insertOriginBoard" parameterType="Board">
+		insert into board
+		values ((select max(board_num) + 1 from board), #{boardWriter}, #{boardTitle},
+					 #{boardContent}, #{boardOriginalFileName}, #{boardRenameFileName},
+					 (select max(board_num) + 1 from board), null, default, default, default, default)
+	</insert>
+	
+	<update id="updateAddReadCount" parameterType="_int">
+		update board
+		set board_readcount = board_readcount + 1
+		where board_num = #{board_num}
+	</update>
 
 </mapper>

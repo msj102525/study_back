@@ -188,6 +188,8 @@ function changeLogin(element){
 </table>
 
 <hr>
+<c:import url="/WEB-INF/views/common/pagingView.jsp" />
+<hr>
 <c:import url="/WEB-INF/views/common/footer.jsp" />
 
 </body>

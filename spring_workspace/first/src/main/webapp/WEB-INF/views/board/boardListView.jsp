@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>  
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>  
 
-<c:set var="nowpage" value="1"/>
+<c:set var="nowpage" value="1" />
 <c:if test="${ !empty requestScope.currentPage }">
 	<c:set var="nowpage" value="${ requestScope.currentPage }" />
 </c:if>
-
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,13 +51,12 @@ $(function(){
 });  //document ready
 
 function showWriteForm(){
-	// 게시글 원글 쓰기 페이지로 이동 요청
+	//게시글 원글 쓰기 페이지로 이동 요청
 	location.href = "${ pageContext.servletContext.contextPath }/bwform.do";
 }
 </script>
 </head>
 <body>
-<%-- <%@ include file="../common/menubar.jsp" %> --%>
 <c:import url="/WEB-INF/views/common/menubar.jsp" />
 <hr>
 <h1 align="center">게시글 목록</h1>
@@ -65,9 +64,9 @@ function showWriteForm(){
 <%-- 게시글 쓰기는 로그인한 회원만 가능함 --%>
 <%-- <% if(loginMember != null){ %> --%>
 <c:if test="${ !empty sessionScope.loginMember }">
-<div style="align:center;text-align:center;">
-	<button onclick="showWriteForm();">글쓰기</button>
-</div>
+	<div style="align:center;text-align:center;">
+		<button onclick="showWriteForm();">글쓰기</button>
+	</div>
 </c:if>
 <%-- <% } %> --%>
 <br>
@@ -147,7 +146,7 @@ function showWriteForm(){
 				<c:param name="bnum" value="${ b.boardNum }" />
 				<c:param name="page" value="${ nowpage }" />
 			</c:url>
-			<a href="${ bd} }">${b.boardTitle }</a>
+			<a href="${ bd }">${ b.boardTitle }</a>
 			</td>
 			<td align="center">${ b.boardWriter }</td>
 			<td align="center">${ b.boardDate }</td>
@@ -164,21 +163,19 @@ function showWriteForm(){
 			</td>
 			<td align="center">${ b.boardReadCount }</td>
 		</tr>
-	</c:forEach>
+		</c:forEach>
 	<%-- <% } %> --%>
 </table>
 <br>
-<!-- !! -->
 
 <%-- 페이징 처리 뷰 포함 처리 --%>
-<%-- <%@ include file="../common/pagingView.jsp" %> --%>
-
 <c:import url="/WEB-INF/views/common/pagingView.jsp" />
 
-<%-- <%@ include file="../common/footer.jsp" %> --%>
-<c:import url="/WEB-INF/views/common/footer.jsp" />
+<hr>
+	<c:import url="/WEB-INF/views/common/footer.jsp" />
 </body>
 </html>
+
 
 
 

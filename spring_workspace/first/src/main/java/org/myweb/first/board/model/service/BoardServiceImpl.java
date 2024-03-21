@@ -28,4 +28,20 @@ public class BoardServiceImpl implements BoardService {
 		return boardDao.selectList(paging);
 	}
 
+	@Override
+	public int insertOriginBoard(Board board) {
+		return boardDao.insertOriginBoard(board);
+	}
+
+	@Override
+	public void updateAddReadCount(int boardNum) {
+		boardDao.updateAddReadCount(boardNum);
+	}
+
+	@Override
+	public Board selectBoard(int boardNum) {
+		return boardDao.selectBoard(boardNum);
+	}
+	
+
 }

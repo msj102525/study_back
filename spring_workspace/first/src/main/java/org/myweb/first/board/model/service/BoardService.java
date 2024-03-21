@@ -11,4 +11,10 @@ public interface BoardService {
 	int selectListCount();
 
 	ArrayList<Board> selectList(Paging paging);
+
+	int insertOriginBoard(Board board);
+
+	void updateAddReadCount(int boardNum);
+
+	Board selectBoard(int boardNum);
 }

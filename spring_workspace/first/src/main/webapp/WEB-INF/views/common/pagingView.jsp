@@ -19,6 +19,11 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
+<style type="text/css">
+a {
+	cursor: pointer;
+}
+</style>
 </head>
 <body>
 <%-- 목록 페이징 처리 : 검색 목록이 아닌 경우 --%>
@@ -131,7 +136,7 @@
 </c:if>
 
 <%-- 검색(등록날짜) 페이징 처리 --%>
-<c:if test="${ !empty action and action eq 'date' }">
+<c:if test="${ !empty action and action eq 'date' or action eq 'enrolldate' }">
 <div style="text-align:center;">
 	
 	<c:if test="${ currentPage eq 1 }">

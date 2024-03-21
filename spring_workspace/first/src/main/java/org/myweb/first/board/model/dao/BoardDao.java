@@ -31,5 +31,20 @@ public class BoardDao {
 		List<Board> list = sqlSessionTemplate.selectList("boardMapper.selectList", paging);
 		return (ArrayList<Board>)list;
 	}
+
+	public int insertOriginBoard(Board board) {
+		return sqlSessionTemplate.insert("boardMapper.insertOriginBoard", board);
+	}
+
+	public void updateAddReadCount(int boardNum) {
+		sqlSessionTemplate.update("boardMapper.updateAddReadCount", boardNum);
+		
+	}
+
+	public Board selectBoard(int boardNum) {
+		return sqlSessionTemplate.selectOne("boardMapper.selectBoard", boardNum);
+	}
+
+	
 	
 }

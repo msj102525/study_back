@@ -1,0 +1,8 @@
+package org.myweb.first.common;
+
+public class FIleNameChange {
+	
+	public static String change(String originalFileName, String formatStr) {
+		String renameFileName = null;
+	}
+}
