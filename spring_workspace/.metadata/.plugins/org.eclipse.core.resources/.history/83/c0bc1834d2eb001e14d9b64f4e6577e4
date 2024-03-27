@@ -1,0 +1,5 @@
+package org.myweb.first.test.controller;
+
+public class TestController {
+
+}

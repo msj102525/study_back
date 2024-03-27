@@ -102,4 +102,6 @@
 		<item value="org.springsource.sts.package:3.9.18.202109140905-RELEASE-e421"/>
 		<item value="org.springsource.sts:3.9.18.202109140905-RELEASE"/>
 	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
 </section>

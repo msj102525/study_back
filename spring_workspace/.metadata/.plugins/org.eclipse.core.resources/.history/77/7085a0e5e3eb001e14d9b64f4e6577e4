@@ -1,0 +1,74 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>first</title>
+<script type="text/javascript" src="${ pageContext.servletContext.contextPath }/resources/js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+	<h1>jQuery 로 ajax 스프링에  사용 테스트 페이지</h1>
+	<hr>
+	
+	<h2>1. 서버로 전송하는 값은 없고, 결과로 문자열을 받아서 출력 : get 방식</h2>
+	<p id="p1" style="width:300px;height:50px;border:1px solid red;"></p>	
+	<button id="test1">테스트1</button>
+	
+	<script type="text/javascript">
+		$(() => {
+			// jQuery("selector").method([args, .....]);
+			// jQuery("selector").method([args, .....]).method().method();
+			$("#test1").click(()=> {
+				// 서버측 컨트롤러로 서비스 요청하고, 결과로 문자열을 받는 경우에는
+				// $.get('요청url', {파라매터이름 : 전송값, ....}, function(리턴값받을변수){ 요청 성공시 리턴값 처리 });
+				
+				// $.get() 사용
+				$.get("test1.do", function(data){
+					$("#p1").text(data);
+				})
+				// $.ajax() 사용
+				$.ajax({
+					url: "test1.do",
+					type: "get",
+					// dataType: "text",  // 'text' 는 기본값이므로 생략해도 됨
+					success: (data) => {
+						// 태그 안의 값을 추가하는 방식
+						$("#p1").html($("#p1").text() + "<br>" + data)
+					}
+				});
+			});
+		});
+	</script>
+	<hr>
+	
+	<h2>2. 서버로 전송하는 값 있고, 결과로 문자열을 받아서 출력 : post 방식</h2>
+	이름 : <input type="text" id="name"><br>
+	나이 : <input type="number" id="age"><br>
+	<p id="p2" style="width:300px;height:50px;border:1px solid red;"></p>	
+	<button id="test2">테스트2</button>
+	
+	<script type="text/javascript">
+		$(() => {
+			$('#test2').click(()=> {
+				// 서버측 컨트롤러로 서비스 요청하고, 결과로 문자열을 받는 경우에
+				// $.post("요청url", []{ 파라메타이름: 전송값, ....}], funtion(리턴값받을변수){ 리턴값 처리 코드 });
+				
+				//$.post()
+				$.post("test2.do", { name: $("#name"}.val(),
+											age: $("#age").val() }, 
+											function(data) {
+												$("#p2").text(data);
+											});
+				// $.ajax()
+				$.ajax({
+					url: "test2.do",
+					type: "post",
+					data: {name: $("#name"}.val(),
+					age: $("#age").val()}, },
+				})
+		});	
+	</script>
+	
+</body>
+</html>

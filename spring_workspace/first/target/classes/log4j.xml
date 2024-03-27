@@ -12,7 +12,7 @@
 	
 	<!-- 파일에 로그 메세지 저장하는 appender -->
 	<appender name="fileLogger" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="D:\\spring_workspace\\first\\src\\main\\resources\\logs\\system.log" />		
+		<!-- <param name="file" value="D:\\spring_workspace\\first\\src\\main\\resources\\logs\\system.log" /> -->		
 		<param name="Append" value="true" />
 		<param name="DatePattern" value="yyyy-MM-dd" />
 		<layout class="org.apache.log4j.PatternLayout">

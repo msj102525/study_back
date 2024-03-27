@@ -1,5 +1,0 @@
-package org.myweb.first.member.model.service;
-
-public interface MemberService {
-	
-}

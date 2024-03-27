@@ -32,7 +32,7 @@
 <script type="text/javascript">
 function requestReply(){
 	//댓글달기 요청 함수
-	location.href = "${ reply }";
+	location.href = "${ replyf }";
 }
 
 

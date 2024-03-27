@@ -1,5 +1,0 @@
-package org.myweb.first.board.model.dao;
-
-public class BoardDao {
-	
-}

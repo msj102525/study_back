@@ -21,7 +21,11 @@
     <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
     <fullyQualifiedTypeName name="org.myweb.first.member.model.service.MemberServiceImpl"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="org.myweb.first.common.Paging"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="org.myweb.first.common.FIleNameChange"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.view.AbstractView"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="org.springframework.util.FileCopyUtils"/>
 </qualifiedTypeNameHistroy>

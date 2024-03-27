@@ -1,0 +1,20 @@
+package org.myweb.first.test.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class TestController {
+	// 이 컨트롤러 메소드들이 잘 구동되는지, 값이 잘 전달 또는 리턴되었는지 확인하기 위한 로그 객체 생성
+	private static Logger logger = LoggerFactory.getLogger(TestController.class);
+	
+	// 뷰 페이지 이동 처리용 --------------------------------------
+	
+	@RequestMapping("moveAjax.do")
+	public String moveAjaxPage() {
+		return "";
+	}
+	
+}

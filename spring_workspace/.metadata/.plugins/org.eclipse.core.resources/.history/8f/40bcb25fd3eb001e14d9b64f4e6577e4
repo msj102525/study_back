@@ -1,0 +1,10 @@
+package org.myweb.first.test.model.vo;
+
+public class TestVO implements java.io.Serializable{
+	private static final long serialVersionUID = 3330259852242453317L;
+	
+	private String name;
+	private int age;
+	
+	
+}

@@ -1,0 +1,14 @@
+package org.myweb.first.test.model.service;
+
+import org.myweb.first.test.model.vo.TestVO;
+import org.springframework.stereotype.Service;
+
+@Service("testService")
+public class TestServiceImpl implements TestService{
+
+	@Override
+	public int selectTestVO(TestVO vo) {
+		return 0;
+	}
+	
+}

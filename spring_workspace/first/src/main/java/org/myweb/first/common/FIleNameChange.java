@@ -2,7 +2,7 @@ package org.myweb.first.common;
 
 import java.text.SimpleDateFormat;
 
-public class FIleNameChange {
+public class FileNameChange {
 	
 	public static String change(String originalFileName, String formatStr) {
 		String renameFileName = null;

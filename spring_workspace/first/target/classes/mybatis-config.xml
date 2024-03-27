@@ -20,11 +20,13 @@
 		<typeAlias type="org.myweb.first.common.Search" alias="Search" />
 		<typeAlias type="org.myweb.first.notice.model.vo.Notice" alias="Notice" />
 		<typeAlias type="org.myweb.first.board.model.vo.Board" alias="Board" />
+		<typeAlias type="org.myweb.first.test.model.vo.TestVO" alias="TestVO" />
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mappers/member-mapper.xml" />
 		<mapper resource="mappers/notice-mapper.xml" />
 		<mapper resource="mappers/board-mapper.xml"/>
+		<mapper resource="mappers/test-mapper.xml"/>
 	</mappers>
 </configuration>

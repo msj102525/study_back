@@ -1,5 +1,0 @@
-package org.myweb.first.notice.model.service;
-
-public class NoticeServiceImpl {
-
-}
