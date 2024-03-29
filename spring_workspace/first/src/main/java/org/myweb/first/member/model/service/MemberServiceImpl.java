@@ -7,6 +7,8 @@ import org.myweb.first.common.Search;
 import org.myweb.first.common.SearchDate;
 import org.myweb.first.member.model.dao.MemberDao;
 import org.myweb.first.member.model.vo.Member;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,8 @@ public class MemberServiceImpl implements MemberService {
 	//dao 와 연결 처리 : DI(Dependency Injection : 의존성 주업)
 	@Autowired  //자동 DI 처리됨 ; 자동 객체 생성됨
 	private MemberDao memberDao;
+	
+	private static final Logger logger = LoggerFactory.getLogger(MemberService.class);
 
 	@Override
 	public Member selectLogin(Member member) {
@@ -29,6 +33,7 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public Member selectMember(String userid) {
+		logger.info(userid);
 		return memberDao.selectMember(userid);
 	}
 

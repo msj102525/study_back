@@ -1,0 +1,89 @@
+package org.myweb.first.testapi.controller;
+
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.myweb.first.testapi.model.vo.Position;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class TestAPIController {
+	private static final Logger logger = LoggerFactory.getLogger(TestAPIController.class);
+	
+	
+	@RequestMapping("moveAPI.do")
+	public String moveApiPage() {
+		return "testapi/testAPI";
+	}
+	
+	@RequestMapping("moveGeo.do")
+	public String moveGeolocationPage() {
+		return "testapi/testGeolocation";
+	}
+	
+	@RequestMapping("moveKlogin.do")
+	public String moveKakaoLoginPage() {
+		return "testapi/kakaoLogin";
+	}
+	
+	@RequestMapping("moveMap.do")
+	public String moveKakaoMapPage() {
+		return "testapi/kakaoMap";
+	}
+	
+	@RequestMapping("moveExample01.do")
+	public String moveMapExample01Page() {
+		return "testapi/mapExample01";
+	}
+	
+	@RequestMapping("moveExample02.do")
+	public String moveMapExample02Page() {
+		return "testapi/mapExample02";
+	}
+	
+	@RequestMapping("moveExample03.do")
+	public String moveMapExample03Page() {
+		return "testapi/mapExample03";
+	}
+	
+	@RequestMapping("moveExample04.do")
+	public String moveMapExample04Page() {
+		return "testapi/mapExample04";
+	}
+	
+	@RequestMapping("moveExample05.do")
+	public String moveMapExample05Page() {
+		return "testapi/mapExample05";
+	}
+	
+	// 카카오 로그인 요청 처리용
+	@RequestMapping("kakao_login.do")
+	public String kakaoLoginMethod(
+				HttpServletRequest request, HttpServletResponse response, Model model) {
+		logger.info("request에 담아서 온 파라메타 이름들 : " + request.getParameterNames());
+		logger.info("response 에 담긴 정보 : " + response.getContentType());
+		return "common/main";
+	}
+	
+	// 데이터베이스에서 조회해 온 여러 개의 좌표정보들을 출력 페이지로 내보내는 컨트롤러 메소드
+	@RequestMapping("positions.do")
+	@ResponseBody
+	public String selectMapPositionsMethod(HttpServletResponse response) {
+		// 카카오 지도에 표시할 마커 데이터를 서비스를 통해 조회해 옴 : 생략
+		
+		// 샘플 데이터 임의 입력해 넣음
+		ArrayList<Position> list = new ArrayList<Position>();
+		
+		
+		
+	}
+	
+	
+}

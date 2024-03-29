@@ -73,7 +73,7 @@ hr { clear: both; }
 		<li><a href="${ pageContext.servletContext.contextPath }/nlist.do?page=1">공지사항</a></li>
 		<li><a href="${ pageContext.servletContext.contextPath }/blist.do?page=1">게시글</a></li>
 		<li><a href="${ pageContext.servletContext.contextPath }/moveAOP.do">AOP란</a></li>
-		<li><a href="${ pageContext.servletContext.contextPath }/moveAjax.do">ajax 처리</a></li>
+		<li><a href="${ pageContext.servletContext.contextPath }/moveAPI.do">test api</a></li>
 		<li><a href="${ pageContext.servletContext.contextPath }/main.do">예제</a></li>
 	</ul>
 </nav>

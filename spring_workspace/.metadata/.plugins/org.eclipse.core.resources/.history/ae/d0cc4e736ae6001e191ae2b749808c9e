@@ -1,6 +1,0 @@
-package org.myweb.first.common;
-
-public class Paging implements java.io.Serializable {
-	private static final long serialVersionUID = -8649527407666546438L;
-	
-}

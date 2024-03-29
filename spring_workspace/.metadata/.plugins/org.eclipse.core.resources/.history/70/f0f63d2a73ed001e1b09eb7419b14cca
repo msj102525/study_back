@@ -1,0 +1,33 @@
+package org.myweb.first.testapi.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class TestAPIController {
+	private static final Logger logger = LoggerFactory.getLogger(TestAPIController.class);
+	
+	
+	@RequestMapping("moveAPI.do")
+	public String moveApiPage() {
+		return "testapi/testAPI";
+	}
+	
+	@RequestMapping("moveGeo.do")
+	public String moveGeolocationPage() {
+		return "testapi/testGeolocation";
+	}
+	
+	@RequestMapping("moveKlogin.do")
+	public String moveKakaoLoginPage() {
+		return "testapi/kakaoLogin";
+	}
+	
+	@RequestMapping("moveMap.do")
+	public String moveKakaoMapPage() {
+		return "testapi/kakaoMap";
+	}
+	
+}

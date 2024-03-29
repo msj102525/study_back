@@ -1,0 +1,106 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testGeolocation</title>
+<script type="text/javascript" src="/first/resources/js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript" src="/first/resources/js/modernizr-custom.min.js"></script>
+</head>
+<body>
+<p id="comment">Geolocation ì§ì ì¬ë¶ íì¸</p>
+<button id="btnGeolocation">Geolocation ì§ìì¬ë¶ íì¸</button>
+<script type="text/javascript">
+	$(function(){
+		//$('#btnGeolocation').on('click', supportGeolocation);
+		$('#btnGeolocation').on('click', supportGeolocationByModernizr);
+	});
+	
+	//ì§ìì¬ë¶ íì¸
+	function supportGeolocation(){
+		//alert(window.navigator.geolocation);
+		//true / false ì ê²°ê³¼ë¥¼ ìí  ê²½ì°
+		alert(!!window.navigator.geolocation);
+	}
+	
+	function supportGeolocationByModernizr(){
+		alert(Modernizr.geolocation);
+	}
+</script>
+<hr>
+<p id="comment2">ê²½/ìëì¢íë¡ ìì¹ì ë³´ ì¡°í</p>
+<button id="btnPosition">ìì¹ì ë³´ íì¸</button>
+<script type="text/javascript">
+	//options ì¤ì 
+	var options = {
+			enablehighAccuracy : true,
+			maximumAge : 6000,
+			//í­ì ìºì±ë ìì¹ë¥¼ ì»ê³ ì í  ëë infinity ë¡ ì§ì í¨
+			timeout : 45000
+	};
+	var watcher = null;
+
+
+	$(function(){
+		$('#btnPosition').on('click', showPosition);		
+	});  //document ready
+	
+	function showPosition(){
+		if(window.navigator.geolocation){
+			//navigator.geolocation.getCurrentPosition(successCallback[, errorCallback[, options]]);
+			//navigator.geolocation.getCurrentPosition(getPosition);
+			
+			//ìì§ì´ë ìì¹ì ëí´ ê³ì ì ìì¹ë¡ ê°±ì íê³ ì í  ë
+			watcher = navigator.geolocation.watchPosition(getPosition, handleError, options);
+		}else{
+			alert("ì´ ë¸ë¼ì°ì ììë Geolocation ê¸°ë¥ì´ ì§ìëì§ ììµëë¤.");
+		}
+	}
+	
+	//success callback í¨ì : ìì¹ ìì²­ì´ ì±ê³µíì ë ì¤íë¨
+	//ìì¹ ìì²­ì ëí´ ìì¹ê°ì´ ë¦¬í´ëìì ë ì¤íë¨
+	//ë¦¬í´ë ìì¹ê°ì ë°ìì¼ í¨ : ë©ê°ë³ìê° íìí¨
+	function getPosition(position){
+		//ë§¤ê°ë³ì position ì´ ìì²­ë ìì¹ê°ì ë°ì.
+		$('#comment2').html("ìë : " + position.coords.latitude 
+				+ "<br>ê²½ë : " + position.coords.longitude);
+	
+		//ì ìì¹ì ëí ê°±ì ì ì·¨ì
+		navigator.geolocation.clearWatch(watcher);
+	}
+	
+	//error callback í¨ì : ì í´ì§ ìê° ìì ìì¹ì ë³´ê° ë¦¬í´ëì§ ììì ë ì¤íë¨.
+	function handleError(error){
+		//ìë¬ ì²ë¦¬
+		//alert("Error : " + error.code + ", " + error.message);
+		//alert(error);
+		
+		//error code
+		//code 1 : ì¬ì©ìê° ìì¹ì ë³´ì ëí ì ê·¼ì ë§ì ê²½ì°
+		if(error.code == error.PERMISSION_DENIED){
+			alert("ì¬ì©ìê° ìì¹ì ë³´ì ëí ì ê·¼ì ë§ìì.");
+		}
+		//code 2 : ë¤í¸ìí¬ ëë GPS ì ì°ê²°í  ì ìë ê²½ì°
+		else if(error.code == error.POSITION_UNAVAILABLE){
+			alert("ì¸í°ë· ë¤í¸ìí¬ ëë GPS ì ì°ê²°í  ì ìì.");
+		}
+		//code 3 : ì¬ì©ìì ìì¹ì ë³´ë¥¼ ê³ì°íë ë° ìê°ì´ ì´ê³¼ë ê²½ì°
+		else if(error.code == error.TIMEOUT){
+			alert("ìì¹ì ë³´ ê³ì°ì ìê°ì´ ì´ê³¼ë¨.");
+		}
+		//code 4 : ê·¸ì¸ ì ì ìë ë¬¸ì ê° ìê¸´ ê²½ì°
+		else if(error.code == error.UNKNOW_ERROR){
+			alert("ì ì ìë ì¤ë¥ ë°ìë¨.")
+		}
+	}
+</script>
+
+
+
+
+</body>
+</html>
+
+
+

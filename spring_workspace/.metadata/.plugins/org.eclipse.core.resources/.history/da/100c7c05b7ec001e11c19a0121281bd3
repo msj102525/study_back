@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>first</title>
+</head>
+<body>
+ <h1>Open API 사용 테스트 페이지</h1>
+<HR>
+
+	<ol>
+		<li><a href="${ pageContext.servletContext.contextPath }/main.do">Home</a></li>
+		<li><a href="${ pageContext.servletContext.contextPath }/nlist.do?page=1">공지사항</a></li>
+		<li><a href="${ pageContext.servletContext.contextPath }/blist.do?page=1">게시글</a></li>
+		<li><a href="${ pageContext.servletContext.contextPath }/moveAOP.do">AOP란</a></li>
+		<li><a href="${ pageContext.servletContext.contextPath }/moveAPI.do">test api</a></li>
+		<li><a href="${ pageContext.servletContext.contextPath }/main.do">예제</a></li>
+	</ol>
+
+</body>
+</html>
