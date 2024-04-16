@@ -1,0 +1,1452 @@
+[09:56:13][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[09:56:14][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1095 ms
+[09:56:14][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[09:56:16][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1573 ms
+[09:56:17][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[09:56:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2992ed73
+[09:56:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@51e322ef
+[09:56:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@737fbc59
+[09:56:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2660eecb
+[09:56:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@240898f8
+[09:56:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@9827dd2
+[09:56:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@18630f99
+[09:56:31][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[09:56:31][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@702fc28a
+[09:56:31][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@21b04b8c
+[09:59:06][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[09:59:07][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 781 ms
+[09:59:07][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[09:59:09][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1341 ms
+[09:59:09][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[09:59:09][ERROR][Slf4jSpyLogDelegator.java: 120] - 3. PreparedStatement.execute() SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5
+java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy9.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:216)
+	at com.sdm.ssm.admin.dao.NoticeDao.selectTop5(NoticeDao.java:71)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl.selectTop5(NoticeServiceImpl.java:96)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl$$FastClassBySpringCGLIB$$31225f85.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl$$EnhancerBySpringCGLIB$$939df073.selectTop5(<generated>)
+	at com.sdm.ssm.admin.controller.NoticeController.noticeNewTop5Method(NoticeController.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Error : 942, Position : 111, Sql = SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5, OriginalSql = SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 94 more
+[09:59:09][ERROR][Slf4jSpyLogDelegator.java: 120] - 1. PreparedStatement.execute() select board_no, board_title, status, user_id
+		from(select rownum rnum, board_no, user_id, board_title, status
+				from(select * from tb_inconvinience_board left join tb_user on writer = id where status = 1 order by write_date))
+		where rnum between 1 and 10
+java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy9.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:216)
+	at com.sdm.ssm.Inconvinience.model.dao.InconvinienceDao.selectTop10(InconvinienceDao.java:104)
+	at com.sdm.ssm.Inconvinience.model.service.InconvinienceServiceImpl.selectTop10(InconvinienceServiceImpl.java:121)
+	at com.sdm.ssm.Inconvinience.model.service.InconvinienceServiceImpl$$FastClassBySpringCGLIB$$976abb95.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sdm.ssm.Inconvinience.model.service.InconvinienceServiceImpl$$EnhancerBySpringCGLIB$$12490ea3.selectTop10(<generated>)
+	at com.sdm.ssm.Inconvinience.controller.InconvinienceController.inconvTop10Method(InconvinienceController.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Error : 942, Position : 168, Sql = select board_no, board_title, status, user_id
+		from(select rownum rnum, board_no, user_id, board_title, status
+				from(select * from tb_inconvinience_board left join tb_user on writer = id where status = 1 order by write_date))
+		where rnum between 1 and 10, OriginalSql = select board_no, board_title, status, user_id
+		from(select rownum rnum, board_no, user_id, board_title, status
+				from(select * from tb_inconvinience_board left join tb_user on writer = id where status = 1 order by write_date))
+		where rnum between 1 and 10, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 94 more
+[09:59:09][ERROR][Slf4jSpyLogDelegator.java: 120] - 4. PreparedStatement.execute() select to_char(LAST_MODIFIED, 'MM') as month, count(*) count
+from tb_user
+where to_char(last_modified,'YYYY') = 2024
+group by to_char(LAST_MODIFIED, 'MM')
+java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy9.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.sdm.ssm.admin.dao.UserManageDao.selectCountUserByEnrollDate(UserManageDao.java:70)
+	at com.sdm.ssm.admin.service.UserManageServiceImpl.selectCountUserByEnrollDate(UserManageServiceImpl.java:96)
+	at com.sdm.ssm.admin.service.UserManageServiceImpl$$FastClassBySpringCGLIB$$9d59ee4d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sdm.ssm.admin.service.UserManageServiceImpl$$EnhancerBySpringCGLIB$$49f019cb.selectCountUserByEnrollDate(<generated>)
+	at com.sdm.ssm.admin.controller.UserManageController.selectCountUserByEnrollDateMethod(UserManageController.java:221)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Error : 942, Position : 66, Sql = select to_char(LAST_MODIFIED, 'MM') as month, count(*) count
+from tb_user
+where to_char(last_modified,'YYYY') = :1 
+group by to_char(LAST_MODIFIED, 'MM'), OriginalSql = select to_char(LAST_MODIFIED, 'MM') as month, count(*) count
+from tb_user
+where to_char(last_modified,'YYYY') = ?
+group by to_char(LAST_MODIFIED, 'MM'), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 93 more
+[09:59:09][ERROR][Slf4jSpyLogDelegator.java: 139] - 1. PreparedStatement.execute() FAILED! select board_no, board_title, status, user_id
+		from(select rownum rnum, board_no, user_id, board_title, status
+				from(select * from tb_inconvinience_board left join tb_user on writer = id where status = 1 order by write_date))
+		where rnum between 1 and 10 {FAILED after 6 msec}
+java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy9.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:216)
+	at com.sdm.ssm.Inconvinience.model.dao.InconvinienceDao.selectTop10(InconvinienceDao.java:104)
+	at com.sdm.ssm.Inconvinience.model.service.InconvinienceServiceImpl.selectTop10(InconvinienceServiceImpl.java:121)
+	at com.sdm.ssm.Inconvinience.model.service.InconvinienceServiceImpl$$FastClassBySpringCGLIB$$976abb95.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sdm.ssm.Inconvinience.model.service.InconvinienceServiceImpl$$EnhancerBySpringCGLIB$$12490ea3.selectTop10(<generated>)
+	at com.sdm.ssm.Inconvinience.controller.InconvinienceController.inconvTop10Method(InconvinienceController.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Error : 942, Position : 168, Sql = select board_no, board_title, status, user_id
+		from(select rownum rnum, board_no, user_id, board_title, status
+				from(select * from tb_inconvinience_board left join tb_user on writer = id where status = 1 order by write_date))
+		where rnum between 1 and 10, OriginalSql = select board_no, board_title, status, user_id
+		from(select rownum rnum, board_no, user_id, board_title, status
+				from(select * from tb_inconvinience_board left join tb_user on writer = id where status = 1 order by write_date))
+		where rnum between 1 and 10, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 94 more
+[09:59:09][ERROR][Slf4jSpyLogDelegator.java: 139] - 3. PreparedStatement.execute() FAILED! SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5 {FAILED after 6 msec}
+java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy9.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:216)
+	at com.sdm.ssm.admin.dao.NoticeDao.selectTop5(NoticeDao.java:71)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl.selectTop5(NoticeServiceImpl.java:96)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl$$FastClassBySpringCGLIB$$31225f85.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl$$EnhancerBySpringCGLIB$$939df073.selectTop5(<generated>)
+	at com.sdm.ssm.admin.controller.NoticeController.noticeNewTop5Method(NoticeController.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Error : 942, Position : 111, Sql = SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5, OriginalSql = SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 94 more
+[09:59:09][ERROR][Slf4jSpyLogDelegator.java: 139] - 4. PreparedStatement.execute() FAILED! select to_char(LAST_MODIFIED, 'MM') as month, count(*) count
+from tb_user
+where to_char(last_modified,'YYYY') = 2024
+group by to_char(LAST_MODIFIED, 'MM') {FAILED after 4 msec}
+java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy9.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.sdm.ssm.admin.dao.UserManageDao.selectCountUserByEnrollDate(UserManageDao.java:70)
+	at com.sdm.ssm.admin.service.UserManageServiceImpl.selectCountUserByEnrollDate(UserManageServiceImpl.java:96)
+	at com.sdm.ssm.admin.service.UserManageServiceImpl$$FastClassBySpringCGLIB$$9d59ee4d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sdm.ssm.admin.service.UserManageServiceImpl$$EnhancerBySpringCGLIB$$49f019cb.selectCountUserByEnrollDate(<generated>)
+	at com.sdm.ssm.admin.controller.UserManageController.selectCountUserByEnrollDateMethod(UserManageController.java:221)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Error : 942, Position : 66, Sql = select to_char(LAST_MODIFIED, 'MM') as month, count(*) count
+from tb_user
+where to_char(last_modified,'YYYY') = :1 
+group by to_char(LAST_MODIFIED, 'MM'), OriginalSql = select to_char(LAST_MODIFIED, 'MM') as month, count(*) count
+from tb_user
+where to_char(last_modified,'YYYY') = ?
+group by to_char(LAST_MODIFIED, 'MM'), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 93 more
+[09:59:09][ERROR][Slf4jSpyLogDelegator.java: 120] - 2. PreparedStatement.execute() SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5
+java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy9.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:216)
+	at com.sdm.ssm.admin.dao.NoticeDao.selectTop5(NoticeDao.java:71)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl.selectTop5(NoticeServiceImpl.java:96)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl$$FastClassBySpringCGLIB$$31225f85.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl$$EnhancerBySpringCGLIB$$939df073.selectTop5(<generated>)
+	at com.sdm.ssm.admin.controller.NoticeController.noticeNewTop5Method(NoticeController.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Error : 942, Position : 111, Sql = SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5, OriginalSql = SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 94 more
+[09:59:09][ERROR][Slf4jSpyLogDelegator.java: 139] - 2. PreparedStatement.execute() FAILED! SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5 {FAILED after 66 msec}
+java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy9.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:216)
+	at com.sdm.ssm.admin.dao.NoticeDao.selectTop5(NoticeDao.java:71)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl.selectTop5(NoticeServiceImpl.java:96)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl$$FastClassBySpringCGLIB$$31225f85.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sdm.ssm.admin.service.NoticeServiceImpl$$EnhancerBySpringCGLIB$$939df073.selectTop5(<generated>)
+	at com.sdm.ssm.admin.controller.NoticeController.noticeNewTop5Method(NoticeController.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Error : 942, Position : 111, Sql = SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5, OriginalSql = SELECT * FROM (SELECT ROWNUM RNUM, NOTICE_NO, NOTICE_TITLE
+								 FROM ( SELECT NOTICE_NO, NOTICE_TITLE FROM tb_NOTICE WHERE IMPORTANCY = '3' 
+											  ORDER BY WRITE_DATE DESC)) 
+		 WHERE RNUM BETWEEN 1 AND 5, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 94 more
+[10:08:16][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:08:16][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@4bb5725a
+[10:08:16][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@73a00c4c
+[10:08:23][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:08:23][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@cdbe6bb
+[10:08:23][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@39e674b5
+[10:09:16][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:09:16][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@2dd604a9
+[10:09:16][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@26804466
+[10:09:19][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:09:19][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@35ee99fb
+[10:09:19][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@60dc581d
+[10:10:23][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:10:23][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@43e3f5b8
+[10:10:23][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@72e4c9b2
+[10:10:23][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5c28471
+[10:10:23][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@8c23848
+[10:10:23][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@471afc72
+[10:10:23][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7c07d5c5
+[10:10:23][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6adc7f54
+[10:10:24][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:10:24][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@d8e0e85
+[10:10:24][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@507e49c8
+[10:13:45][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:13:45][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@12d44b68
+[10:13:45][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3157bcff
+[10:13:45][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@59e68fab
+[10:13:45][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@62d0c6d5
+[10:13:45][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2ee9eeed
+[10:13:45][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4575d1a1
+[10:13:45][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1a7cac5c
+[10:13:46][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:13:46][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5c6ce6f6
+[10:13:46][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@3e503d43
+[10:13:54][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:13:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@60dbcd03
+[10:13:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@454e6800
+[10:13:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1ba24f6d
+[10:13:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@602e24b2
+[10:13:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3565cb28
+[10:13:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@40cdb628
+[10:13:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4edd234b
+[10:14:26][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:14:26][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@747760c8
+[10:14:26][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@69d0978d
+[10:14:26][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@77c0c684
+[10:14:26][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6a121378
+[10:14:26][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@57a6ede7
+[10:14:26][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@36daf005
+[10:14:26][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6f33612d
+[10:14:29][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:14:29][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@395e5eaf
+[10:14:29][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@2bdc2abd
+[10:14:31][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:14:31][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@74578a07
+[10:14:31][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@1509865c
+[10:14:35][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:14:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@d6aa124
+[10:14:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@46f704b6
+[10:14:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@60bc805a
+[10:14:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@28e6d255
+[10:14:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2f778958
+[10:14:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@32a07750
+[10:14:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@61126d53
+[10:14:36][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:14:36][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5318d811
+[10:14:36][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5c1730c8
+[10:16:07][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:16:07][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@28a2d453
+[10:16:07][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@753ec2be
+[10:17:14][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:17:14][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@41956cb8
+[10:17:14][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@31fdb1cc
+[10:17:18][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:17:18][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@76eca1cb
+[10:17:18][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@28758367
+[10:17:40][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:17:40][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@2eb00d58
+[10:17:40][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@1e646aba
+[10:17:58][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:17:58][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@103499a5
+[10:17:58][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@7a8c42c2
+[10:18:04][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:18:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1abbd793
+[10:18:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@13356cbd
+[10:18:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4d6add9
+[10:18:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3e8bf36e
+[10:18:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@60909bf2
+[10:18:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1e21ab93
+[10:18:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@616ba25f
+[10:18:06][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:18:06][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@4abedc65
+[10:18:06][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@6c43f64c
+[10:18:08][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:18:08][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@e9573f3
+[10:18:08][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@63dd1670
+[10:18:10][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:18:10][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@273e901a
+[10:18:10][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@52b05d9a
+[10:18:10][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@34551b50
+[10:18:10][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5106b546
+[10:18:10][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6d42437b
+[10:18:10][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5bf1ade3
+[10:18:10][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5f31647c
+[10:18:12][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:18:12][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3f335143
+[10:18:12][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@7ec593e3
+[10:18:15][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:18:15][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@139ee75e
+[10:18:15][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@51cfb3df
+[10:18:25][INFO ][UserController.java: 322] - result!!!!!!!!!!!!!!ok
+[10:18:27][INFO ][UserController.java: 322] - result!!!!!!!!!!!!!!dup
+[10:18:33][INFO ][UserController.java: 322] - result!!!!!!!!!!!!!!ok
+[10:18:57][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:18:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@58d291fb
+[10:18:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@20f527d3
+[10:18:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@18356adb
+[10:18:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2bc103f
+[10:18:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@469850d9
+[10:18:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5ce84822
+[10:18:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@69733f8d
+[10:18:58][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:18:58][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@20c8e013
+[10:18:58][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@45f5bc43
+[10:19:03][INFO ][UserDao.java: 21] - user1
+[10:19:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@15ec8f04
+[10:19:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@24ad7706
+[10:19:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@67e8a4c8
+[10:19:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@325f2af6
+[10:19:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6aa9e2b6
+[10:19:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7781085f
+[10:19:04][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3437f23d
+[10:19:04][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6acc67a
+[10:19:04][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@751ebaf0
+[10:19:04][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7bec6a2e
+[10:19:04][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@482028c1
+[10:19:04][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@54136da7
+[10:19:17][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:19:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@17baefa4
+[10:19:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@711281b6
+[10:19:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1a3c26ae
+[10:19:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4a325fb6
+[10:19:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3254b29b
+[10:19:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6c1c53e
+[10:19:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6fecb81b
+[10:19:18][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:19:18][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@611766fb
+[10:19:18][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@1f9d2a4a
+[10:19:24][INFO ][UserDao.java: 21] - user1
+[10:19:33][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:19:33][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@25351000
+[10:19:33][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@4c3e11a
+[10:21:29][INFO ][UserDao.java: 21] - user1
+[10:21:29][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2a1489d7
+[10:21:29][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@12c7d4e7
+[10:21:29][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1d72f359
+[10:21:29][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2f3c9d45
+[10:21:29][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@289f844
+[10:21:29][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4aee636a
+[10:21:29][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@56033212
+[10:21:29][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@340c5c51
+[10:21:29][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@214195bd
+[10:21:29][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1342572b
+[10:21:29][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4f72ad2c
+[10:21:29][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@58cc743c
+[10:22:44][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:22:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4a84fb15
+[10:22:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3ff2ff83
+[10:22:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7e6a4260
+[10:22:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@ceebe69
+[10:22:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@69539a1c
+[10:22:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7605daa2
+[10:22:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@73493e04
+[10:22:45][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:22:45][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@783e80ce
+[10:22:45][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@545b0daf
+[10:23:12][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:23:13][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 814 ms
+[10:23:13][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:23:15][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1342 ms
+[10:23:16][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:23:16][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@347b98e3
+[10:23:16][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@24b4ffb7
+[10:23:17][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:23:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@37da7392
+[10:23:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@77f5222a
+[10:23:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@30722462
+[10:23:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3e418ffb
+[10:23:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4fed3f7c
+[10:23:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@450fe204
+[10:23:17][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@67190645
+[10:23:18][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:23:18][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1a391d93
+[10:23:18][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@21b69562
+[10:23:24][INFO ][UserDao.java: 21] - user1
+[10:23:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@620a6bf4
+[10:23:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3b4d72aa
+[10:23:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@33a2eac3
+[10:23:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2d14cba6
+[10:23:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@38167c5d
+[10:23:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2f2063d5
+[10:23:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@bf95645
+[10:23:24][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@72088d8b
+[10:23:24][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2ae66cb9
+[10:23:24][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@23da8941
+[10:23:24][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@763ff226
+[10:23:24][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@55d17e93
+[10:23:31][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:23:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@30e3e4c1
+[10:23:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1db48903
+[10:23:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@f36e8e6
+[10:23:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6129cf5e
+[10:23:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1fd4c9b3
+[10:23:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@d372191
+[10:23:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@78e55a07
+[10:23:32][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:23:32][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@731cf3ba
+[10:23:32][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5bc90041
+[10:23:34][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:23:34][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7971a10b
+[10:23:34][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@60671714
+[10:23:39][INFO ][UserController.java: 322] - result!!!!!!!!!!!!!!dup
+[10:23:48][INFO ][UserController.java: 322] - result!!!!!!!!!!!!!!ok
+[10:24:12][INFO ][UserController.java: 365] - 랜덤숫자 : 937710
+[10:25:25][INFO ][UserController.java: 377] - 입력 : Tmdwhd0711!
+[10:25:25][INFO ][UserController.java: 379] - enroll.do : User [id=0, userId=doorwinbell1, passWd=$2a$10$uLgYqDiq1s8xjH873/UPbuvn323menhffvKJZjXCzzjaQVXUAuWdS, email=msj102525@daum.net, userNo=19980711, phone=010-1234-1234, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=null, serviceDate=null, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[10:25:25][INFO ][UserController.java: 381] - 암호화 : $2a$10$uLgYqDiq1s8xjH873/UPbuvn323menhffvKJZjXCzzjaQVXUAuWdS
+[10:25:25][INFO ][UserDao.java: 31] - User [id=0, userId=doorwinbell1, passWd=$2a$10$uLgYqDiq1s8xjH873/UPbuvn323menhffvKJZjXCzzjaQVXUAuWdS, email=msj102525@daum.net, userNo=19980711, phone=010-1234-1234, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=null, serviceDate=null, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[10:25:34][INFO ][UserDao.java: 21] - doorwinbell1
+[10:25:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@caeaa2b
+[10:25:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@443bdfb6
+[10:25:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4dfea38e
+[10:25:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@419c32ee
+[10:25:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@8094b3a
+[10:25:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@773fa352
+[10:25:35][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1e3659f9
+[10:25:36][INFO ][UserDao.java: 21] - doorwinbell1
+[10:25:36][INFO ][UserController.java: 248] - goMypage!!!!
+[10:25:36][INFO ][UserController.java: 251] - profilUrl!!!! : 
+[10:26:14][INFO ][UserController.java: 406] - 첨부 파일명 변경 확인 : unnamed.jpg, 20240412102614.jpg
+[10:26:14][INFO ][UserController.java: 422] - 새로운 암호 : Tmdwhd0711!, 11
+[10:26:14][WARN ][BCryptPasswordEncoder.java: 130] - Encoded password does not look like BCrypt
+[10:26:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3e37bd32
+[10:26:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@34fbb4bf
+[10:26:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6ff7540d
+[10:26:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@157a589f
+[10:26:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@793fd893
+[10:26:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@28b24b7a
+[10:26:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6e037aab
+[10:26:20][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:26:20][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7db32911
+[10:26:20][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4e5cc5be
+[10:26:20][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5fd52713
+[10:26:20][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@44f05741
+[10:26:20][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5a1fbe13
+[10:26:20][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@386c922b
+[10:26:20][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@14628648
+[10:26:21][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:26:21][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@4fbd547f
+[10:26:21][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@1a638254
+[10:26:28][INFO ][UserDao.java: 21] - doorwinbell1
+[10:26:28][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@79892c6d
+[10:26:28][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7fc24cd0
+[10:26:28][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@46200930
+[10:26:28][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7cdd89da
+[10:26:28][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1965d04e
+[10:26:28][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3fdbc43d
+[10:26:28][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@697db55
+[10:26:29][INFO ][UserDao.java: 21] - doorwinbell1
+[10:26:29][INFO ][UserController.java: 248] - goMypage!!!!
+[10:26:29][INFO ][UserController.java: 254] - profilUrl!!!! : 20240412102614.jpg
+[10:28:30][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6e66cbad
+[10:28:30][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2889b387
+[10:28:30][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@e045b08
+[10:28:30][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5708f1fb
+[10:28:30][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@13b98bb3
+[10:28:30][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@72eaa7c8
+[10:28:30][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5837ce9e
+[10:28:31][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:28:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@52b8db26
+[10:28:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7b3619d
+[10:28:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@f488cbb
+[10:28:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@315d7b3b
+[10:28:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@9dd8434
+[10:28:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@ce6ca18
+[10:28:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@74f503b0
+[10:28:32][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:28:32][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@2ead8c16
+[10:28:32][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@15bf7853
+[10:28:39][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:28:39][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7efd8ea0
+[10:28:39][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@37ecc9d5
+[10:28:57][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:28:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@745c4ad7
+[10:28:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@463de50b
+[10:28:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1f23ec28
+[10:28:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@790d136f
+[10:28:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@82830a8
+[10:28:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@44cd2096
+[10:28:57][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@53643271
+[10:28:58][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:28:58][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@24c5404b
+[10:28:58][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@77de0170
+[10:36:30][INFO ][UserController.java: 365] - 랜덤숫자 : 885821
+[10:37:37][INFO ][UserController.java: 446] - User [id=0, userId=doorwinbell1, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-12, serviceDate=null, businessNo=null, businessStoreName=null]
+[10:37:41][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:37:41][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@234a2595
+[10:37:41][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1f22769e
+[10:37:41][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@11e5d67f
+[10:37:41][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@25531ff2
+[10:37:41][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@70297a81
+[10:37:41][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2cc65802
+[10:37:41][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@58d68cf8
+[10:37:42][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:37:42][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@600acbce
+[10:37:42][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@64ccb1f0
+[10:37:51][INFO ][UserController.java: 365] - 랜덤숫자 : 712286
+[10:38:25][INFO ][UserController.java: 494] - 임시 비밀번호 : K+k_kAIZxZi
+[10:38:53][INFO ][UserDao.java: 21] - doorwinbell1
+[10:38:53][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4fca53a6
+[10:38:53][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@18ad44a9
+[10:38:53][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@cd1ebcb
+[10:38:53][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2566341a
+[10:38:53][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@69d7569d
+[10:38:53][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4f79763a
+[10:38:53][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2d9e4c0a
+[10:38:54][INFO ][UserDao.java: 21] - doorwinbell1
+[10:38:54][INFO ][UserController.java: 248] - goMypage!!!!
+[10:38:54][INFO ][UserController.java: 254] - profilUrl!!!! : 20240412102614.jpg
+[10:39:11][INFO ][UserController.java: 422] - 새로운 암호 : Tmdwhd0711!, 11
+[10:39:11][WARN ][BCryptPasswordEncoder.java: 130] - Encoded password does not look like BCrypt
+[10:39:11][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@66fd01b
+[10:39:11][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@71c39efe
+[10:39:11][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1b835b38
+[10:39:11][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@120bf404
+[10:39:11][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5580c3cc
+[10:39:11][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@72552975
+[10:39:11][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2d08b154
+[10:39:14][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:39:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3844bc2f
+[10:39:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@40a31f1d
+[10:39:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@35fb36a0
+[10:39:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@8c66498
+[10:39:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@568781db
+[10:39:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@13760cda
+[10:39:14][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6c553dcf
+[10:39:15][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:39:15][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3e2bf099
+[10:39:15][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5fac88a1
+[10:39:24][INFO ][UserDao.java: 21] - doorwinbell1
+[10:39:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@b968fc3
+[10:39:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3604cbb4
+[10:39:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1e6b69b2
+[10:39:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@703ed48f
+[10:39:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@74362322
+[10:39:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2dd031ba
+[10:39:24][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@76235bc9
+[10:39:28][INFO ][UserDao.java: 21] - doorwinbell1
+[10:39:28][INFO ][UserController.java: 248] - goMypage!!!!
+[10:39:28][INFO ][UserController.java: 254] - profilUrl!!!! : 20240412102614.jpg
+[10:39:42][INFO ][UserController.java: 522] - UserFinkOut [finkOutNo=2004, fUserId=doorwinbell1, fEmail=msj102525@daum.net, finkOutDate=null]
+[10:39:43][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:39:43][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7737c616
+[10:39:43][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@78091aef
+[10:39:43][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@50126e2d
+[10:39:43][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@54676d26
+[10:39:43][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6e0104ff
+[10:39:43][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2baabfea
+[10:39:43][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6b4e0729
+[10:39:44][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:39:44][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@45be9408
+[10:39:44][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@1bdbf43f
+[10:39:50][INFO ][UserDao.java: 21] - doorwinbell1
+[10:40:36][INFO ][UserDao.java: 21] - doorwinbell1
+[10:40:45][INFO ][UserDao.java: 21] - doorwinbell1
+[10:42:14][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:42:14][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@46e5b07
+[10:42:14][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@25e13287
+[10:43:39][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:43:40][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 789 ms
+[10:43:40][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:43:41][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1309 ms
+[10:43:42][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:43:42][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@45b46ac9
+[10:43:42][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@51ec32ef
+[10:43:42][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@28b1bc86
+[10:43:42][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@733a90f4
+[10:43:42][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@33376047
+[10:43:42][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5adb9db3
+[10:43:42][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@79567d5c
+[10:44:32][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:44:32][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@353fef33
+[10:44:32][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@22b1016e
+[10:44:51][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:44:51][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3c1620a4
+[10:44:51][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@27fcedeb
+[10:44:51][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4d7fe07f
+[10:44:51][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1a21a013
+[10:44:51][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@679fb10e
+[10:44:51][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3e7dbef9
+[10:44:51][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7f041bdc
+[10:44:54][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:44:54][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@622c1e52
+[10:44:54][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@570e690a
+[10:44:56][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:44:56][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@73da81aa
+[10:44:56][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@46884c0a
+[10:45:33][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:45:33][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@27debd65
+[10:45:33][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5380b955
+[10:48:31][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:48:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@574662cc
+[10:48:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@789e532d
+[10:48:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@17ec7b36
+[10:48:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@d62c325
+[10:48:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4b75f0ae
+[10:48:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@28fcf1ac
+[10:48:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@538ecafa
+[10:48:32][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:48:32][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@77db408
+[10:48:32][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@295d3893
+[10:48:38][INFO ][UserDao.java: 21] - user1
+[10:48:39][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3eb53cc1
+[10:48:39][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@72a71c70
+[10:48:39][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5713bdc4
+[10:48:39][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@577811a4
+[10:48:39][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6377a20b
+[10:48:39][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5f1f28e3
+[10:48:39][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2e72dc95
+[10:48:39][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@77b440c9
+[10:48:39][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@31ac8599
+[10:48:39][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@10e3a386
+[10:48:39][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@478fc66e
+[10:48:39][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2f138418
+[10:48:41][INFO ][UserDao.java: 21] - user1
+[10:48:45][INFO ][NoticeController.java: 140] - 리스트카운트 : 30
+[10:48:46][INFO ][UserDao.java: 21] - user1
+[10:48:48][INFO ][UserDao.java: 21] - user1
+[10:48:51][INFO ][UserDao.java: 21] - user1
+[10:48:56][INFO ][UserDao.java: 21] - user1
+[10:53:12][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@59697cb4
+[10:53:12][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@234809a
+[10:53:12][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@37e8a8a3
+[10:53:12][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@634c2279
+[10:53:12][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3946c1b
+[10:53:12][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@16d4cbf9
+[10:53:12][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1c184bd3
+[10:53:12][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3160aa59
+[10:53:12][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5b194ebf
+[10:53:12][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@49a633f
+[10:53:12][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3e0e2298
+[10:53:12][INFO ][InconvinienceController.java: 87] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@383f198a
+[10:53:55][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:53:55][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@33754faf
+[10:53:55][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7610b925
+[10:53:55][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@66266b64
+[10:53:55][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3b139437
+[10:53:55][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2b915ebc
+[10:53:55][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@a17b094
+[10:53:55][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1ee4b833
+[10:53:56][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:53:56][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@79eba08e
+[10:53:56][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@3b29184d
+[10:53:58][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:53:58][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@17b3a63c
+[10:53:58][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@27510f83
+[10:54:16][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:54:16][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@98b4f4c
+[10:54:16][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@42d7c1a2
+[10:54:16][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2d1f0cc
+[10:54:16][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3b5c234
+[10:54:16][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4670e7c6
+[10:54:16][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@abef5e3
+[10:54:16][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@514edb93
+[10:54:17][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:54:17][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@27d645d
+[10:54:17][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@2e1484e4
+[10:56:37][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[10:56:37][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@15829b86
+[10:56:37][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1c18bf24
+[10:56:37][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@56b699db
+[10:56:37][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@f1c24c7
+[10:56:37][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@7143f9f0
+[10:56:37][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6b426089
+[10:56:37][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@58340df9
+[10:56:53][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[10:56:53][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@243b98ec
+[10:56:53][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5579fe35
+[12:32:34][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[12:32:34][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@40a33d53
+[12:32:34][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3066c0ff
+[12:32:34][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@2999befe
+[12:32:34][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@654fbf2b
+[12:32:34][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3b96655c
+[12:32:34][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@760ee30
+[12:32:34][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@32059a6a
+[12:33:03][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[12:33:03][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4486713b
+[12:33:03][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@28a07b38
+[12:33:03][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3138f1f
+[12:33:03][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@291da2ab
+[12:33:03][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1b174fdb
+[12:33:03][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@26ee96a5
+[12:33:03][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1942ba31
+[12:33:31][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[12:33:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@41edf007
+[12:33:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@30db28f0
+[12:33:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3f32c96a
+[12:33:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@627807e7
+[12:33:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5137c7fa
+[12:33:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@112b6a71
+[12:33:31][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3f2ada25
+[12:33:44][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[12:33:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5e0941cf
+[12:33:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5c25e641
+[12:33:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1f6649f7
+[12:33:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@40fc7259
+[12:33:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@4d1ef622
+[12:33:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@19d06d81
+[12:33:44][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@12ffa3df
+[12:33:48][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[12:33:48][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@74f7305e
+[12:33:48][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@6d4ff6c
+[12:33:50][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[12:33:50][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@3988e82c
+[12:33:50][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@ba5a6fc
+[12:33:50][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6cd815bf
+[12:33:50][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@50f7f5b0
+[12:33:50][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@149b5b44
+[12:33:50][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@147c7b16
+[12:33:50][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@74bf92da
+[12:40:43][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[12:40:43][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3264ec4d
+[12:40:43][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5b23e86
+[16:06:51][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:06:51][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 869 ms
+[16:06:51][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:06:53][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1413 ms
+[16:06:54][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type int is not present]
+[16:06:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@5dcaefdb
+[16:06:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6f71faa1
+[16:06:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@11e0f6c1
+[16:06:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@6887b9a3
+[16:06:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@1643260c
+[16:06:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@54ff552c
+[16:06:54][INFO ][InconvinienceController.java: 123] - com.sdm.ssm.Inconvinience.model.vo.InconvinienceBoard@476d87de

@@ -126,8 +126,12 @@ window.onload = function(){
 				<td><input type="tel" name="phone" required></td>
 			<tr>
 				<th>*이메일</th>
-				<td><input type="email" name="email" required></td>
-				<td align="right"><input type="file" name="photofile" id="photofile" value=""></td>
+				<td>
+					<input type="email" name="email" required>
+				</td>
+				<td align="right">
+					<input type="file" name="photofile" id="photofile" value="">
+				</td>
 			</tr>
 			<tr>
 				<th>취미(연습용)</th>

@@ -1,0 +1,664 @@
+[09:56:18][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[09:56:19][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1031 ms
+[09:56:19][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[09:56:20][INFO ][FrameworkServlet.java: 547] - Completed initialization in 910 ms
+[10:35:18][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:35:19][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 820 ms
+[10:35:19][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:35:20][INFO ][FrameworkServlet.java: 547] - Completed initialization in 765 ms
+[10:42:21][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:42:21][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 879 ms
+[10:42:21][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:42:22][INFO ][FrameworkServlet.java: 547] - Completed initialization in 903 ms
+[10:42:49][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[10:44:09][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:44:10][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 816 ms
+[10:44:10][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:44:11][INFO ][FrameworkServlet.java: 547] - Completed initialization in 820 ms
+[10:46:35][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:46:36][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 823 ms
+[10:46:36][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:46:36][INFO ][FrameworkServlet.java: 547] - Completed initialization in 826 ms
+[10:47:06][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:47:07][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 816 ms
+[10:47:07][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:47:08][INFO ][FrameworkServlet.java: 547] - Completed initialization in 801 ms
+[10:47:19][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[11:07:30][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[11:07:31][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 815 ms
+[11:07:31][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[11:07:32][INFO ][FrameworkServlet.java: 547] - Completed initialization in 799 ms
+[11:26:44][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[11:26:45][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 718 ms
+[11:26:45][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[11:26:45][INFO ][FrameworkServlet.java: 547] - Completed initialization in 732 ms
+[12:18:06][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:18:07][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 732 ms
+[12:18:07][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:18:08][INFO ][FrameworkServlet.java: 547] - Completed initialization in 776 ms
+[12:24:46][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:24:47][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 754 ms
+[12:24:47][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:24:48][INFO ][FrameworkServlet.java: 547] - Completed initialization in 780 ms
+[12:28:14][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:28:15][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 749 ms
+[12:28:15][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:28:15][INFO ][FrameworkServlet.java: 547] - Completed initialization in 769 ms
+[12:48:02][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:48:03][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 740 ms
+[12:48:03][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:48:04][INFO ][FrameworkServlet.java: 547] - Completed initialization in 755 ms
+[14:59:45][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[14:59:45][ERROR][ContextLoader.java: 313] - Context initialization failed
+org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.context.support.XmlWebApplicationContext]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/metrics/ApplicationStartup
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:102)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:337)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:279)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4462)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4914)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/metrics/ApplicationStartup
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:229)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:81)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:51)
+	at org.springframework.web.context.support.AbstractRefreshableWebApplicationContext.<init>(AbstractRefreshableWebApplicationContext.java:101)
+	at org.springframework.web.context.support.XmlWebApplicationContext.<init>(XmlWebApplicationContext.java:62)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	... 34 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.metrics.ApplicationStartup
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1141)
+	... 45 more
+[15:00:17][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:00:17][ERROR][ContextLoader.java: 313] - Context initialization failed
+org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.context.support.XmlWebApplicationContext]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/metrics/ApplicationStartup
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:102)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:337)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:279)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4462)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4914)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/metrics/ApplicationStartup
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:229)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:81)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:51)
+	at org.springframework.web.context.support.AbstractRefreshableWebApplicationContext.<init>(AbstractRefreshableWebApplicationContext.java:101)
+	at org.springframework.web.context.support.XmlWebApplicationContext.<init>(XmlWebApplicationContext.java:62)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	... 34 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.metrics.ApplicationStartup
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1141)
+	... 45 more
+[15:01:00][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:01:00][ERROR][ContextLoader.java: 313] - Context initialization failed
+org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.context.support.XmlWebApplicationContext]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/metrics/ApplicationStartup
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:102)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:337)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:279)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4462)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4914)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/metrics/ApplicationStartup
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:229)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:81)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:51)
+	at org.springframework.web.context.support.AbstractRefreshableWebApplicationContext.<init>(AbstractRefreshableWebApplicationContext.java:101)
+	at org.springframework.web.context.support.XmlWebApplicationContext.<init>(XmlWebApplicationContext.java:62)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	... 34 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.metrics.ApplicationStartup
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1141)
+	... 45 more
+[15:01:11][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:01:11][ERROR][ContextLoader.java: 313] - Context initialization failed
+org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.context.support.XmlWebApplicationContext]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/metrics/ApplicationStartup
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:102)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:337)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:279)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4462)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4914)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/metrics/ApplicationStartup
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:229)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:81)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:51)
+	at org.springframework.web.context.support.AbstractRefreshableWebApplicationContext.<init>(AbstractRefreshableWebApplicationContext.java:101)
+	at org.springframework.web.context.support.XmlWebApplicationContext.<init>(XmlWebApplicationContext.java:62)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	... 34 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.metrics.ApplicationStartup
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1141)
+	... 45 more
+[15:03:11][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:03:11][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 771 ms
+[15:03:11][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[15:03:12][INFO ][FrameworkServlet.java: 547] - Completed initialization in 767 ms
+[15:05:39][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:05:39][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 753 ms
+[15:05:39][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[15:05:40][INFO ][FrameworkServlet.java: 547] - Completed initialization in 767 ms
+[15:06:37][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:06:37][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 748 ms
+[15:06:37][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[15:06:38][INFO ][FrameworkServlet.java: 547] - Completed initialization in 994 ms
+[15:10:00][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:10:01][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 732 ms
+[15:10:01][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[15:10:02][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1015 ms
+[15:11:58][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:11:59][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 754 ms
+[15:11:59][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[15:12:00][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1031 ms
+[15:12:10][WARN ][DispatcherServlet.java: 1278] - No mapping for GET /ssm/kcallback.do
+[15:40:48][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:40:49][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 739 ms
+[15:40:49][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[15:40:50][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1025 ms
+[15:50:47][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:50:48][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 721 ms
+[15:50:48][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[15:50:49][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1050 ms
+[15:57:45][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'code' for method parameter type String is not present]
+[16:00:02][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:00:03][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 752 ms
+[16:00:03][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:00:04][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1019 ms
+[16:00:12][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'code' for method parameter type String is not present]
+[16:04:49][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:04:49][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 742 ms
+[16:04:49][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:04:50][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1007 ms
+[16:06:39][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:06:40][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 741 ms
+[16:06:40][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:06:41][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1018 ms
+[16:36:42][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:36:43][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 748 ms
+[16:36:43][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:36:44][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1012 ms
+[16:36:50][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'code' for method parameter type String is not present]
+[16:50:55][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:50:55][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 737 ms
+[16:50:56][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:50:57][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1001 ms
+[16:59:08][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:59:09][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 743 ms
+[16:59:09][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:59:10][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1022 ms
+[17:02:05][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:02:06][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 740 ms
+[17:02:06][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:02:07][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1012 ms
+[17:02:10][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:02:57][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:03:09][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:03:09][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 733 ms
+[17:03:09][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:03:10][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1002 ms
+[17:10:15][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:10:16][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 742 ms
+[17:10:16][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:10:17][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1034 ms
+[17:12:57][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:12:58][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 742 ms
+[17:12:58][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:12:59][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1028 ms
+[17:15:18][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:15:45][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:15:46][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 763 ms
+[17:15:46][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:15:47][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1017 ms
+[17:15:52][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:16:36][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:17:09][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:17:09][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 738 ms
+[17:17:09][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:17:10][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1017 ms
+[17:17:18][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:17:49][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:19:34][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:20:03][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:20:04][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 738 ms
+[17:20:04][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:20:05][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1019 ms
+[17:23:26][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:23:27][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 753 ms
+[17:23:27][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:23:28][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1043 ms
+[17:24:12][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:28:47][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:28:48][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 759 ms
+[17:28:48][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:28:49][INFO ][FrameworkServlet.java: 547] - Completed initialization in 976 ms
+[17:28:52][INFO ][KakaoLoginAuth.java: 39] - kakaoURLhttps://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:28:57][INFO ][UserController.java: 79] - 0. kcallback.doSEknF0EtaQZTgC0Wz9mUWVD_GXsE2z7QxLSkMCQF8yTYVZmnoe0PIbG1rW0KKiURAAABjqMTW-tONYg--5I0Sw
+[17:28:58][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"wX4t1BKFsX6rJfB0YSQhnT-lXfrKS6DOtN4KKwzSAAABjqMTXRbkNSpXBP-m7Q","token_type":"bearer","refresh_token":"rRU-zhqAVFoUF9BIa1ivGCPthdHN1ulBv0gKKwzSAAABjqMTXRHkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzI5MzksImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDAxMzksImlhdCI6MTcxMjEzMjkzOSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.MsyNuEe1E05qnlAaqLc--NDBC0NOW6jvhXOCtyXt-ZKobYtJ-bQjMzykzE5hE7oA75zMd7EHo-LpkSxL_rrsh4APXmajQNazxv46ruS6uQkTCIGUqT5pwZTPsfZ0uGO5SoXWig2u9TlU1T6yLhbiRJQLOnKBAnxa5Vq-zp2ohsOQZgbALjsiaPgWUJwqYM9uxUp9J-OFfHTXkLyD_jFCGB5AS4jhp9N5rnu9kVekDomIpgJRAFRns3G0p7mT1BhELwSUnb9bSwjhbOxP80MU2uhMpyqbrXSU9Euicl52QepaVDaj4_iZ78L9K9lAgn5vZ8eC3fan5ZTwtYc0sJJBpg","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:28:58][INFO ][UserController.java: 87] - 2. kcallback.do : "wX4t1BKFsX6rJfB0YSQhnT-lXfrKS6DOtN4KKwzSAAABjqMTXRbkNSpXBP-m7Q"
+[17:28:58][INFO ][UserController.java: 91] - 3. kcallback.do : {"msg":"Forbidden","code":-403}
+[17:28:58][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:28:58][INFO ][UserController.java: 100] - 5. kcallback.do : 
+[17:28:58][INFO ][UserDao.java: 20] - 
+[17:28:58][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:29:59][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:30:00][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 743 ms
+[17:30:00][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:30:01][INFO ][FrameworkServlet.java: 547] - Completed initialization in 984 ms
+[17:30:41][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:30:42][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 743 ms
+[17:30:42][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:30:43][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1036 ms
+[17:30:46][INFO ][KakaoLoginAuth.java: 39] - kakaoURLhttps://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:31:07][INFO ][UserController.java: 79] - 0. kcallback.doh1Gdcr-sWEcmlNvEl55HNVsqxzydxHDc_6TAmO_N9SSb0jk7gTPEqHFSzy8KPXRpAAABjqMVVhu37mS5Kc-sjw
+[17:31:07][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"YdFn_9NvhhQWC455oQi9CWNTkVT2X23o0PgKKwzUAAABjqMVV1_kNSpXBP-m7Q","token_type":"bearer","refresh_token":"Rn7nzw5B2YUJev2C3cMN_TG1mr7KBomNcM0KKwzUAAABjqMVV1vkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzMwNjgsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDAyNjgsImlhdCI6MTcxMjEzMzA2OCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.j8qxRCpNkd9-IclZqgj8kil_eM1GaVfZNsZO1k41oBOGvlywSxfAk49PmLrAfQbcvGHd47QCXwHJNjTqaxfNl__C7sLKoAtB_c3zdEYMoonG1noqKattaAGrD1BlkxYKZgO1yTIj2vLrMhK-ZYN6eL3XDFGyJNyJb8cGx0aQP4uIBsTNSXpuos7jQ5rGqvquS3-5KnkOHBnTPwb2SRXPw0VVTTMI8Uzc2CURjTb-jKNdEIk502ZkEn-HTEv4HjAw_Vd7vZOsOeexF05XW3n5risWtLnIO_KdVj0eRnxFXbadixtWni5h8WN_mljhTfwmNfvzQjwpyxqK27L6QynLqw","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:31:07][INFO ][UserController.java: 87] - 2. kcallback.do : "YdFn_9NvhhQWC455oQi9CWNTkVT2X23o0PgKKwzUAAABjqMVV1_kNSpXBP-m7Q"
+[17:31:07][INFO ][UserController.java: 91] - 3. kcallback.do : {"msg":"Forbidden","code":-403}
+[17:31:07][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:31:07][INFO ][UserController.java: 100] - 5. kcallback.do : 
+[17:31:08][INFO ][UserDao.java: 20] - 
+[17:31:08][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:35:25][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:35:25][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 743 ms
+[17:35:25][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:35:26][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1019 ms
+[17:35:33][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:35:33][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 751 ms
+[17:35:33][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:35:34][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1018 ms
+[17:35:37][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:35:39][INFO ][UserController.java: 79] - 0. kcallback.do8TmxfE-kmRey8IpQ1SC8H8VFu2cBsUaoyxN5NOt162SSjQLK8K9ILtaOOJUKPXWaAAABjqMZfJSoblpFv_zasg
+[17:35:39][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"dGjXw8RMEkTP24J-PGRxMfLl3FLzdnkUprUKPXQRAAABjqMZfbvkNSpXBP-m7Q","token_type":"bearer","refresh_token":"l1NQbcwWl-G__BSVRuBIib4jILFk5nO_UA8KPXQRAAABjqMZfbjkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzMzNDAsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDA1NDAsImlhdCI6MTcxMjEzMzM0MCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.Z1XKbJUoDjjTKa-vYdVEZPuVHycypLVf-q6Yg6_A-YAoGsUCyk98Op2H7jowNkuM4DqopsdH1pdJVzJDuNX0HGXGW72yHyaPg-tIME71cQO6OXEdXwaJrr-Hs_8iqp9M2Em7s4cW8B7P-BlNEk0VXPWLiAoQ8q5fpsP5-FzpmnzMJ0954OWeFi5-w7BdS-T28Et3PX8rIyg0NYPUkDpWmwwIPpcvAEJSrZ2i-JGdKBtqrO3f6Yhppz1q-zpbUGCTfaNRAY8nDllW_js6UNkvolalF18KS4j-MRoYoPU4bsrBsy08FSg_0whhSlMaj30_lL7DIa-P6KQ_BSrTfq0Bgg","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:35:39][INFO ][UserController.java: 87] - 2. kcallback.do : "dGjXw8RMEkTP24J-PGRxMfLl3FLzdnkUprUKPXQRAAABjqMZfbvkNSpXBP-m7Q"
+[17:35:39][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/scopes HTTP/1.1
+[17:35:39][INFO ][UserController.java: 91] - 3. kcallback.do : {"msg":"Forbidden","code":-403}
+[17:35:39][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:35:39][INFO ][UserController.java: 100] - 5. kcallback.do : 
+[17:35:39][INFO ][UserDao.java: 20] - 
+[17:35:39][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:35:59][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:36:17][INFO ][UserController.java: 79] - 0. kcallback.do4UmJIb0WOxUGrcXAdB0zWkPFdefGlOTM9Gi4uSf_3T96yR-zpCIg3lbLPT4KKwzTAAABjqMaEzkicpf3YNJZ6g
+[17:36:17][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"Qop4Wsc0NKQFz4vi0vffKXFnejbLOB4vAmIKKiWOAAABjqMaE4TkNSpXBP-m7Q","token_type":"bearer","refresh_token":"0RbGyoCz8EtuGcGZU7Oh5LtykkFfCaxJVcMKKiWOAAABjqMaE4DkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzMzNzgsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDA1NzgsImlhdCI6MTcxMjEzMzM3OCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.isxrJeAtg1pzbb8Su7Azf5vYlOmaVNyRW_BFbO-A1ktvOrvqsJU_dB-S42lLrbI5giskiku1O97wJp2tEkmjmcb9WrHytAQUKAjcjzrB21oLNYOgll3C9UhVit756O0DJPZO2vrIjBZFOFgr1jqOF82F-0y6h6aekWTZq34HgLlK8Y-DfSXrGtamcOTXu4XahIAU9ccN9WphXva9s9Z6hCaUtRVH_GCWSipi8aYaXVZKtemG715aQeYoQGUdp9vRqcwwlXDWtqoU-QX37Z_873wSRUzWHfSNmueQ1miR3d1EX-44SOW-2D-FIPs9eUcZxZoFLyGA7u-Bzf9BsAXe8A","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:36:17][INFO ][UserController.java: 87] - 2. kcallback.do : "Qop4Wsc0NKQFz4vi0vffKXFnejbLOB4vAmIKKiWOAAABjqMaE4TkNSpXBP-m7Q"
+[17:36:17][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/scopes HTTP/1.1
+[17:36:18][INFO ][UserController.java: 91] - 3. kcallback.do : {"msg":"Forbidden","code":-403}
+[17:36:18][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:36:18][INFO ][UserController.java: 100] - 5. kcallback.do : 
+[17:36:18][INFO ][UserDao.java: 20] - 
+[17:36:18][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:44:36][INFO ][UserController.java: 79] - 0. kcallback.doySZw7I_4d5WLnL9ubNo_nA-LqsImVuTLUvt3lWmsCiwDAhfLWIwe4-2icgAKKiUNAAABjqMhr4H_A_o_BVb6-Q
+[17:44:36][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"kxUGEZHD5XCovl_LGp_ndz5qWjAKdqveGfIKKiVTAAABjqMhr8TkNSpXBP-m7Q","token_type":"bearer","refresh_token":"47ylkZQiHwvZk65yWN30p-7_V-hHRnN0_p8KKiVTAAABjqMhr73kNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzM4NzcsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDEwNzcsImlhdCI6MTcxMjEzMzg3NywicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.C4XwYnNmy8o-R6pRuea7M8ofeOKFKwyuyeAfP0Mri6c2GEySvIkt5tboTfQ-JXxLRIRyxl2c0lcL_yGjlOlAuP1Vr0AZrhUR6bs2o5LiclQyiHyxwowwYUb9CzVvfLMKc4c5vPSes_QSCSywphOCxBoeqSe1e0B-9rdSPXatUZirTX-n_4JQd6cseJunsZuZkdKRR0KuhMvBtWqGCUHSyzi9FI9tjVUQwd923YDggme74fqn78dtVrAGkn5JjOzPCFdFSEVgnFolifJq5PyDTcdVPzaRPiZFznA_5W1-aVNvZtXI45nVmmvHgeWQRllMSwzab1RbbfEpo3onr_oadA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:44:36][INFO ][UserController.java: 87] - 2. kcallback.do : "kxUGEZHD5XCovl_LGp_ndz5qWjAKdqveGfIKKiVTAAABjqMhr8TkNSpXBP-m7Q"
+[17:44:36][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/scopes HTTP/1.1
+[17:44:36][INFO ][UserController.java: 91] - 3. kcallback.do : {"msg":"Forbidden","code":-403}
+[17:44:36][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:44:36][INFO ][UserController.java: 100] - 5. kcallback.do : 
+[17:44:36][INFO ][UserDao.java: 20] - 
+[17:44:36][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:44:49][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:44:53][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:45:19][INFO ][UserController.java: 79] - 0. kcallback.do0jkkQaFhfClzUYdJysjX6CT3MAEGKqaXmHqqBRlod5I3Jk_6OjVlCUo9a7sKPXPsAAABjqMiVniYFzyUYZmfhQ
+[17:45:19][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"xT-SXOwkwgifsc4ZRkp4wJCzeSOUdVG5ldwKKwynAAABjqMiVsHkNSpXBP-m7Q","token_type":"bearer","refresh_token":"_QBPEar4TSDHrkpUm_8cmAKxnqfcEwJ0ZGYKKwynAAABjqMiVr3kNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzM5MjAsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDExMjAsImlhdCI6MTcxMjEzMzkyMCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.YvACP46QRxci5jx2bf2Sf_yT0d8i9xY9Kcu6N9SVE1gUFvCAIzYpi0Xrjp13ibox4pQ7edMfTlgYSaTDTKOTmK9tivldxLFNfftkrDwvFCefH_3JkAZ61WVr12cLCvYhGqeY-nyWEGaC6KX6Dy4t7wa5GVLDk44-Oeco9t4CmVGsQckJKZ6NKq1h4dL9tHqnUCxgB5aqetMskihKcDc_8q9ALKOG-dXIb79r5kLKZncctSALWdzlLlYSqmaNATxyBYQAMC1UtQR1i8hXz5krFv3jp_iS3wArAauw-B_mXQc0dbMfCraxaf2ifZZ4JvZhyGXFY6uIT368UMMAPcB3Aw","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:45:19][INFO ][UserController.java: 87] - 2. kcallback.do : "xT-SXOwkwgifsc4ZRkp4wJCzeSOUdVG5ldwKKwynAAABjqMiVsHkNSpXBP-m7Q"
+[17:45:19][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/scopes HTTP/1.1
+[17:45:19][INFO ][UserController.java: 91] - 3. kcallback.do : {"msg":"Forbidden","code":-403}
+[17:45:19][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:45:19][INFO ][UserController.java: 100] - 5. kcallback.do : 
+[17:45:19][INFO ][UserDao.java: 20] - 
+[17:45:19][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:45:58][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:46:06][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:46:17][INFO ][UserController.java: 79] - 0. kcallback.do5hk57dZLV388ebFdev_MG_aV3nwKbGEmawOfctQbVzJsEnf1arMPs3DpjKcKPXTaAAABjqMjO1DUNEQ5evY1pg
+[17:46:18][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"FlnlceyBPUa2WmN46OHFuEkhW21IiVLV6i0KKwzSAAABjqMjO5TkNSpXBP-m7Q","token_type":"bearer","refresh_token":"WuU1KlmfZe19q7JP9o61jTgWTDhoTxxXJawKKwzSAAABjqMjO5DkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzM5NzksImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDExNzksImlhdCI6MTcxMjEzMzk3OSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.BrnT0wqiUn-TzJhs5Rod-OjcGyc9H1RWJGp353p5dqs9NCreo87Uz_ME-kx7mCuHXT2n_LR-u9yF18yOY-oFfdgqqVYsmxk5AaZVkWcacPDnJKorX3JDAcHP7sjDA5GICpApvgEi9NX4nY8G1wfUMZLhrGEUVTuzpPUr_TntjMHIxNXqj4ezz04j98JeFPPsxgk3vptZiItLV88lqW8KeiGrdByTGHZ3GRa6T4EthIsERR7y017qwY5wUvfn6SgL6RUkvgSVKIHvJQ85h9CWMbvyJtNVldelAhB2hNMU42JtSgEvONvLpHPGDe19fLY-QWF7ibq6ULEppDzk03qX1Q","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:46:18][INFO ][UserController.java: 87] - 2. kcallback.do : "FlnlceyBPUa2WmN46OHFuEkhW21IiVLV6i0KKwzSAAABjqMjO5TkNSpXBP-m7Q"
+[17:46:18][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/scopes HTTP/1.1
+[17:46:18][INFO ][UserController.java: 91] - 3. kcallback.do : {"msg":"Forbidden","code":-403}
+[17:46:18][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:46:18][INFO ][UserController.java: 100] - 5. kcallback.do : 
+[17:46:18][INFO ][UserDao.java: 20] - 
+[17:46:18][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:49:11][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:49:12][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 729 ms
+[17:49:12][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:49:13][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1012 ms
+[17:49:38][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:49:53][INFO ][UserController.java: 79] - 0. kcallback.dowJQCtOiCvMy12NdvpsdKx88cDExjJRWUy2Qobh-uSlk9pL36RvQb91gF0WoKKiUOAAABjqMmhO36Fwx8Dt1GgQ
+[17:49:53][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"93E1nhHgAk5qsX7_KC0QX95jXTeQw24cUp4KPXNNAAABjqMmhjDkNSpXBP-m7Q","token_type":"bearer","refresh_token":"rk08g2WMy085S02ycEcng-DQ2-d957r_N1IKPXNNAAABjqMmhivkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzQxOTQsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDEzOTQsImlhdCI6MTcxMjEzNDE5NCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.pYA8YxJg50lZFLC_LUAIedcWClqwU_Zdykjt9_kFRhPqhkl0MoTBgC_Fv1xhha7cSabTCowspwhxwG9JtpUkwm6E3B3Lkh79CO8UhiMz63j2htCHN90a-pTEdE2wFu8Ds7erEzsML9KF8ZCFTOWtT552xSwwilXwIoo3nSq9eQRql3IMtQ1iZ0Sr75Ih9c4UDX2VR1BfPdpqt6SHBBcZz5vhyWBOU-snADZf2PGhMOk1jbgvbYWOgsKCjnUJ1vXtQXEnK1XqvAMBQv-v8L9IM3yE_jY4cDIqzgKELg7to10PzF2bwWCEmrbzIovFOKlnRNGtbTtGiw2dYhFGSSs8fQ","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:49:53][INFO ][UserController.java: 87] - 2. kcallback.do : "93E1nhHgAk5qsX7_KC0QX95jXTeQw24cUp4KPXNNAAABjqMmhjDkNSpXBP-m7Q"
+[17:49:53][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:49:53][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:49:53][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:49:53][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:49:53][INFO ][UserDao.java: 20] - 3420250175
+[17:49:53][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:54:32][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:54:33][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 768 ms
+[17:54:33][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:54:34][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1076 ms
+[17:54:37][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:54:58][INFO ][UserController.java: 79] - 0. kcallback.doVJGDykr7LC_vhVBJLO9yJozIsSS2WPKW1-PkF3Ua6XSvJAHpG6B9Av03recKKiWRAAABjqMrKpqGtS2__sNdBQ
+[17:54:58][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"EgRmaj4IWrBvyRwgv4OmzcUxDs-bIa2xAz4KPXWcAAABjqMrK83kNSpXBP-m7Q","token_type":"bearer","refresh_token":"W8XsoX9C7hv_7IRatMmBTG2bFfWTSm1ISYAKPXWcAAABjqMrK8nkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzQ0OTksImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDE2OTksImlhdCI6MTcxMjEzNDQ5OSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.lhMdUVHhD_vn_EAfAzezkm8BfI_BrIN2mUtXtowzYu4F3Zvg3nrrh69dCu-ES3tUKFvEoEkBHnN_2SKFkVdyILKot2aKV1c3mYMx8coKuoT3snH-CwPtJVCvYZ5Zt6S5JR9xQdjWn49Nyu3Le6_-Bmm9NlPJqsyJ29DslLB6J89vC3dqzPbTC_txvBYV8mwyh5uaX_v_DHPddHtC7S-S35h4mtvec_dvMvMMfif95MS-ekzBiTGY1s7FsWMwalBmn6UI0TLwNZNKj2mc1POgXBc-MvOqfa-eRBwaVnLqiipBzVUXeHp1nWMhBtEFySuE_cGC5AuL9jSsdCQDxJ8V0Q","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:54:58][INFO ][UserController.java: 87] - 2. kcallback.do : "EgRmaj4IWrBvyRwgv4OmzcUxDs-bIa2xAz4KPXWcAAABjqMrK83kNSpXBP-m7Q"
+[17:54:58][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:54:58][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:54:58][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:54:58][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:54:58][INFO ][UserDao.java: 20] - 3420250175
+[17:54:58][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:56:10][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:56:10][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 746 ms
+[17:56:10][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:56:11][INFO ][FrameworkServlet.java: 547] - Completed initialization in 989 ms
+[17:56:14][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:56:27][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:56:36][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:56:37][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 731 ms
+[17:56:37][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:56:38][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1058 ms
+[17:56:40][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:57:27][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:57:28][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 744 ms
+[17:57:28][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:57:29][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1005 ms
+[17:57:31][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:57:52][INFO ][UserController.java: 79] - 0. kcallback.dowEKP0fNqq1OFv3Woiu-oJ9d_mNzzeRLUBCBPckeA1MH_jAjY1GSijMLHZlYKKiURAAABjqMt0zsq17LwdM8QAg
+[17:57:52][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"xHUQcmbisjXjpz9gG04Za5_xAcJ0Z8FrmdYKKw0fAAABjqMt1G3kNSpXBP-m7Q","token_type":"bearer","refresh_token":"ab2KrQmP6elUwUl1ojbymLTjmucrDWiQ5qcKKw0fAAABjqMt1GfkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzQ2NzMsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDE4NzMsImlhdCI6MTcxMjEzNDY3MywicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.CEawDT3uoXzmXS6A7vlyfE8res2OqG0vANedESnZr6sziNUoPNBK4ex36taY-bFAsKXiwqHjnNyP_NEpsXfGLd4BqftnStqXin9CxvQBw1Fm781d9pmuOsxA6pPC231FCwErCyEaWMyYgojXF8GsgpdQ4l_iXbiY0cJUD9OBUG9oK60N6jd7uyUJON62fNdP7R01Ef-QD_-0xDRwXDUCrv4P-4qV6FN7oWVYuXoQYtvtMIDOO2tAvbrWmKNZI4gF189z9QF8tkwpwmIQ6eE_yHrQWSc8Epshx1D6i3WjTwoAX6esLwO2Ik5z3uSVSjqWyJqsz-B_lhsH5kpY85Qu1A","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:57:52][INFO ][UserController.java: 87] - 2. kcallback.do : "xHUQcmbisjXjpz9gG04Za5_xAcJ0Z8FrmdYKKw0fAAABjqMt1G3kNSpXBP-m7Q"
+[17:57:52][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:57:52][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:57:52][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:57:52][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:57:52][INFO ][UserDao.java: 20] - 3420250175
+[17:57:53][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:58:40][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:58:52][INFO ][UserController.java: 79] - 0. kcallback.do1qJoaabAQi4MnBTAvBLqNRmVaZFUEheajDWtISoqvIMIRO-PpUeqN5VWN9kKKclfAAABjqMuvZqBPKUF0hG4dQ
+[17:58:52][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"fxGIAU6s_zwrAjJAfim5KHyT1vBEHMVcGe4KKiVOAAABjqMuvefkNSpXBP-m7Q","token_type":"bearer","refresh_token":"jmys-AGIHufaX44Ce-IpQbF7J4ght4O74TsKKiVOAAABjqMuveDkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzQ3MzMsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDE5MzMsImlhdCI6MTcxMjEzNDczMywicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.mxrpPVBU45znWSyGg2_JRMt4TUlpEjBrISM4M4Kp7YVAgFzOaP9EVuQ38474Pbm2bBOi1JGFZfV-GkoUdGaqG5DdRAtOxeZsW_VfWUAk6i8JzYkdqCywNVf17dBIKEihJcgkuXC04lF6Dx1jV2GodOsMrmTY3z_QVmWMPKGdUgqBkGPWDAy1Itz6svCZuvjzLCE4-E6QylHR5JrlSp6W3G-2imfDv3DXlFONa1m_1yKSU_-HjaD-wZWgVSWnzTlrqdIsT1XLDzWQFn_CBwRoLXEVjsYjvw5uoYdDCcpcNXNhtpIx1Viomk2odwX91D7ozubC8VB_vWhJq4TOOO0_rQ","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:58:52][INFO ][UserController.java: 87] - 2. kcallback.do : "fxGIAU6s_zwrAjJAfim5KHyT1vBEHMVcGe4KKiVOAAABjqMuvefkNSpXBP-m7Q"
+[17:58:52][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:58:52][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:58:52][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[17:58:52][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:58:52][INFO ][UserDao.java: 20] - 3420250175
+[17:58:52][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:01:45][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:01:57][INFO ][UserController.java: 79] - 0. kcallback.doXYItiMZgg3A-HYjzhEMr-JoUGUnEtywrUdDN_GdN1ObvWjORYBmrM0gphdcKPXObAAABjqMxj_WnsOtctwzlGQ
+[18:01:57][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"lMfA5JZw3dO2z8Mn8lV9fv4uSMxxUNGFaeoKKcleAAABjqMxkEnkNSpXBP-m7Q","token_type":"bearer","refresh_token":"LvMbO_anWzeoG-AMnBT7SrEv9A4Z-JDWtekKKcleAAABjqMxkETkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzQ5MTgsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDIxMTgsImlhdCI6MTcxMjEzNDkxOCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.mdfW0kgT3Um6drlObFfI0wWWILew1_gEJh_rL91L4hYGM2MQr6VhAfjj0tJs_zdYm1DX0s3FrYz1IS_0GwYfWd1TonXPETX00-3ndR38EUXGuSk8SD5SXm9kfdzVMid0zztGq9eBX4OSSF51e52f8J9N2wsWWPiAVlMG-TPxq4w6IXEfCWElJO66_rs3Lo9LEPAU0kLNgWZR50BnQNx486O5SoYBQLyV1AUNJTBCSimqfb-KPHqASjlhofC1oWVTllEhzzk1xiMGqzx7dnTSDbh9bWELH9TXCRzMnR32bJhOtAZICA6FD8StZYGlipMrqum_o_IwoYOutQMPwsiVEA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:01:57][INFO ][UserController.java: 87] - 2. kcallback.do : "lMfA5JZw3dO2z8Mn8lV9fv4uSMxxUNGFaeoKKcleAAABjqMxkEnkNSpXBP-m7Q"
+[18:01:57][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:01:57][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:01:57][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:01:57][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:01:57][INFO ][UserDao.java: 20] - 3420250175
+[18:01:57][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:03:48][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:05:12][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:07:32][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:07:59][INFO ][UserController.java: 79] - 0. kcallback.doOW8uc0D-MqYLkryeWH5dauSJEIelipQtQJTHus4xZ516HsFGG9SKDb_o_TwKKiVRAAABjqM3GAzUNEQ5evY1pg
+[18:07:59][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"jAlsrKoTQp_jFnzsgO5W01vr7RFNy8n1tskKPXOaAAABjqM3GF7kNSpXBP-m7Q","token_type":"bearer","refresh_token":"3vfBonmgkVq-HqdMIQK0NLxWV8cew5I5elYKPXOaAAABjqM3GFfkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzUyODAsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDI0ODAsImlhdCI6MTcxMjEzNTI4MCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.Y12N9HKxT6KlB1R5NAAneVVKQNLwiTG4s6q2JWur1TJolRjseHg6duXTpmxyIx---lU_ezp6HaPakj9zQP1EXXtyjfuMHKTX2teZmCmmoLHI7YRba_kti7lNdh8e8Og8a00aNI9woUzF31pQuNLWziTsN_rd-E7He2g-zHxzN6DGi6OLjY4bIvzxdxFxhJ42NRBkSjZPCPIwyV_JySq4tv3K78na5Ehwyz86nCe-FXax3Jk8SeP0pYcMdDDvzhM2UDKQS9z0u57HsbtblrL_i5YsfzRn66VkOz-SqvSZVkBp-80VhCiTLLDeGC1iP_fmQoKP6wPJ9e_5EKzQEL6dZw","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:07:59][INFO ][UserController.java: 87] - 2. kcallback.do : "jAlsrKoTQp_jFnzsgO5W01vr7RFNy8n1tskKPXOaAAABjqM3GF7kNSpXBP-m7Q"
+[18:07:59][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:07:59][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:07:59][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:07:59][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:07:59][INFO ][UserDao.java: 20] - 3420250175
+[18:07:59][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:09:14][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:09:17][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:09:20][INFO ][UserController.java: 79] - 0. kcallback.dojtbi60uwmmOPtLj98HACLDNrbfWfV54GWENUVAJeo5PyTGtw7q-qgCVHQDsKPXOaAAABjqM4VE3RDLJpR7eCqA
+[18:09:20][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"gZGPS2hwjCxVFOrR5vuOzJ26FGqboMqaS58KPXMXAAABjqM4VJ3kNSpXBP-m7Q","token_type":"bearer","refresh_token":"CTzQXyDs2pmALkZVGbiEHZfN-bpteBqLuYUKPXMXAAABjqM4VJfkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzUzNjEsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDI1NjEsImlhdCI6MTcxMjEzNTM2MSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.P3RYKuicLZQm_IcaT5Y85Lt-PuzthqIQmChvrIAFgszvrLv-Vtv5xriJy-1vYubb-A0ZMe90sK_kwc72o3WA_v-_12oNv5DgMMhPPVAyUz5GKay0GC90wQDbmQyDLwuJlej-7LDGmAJU3i6P3f3CoOlFy0txYrGBKUK9LuZemAHqUPKT01dTuVcfs2lzbWgHfoLP8oDZBZluGlUivWsiMCjEn_1U58CP1QPYVdAThx_LvXloXTLQyo-0rtP_j7jJ7YEG1tcrlK9sfmG9s7jukEBGHF6SP3bL88ZEHwKxUtT-n-uVA-2S_CNUoq4h4tS8f63oh-wzkpNkdtp2_X7LoQ","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:09:20][INFO ][UserController.java: 87] - 2. kcallback.do : "gZGPS2hwjCxVFOrR5vuOzJ26FGqboMqaS58KPXMXAAABjqM4VJ3kNSpXBP-m7Q"
+[18:09:20][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:09:20][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:09:20][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:09:20][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:09:20][INFO ][UserDao.java: 20] - 3420250175
+[18:09:20][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:09:23][INFO ][UserController.java: 79] - 0. kcallback.doxEy4abRiInRcLvnY7BqAJ6l4dM2AgdgahoeAHBigPdR4CmxGWZoodD0xoZ8KPXOaAAABjqM4YNLdCc_9be4aqQ
+[18:09:23][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"Byc7kgrsId_QbY42_azw1kgbaSHNCVcSfYEKPXRpAAABjqM4YSbkNSpXBP-m7Q","token_type":"bearer","refresh_token":"rJXLK0Wk0O0EDt0fVYcpG_ydbOgncYK_ClgKPXRpAAABjqM4YSHkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzUzNjQsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDI1NjQsImlhdCI6MTcxMjEzNTM2NCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.SnOpo9qiOohYQ-ojQBu8qqi2Eui5iinJO4GEa3yxUb4Czfp72ZDHg1E7Qj4-wbgUCW6AjDUiic7XQJ_GmBb_Y4RTXjYR_7c70K4tYPp1y0y6Euphu5Z3n9KCVaPawsSk0pB2Js2UgNQWAz-S9tudzCc8DbHQNrwwddNj7QWWq6cjQ6SRc3DgvsL4LSCvCvTNQTZeesQM4S4IHL3_Jic9hjgBjjTypc7zh-l2ejJhs0EGX_RQXfC9cFNIvii7_fS28fOjMg-qYjo635Lf4W2uP4ZxFrc0vKMeIjllGxAhRCcWZ1yVxZrVuWsIYi5hmeCEZdQ8izPkVTUw10b4NuIxUg","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:09:23][INFO ][UserController.java: 87] - 2. kcallback.do : "Byc7kgrsId_QbY42_azw1kgbaSHNCVcSfYEKPXRpAAABjqM4YSbkNSpXBP-m7Q"
+[18:09:23][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:09:23][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:09:23][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:09:23][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:09:23][INFO ][UserDao.java: 20] - 3420250175
+[18:09:23][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:10:12][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:10:59][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:11:00][INFO ][UserController.java: 79] - 0. kcallback.do49ap3Lk_GoPc1I6QDxAP5KrOfBOsWiaWJ9S5h3TprYf13wLpAHWGylrESpMKPXWbAAABjqM52sT7Ewsnpgvovw
+[18:11:00][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"OjPKq_bB-wEuEoLNIQ7ue0y_OCiFn_MQjgsKPXWaAAABjqM52xTkNSpXBP-m7Q","token_type":"bearer","refresh_token":"jLnXmQhkKjqKzPZ-yi8UQYmgx1hItfMglGgKPXWaAAABjqM52xDkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzU0NjEsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDI2NjEsImlhdCI6MTcxMjEzNTQ2MSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.LYTkknogo1vRlQfhr_EWCwLTraDlS8hp6jTD4mbdHVPFN_UJRCHJVrI_2ZUofk9Y97BGKes-cciJLIyZQ9qmOWtRt-0LrhsgnzAkJEjUmYHZcbN3qkxcGV1MM-Lnsn3crrxpWVDx5aB8iCuWlNMvApzLcLx_CGy-HFAy2uM2gFRiD5GAobfw9gIPnwmpPWG5Z68CcD3qM0QHJzlo60Vnfttx_PiV4D3gvx0FUihrORBP1kgy3RL3cz3cziMsTjh1tt-r7K03CBoFi4V71LzZBXmEsrw-qLMCNgNT3qvSq676DzwdU_E6IXYK5g27H-va92wh3RR5n52fwLPfNJx16g","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:11:00][INFO ][UserController.java: 87] - 2. kcallback.do : "OjPKq_bB-wEuEoLNIQ7ue0y_OCiFn_MQjgsKPXWaAAABjqM52xTkNSpXBP-m7Q"
+[18:11:00][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:11:00][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:11:00][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:11:00][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:11:00][INFO ][UserDao.java: 20] - 3420250175
+[18:11:00][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:11:05][INFO ][UserController.java: 79] - 0. kcallback.doMrNaigCGd8PX3f4OgTglbshRTuOOvsF_sUYxBpb8lffdbOKvmNkFVQe2jlUKPXWbAAABjqM57xZPBWDH3LuH7A
+[18:11:05][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"CaptmLO26hJQGKA6cE_EPHYKuA_3V6YSww4KPXKYAAABjqM571zkNSpXBP-m7Q","token_type":"bearer","refresh_token":"ZbOkWsDyql35WF8JaI8ro8xH8S7zApQbiyYKPXKYAAABjqM571jkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzU0NjYsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDI2NjYsImlhdCI6MTcxMjEzNTQ2NiwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.K4S-1lAkdop_WnDhimyEXcHz7TdNfEheBUHdP_T2l-4xGibBp12cqzkMEFyMxKSn91C9R7JAex6RqJXnlCsJiCRh5cHQ9GAwali6b3lMliOp7b4OsnCJGgvfKNBR4eZE6i2U7FuoE2v4VN8XyFL5YlkC6rS7XcbNdFfVyJFt967mrzB64VvKiDtAFH3DZEHqTBopTryuzCbdgm7vJNhrqttOfABjPndTNp1_C2m6MB3U1uua0a4wvZ_4sssiHP59aN1HfPlMhrKv8fT2gFgrjAH3ROj5RiR6xmCgpI6xR9mQTVIMK4mngZ7G4CEmY5k4jiEQgwZNlBKLtEE4elDKqA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:11:05][INFO ][UserController.java: 87] - 2. kcallback.do : "CaptmLO26hJQGKA6cE_EPHYKuA_3V6YSww4KPXKYAAABjqM571zkNSpXBP-m7Q"
+[18:11:05][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:11:05][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:11:05][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:11:05][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:11:05][INFO ][UserDao.java: 20] - 3420250175
+[18:11:05][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:11:09][INFO ][UserController.java: 79] - 0. kcallback.do4VXTvo8MHM3SuNtYmORzDSAAvGDZH7Yo9MgSm0XSwOPqSTUey2qjY8KSoxsKPXWbAAABjqM5--jo6jj-qNQmaA
+[18:11:09][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"cAC5NyYXhFUQYowChdJRImb5000QcCYtZnIKPXNNAAABjqM5_C_kNSpXBP-m7Q","token_type":"bearer","refresh_token":"GQ7l75db2IgnN6Ae5e2VB6PekMLgAdty6joKPXNNAAABjqM5_CnkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzU0NzAsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDI2NzAsImlhdCI6MTcxMjEzNTQ3MCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.ZRjUHcVHNiKeZPS86YNulteyzvYZCJbvWxplK6Wc0IO7fvouvmHJKd8bc_5GvezP1x_wv-oY_6VLDtfTRFdC8y7-hpMEH0Aebn3LSi83HBEvkjruafLtv1Z0AWKPzIGg9BLWisHsLHHnxw0qH4wKXD0fCRvbCLlouAuNeQY1VjlMSEJfmZnQ0WSnpRjUWdFuyAw9B2r0sSaz6k5iKN6sRuGJjObMEGsw3fUvvTWdKnpBGsvrhooOeUB39Cn-0LktrBJNS3K-4vTYRDMGLWPV-HT01-gVCMhANldEoqCS9XNdX-UiF7vHcwhTUpDb-ImBiBzpeB7RE_swL_StRz21pg","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:11:09][INFO ][UserController.java: 87] - 2. kcallback.do : "cAC5NyYXhFUQYowChdJRImb5000QcCYtZnIKPXNNAAABjqM5_C_kNSpXBP-m7Q"
+[18:11:09][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:11:09][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:11:09][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:11:09][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:11:09][INFO ][UserDao.java: 20] - 3420250175
+[18:11:09][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:11:59][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:12:12][INFO ][UserController.java: 79] - 0. kcallback.doMbzIaw2krh78tQ0n7GmxZKmM5RhCD1B0jgPT2k9JRCrVoHmOG3o3_xPAjQEKKw0eAAABjqM69AlyxKx5jTsi9A
+[18:12:12][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"r0y-HmxPhOvDzrcWzSctK4WUnKB58GdjLGMKPXRoAAABjqM69FzkNSpXBP-m7Q","token_type":"bearer","refresh_token":"XU-LHRJe-v7Fma5TZrr3YaSrYVE03bYhX1IKPXRoAAABjqM69FbkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzU1MzMsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDI3MzMsImlhdCI6MTcxMjEzNTUzMywicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.eLuys8OPaKqmF-Qz6hZ5wv8MRPdXH8M1XcKrBs0V2S2UXHE-Fh6X63i4KQ51_JtbFAwoHdVH-tYtvFCY_OQcHBwjgwXm2UDsSepGJdYswYXAmPjMkSdlmT8_KLVBoVU9Hxr_eMvXsl3jHOIdXbbFLiINQ3Q0M0U9FOfT_c9dIN2RvBKFrJ2YvT2O-2FHu8ETbauF0cjb8DqFjX04tQQ8Wq3FRDsnzIsZG3VY-DLPBpfoMCLumhfYbodiSXbxFvvEymxhk8O_bZsNNjSmZpiJ6aIc1joDqqvo9vl7Su_y06vaR2SzxTAgc_rQcVeXtF897k3qDN72SZxL5TPvFAZ6zw","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:12:12][INFO ][UserController.java: 87] - 2. kcallback.do : "r0y-HmxPhOvDzrcWzSctK4WUnKB58GdjLGMKPXRoAAABjqM69FzkNSpXBP-m7Q"
+[18:12:12][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:12:12][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:12:12][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:12:12][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:12:12][INFO ][UserDao.java: 20] - 3420250175
+[18:12:12][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:13:11][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:13:23][INFO ][UserController.java: 79] - 0. kcallback.doEJ255kC80QhZssBKazzpthx0-pJzGa9f37RD8GbYx2Ixbw0ojr4IKvFGRBkKPXWcAAABjqM8CByi-KZYUq23DA
+[18:13:23][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"FBCI1jxdPTl-ikiq6WQwz3-IACOVHZbHii8KKiWOAAABjqM8CGTkNSpXBP-m7Q","token_type":"bearer","refresh_token":"TPGqA_WTxF7Y4Xtz9cFUIdCe9FrvK9Qm1zAKKiWOAAABjqM8CGDkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzU2MDQsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDI4MDQsImlhdCI6MTcxMjEzNTYwNCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.CF3upxMjVJwjxc6oKl5sn7WvSgQW_0AKYzYRwJxY7tNEge5fDz-PiQWUy-v69R-1p7ezgLhVJJoD19Lku55Bf5m1RewYau0bQoLyKJllvLI-xJdrteepztKpMtrY5MC6f5P7Zr7tOvG5TR-S5qpHLI4xjgIf7i27F9fd00YA2RgM4ob0yfMhd5-wgJJhMaIrBI-NXVKR3cA0GSInSnCVQVRbalHehpWgAvm0scxNvTp2zxkNG08WeI6RZkmsTYem5TGgcxnP59Lsq6z1YHkMZLnCOQm0CpE8nWcku6ozlmCm-n7l1q1xPZLitU0R1YlHrn7sRE1PLPiPO3OG7N-kPw","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:13:23][INFO ][UserController.java: 87] - 2. kcallback.do : "FBCI1jxdPTl-ikiq6WQwz3-IACOVHZbHii8KKiWOAAABjqM8CGTkNSpXBP-m7Q"
+[18:13:23][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:13:23][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:13:23][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:13:23][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:13:23][INFO ][UserDao.java: 20] - 3420250175
+[18:13:23][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:17:54][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:17:55][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 798 ms
+[18:17:55][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:17:56][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1084 ms
+[18:17:59][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:18:18][INFO ][UserController.java: 79] - 0. kcallback.do8oRh_pB8tV4IIHAQ3uGiTa7_X2biiqS7LylUY-x1UPCJb8pH9vyoE_niGisKKcleAAABjqNAiWz_A_o_BVb6-Q
+[18:18:18][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"-BPDStdnZLkTt1jXJUcr25CQMmSDfpqtH8MKPXMXAAABjqNAiqXkNSpXBP-m7Q","token_type":"bearer","refresh_token":"mug1K6UGRwRTAIcr5fy0ImHQPRjUJPmhqaMKPXMXAAABjqNAip3kNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzU4OTksImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDMwOTksImlhdCI6MTcxMjEzNTg5OSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.aeiXHeyJkeWHWGHlaLxT6dFmJPwYjqqaeVfZP7I-uGe2WGXPJvWaVfUfwpWOohgK-81uPT8XVi8FJeo615j9MxStP-kS0qk0Irkq4ascFXo_k2xU6RrMpOKTEHTPHSMiua0tImFj9_1GTCSSwxH03fVYS-VQwUT6bDWxa1pOCZ7XXx6DjJ1inbTxsfmLdIzE9EeFgsvn0QTPXRQLniKjGQj-yd9dQX2trNoGPTTMHcBsV0D01BrhQVGolT8cItulqncahVkxJM29r9s_1jTbZ_1dlgcm-mrY_el-7Ah6Mai6OG5NO6TaepWfXAHRZJ9fwrawK4Cg_A84tWxcy0GFmg","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:18:18][INFO ][UserController.java: 87] - 2. kcallback.do : "-BPDStdnZLkTt1jXJUcr25CQMmSDfpqtH8MKPXMXAAABjqNAiqXkNSpXBP-m7Q"
+[18:18:18][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:18:18][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:18:18][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:18:18][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:18:18][INFO ][UserDao.java: 20] - 3420250175
+[18:18:18][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:21:10][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:21:11][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 737 ms
+[18:21:11][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:21:12][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1009 ms
+[18:21:14][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:21:19][INFO ][UserController.java: 79] - 0. kcallback.doP1XEio3oeEU7aXIvgJqtdyGCLILj5s2MGKtvo_ec8JQtHqZViiHDbcsXBBYKPXRoAAABjqNDS83dCc_9be4aqQ
+[18:21:19][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"SFLLXIE8rhNJS8Mu3e_dQn9xmRIwuLSK2hEKPXUaAAABjqNDTO3kNSpXBP-m7Q","token_type":"bearer","refresh_token":"v4-yaYPKsDMj_hE4FJ1vfUF0avYUsbnb3xYKPXUaAAABjqNDTOjkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzYwODAsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDMyODAsImlhdCI6MTcxMjEzNjA4MCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.ARAOr8DU9ZIW3lIZ8EYsNZi2AKaWkhbCa6apRtWeYnZj653JRBH4hKuh4E9NMzdZTsKwmPLF3GfLgUuHUtbTxAiRuZ4iPY_DIpj8D7fdbYNJcUiueOd49N3QaHiYevyFVgytNdzBD0jm3v3PdAhqhtftIQC04jPkeVbngFRcFM7-uDD25BE9b3cJbZNJu6ii7wlRIDtWondRwtx4KLO0gz0zixzdIQ4cw5WxZec5T8qrOZl7ZmivHjY1M382e6hUGnRU-VoWq8lsXCbIqrmiIk6O3jX-57mprs-Kztcra9eQuE_mVz0tsrH9K1Jkl6WFiYy7YaWFGOw6yJBEdxDOIw","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:21:19][INFO ][UserController.java: 87] - 2. kcallback.do : "SFLLXIE8rhNJS8Mu3e_dQn9xmRIwuLSK2hEKPXUaAAABjqNDTO3kNSpXBP-m7Q"
+[18:21:19][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:21:19][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:21:19][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:21:19][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:21:19][INFO ][UserDao.java: 20] - 3420250175
+[18:21:19][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:21:24][INFO ][UserController.java: 157] - result!!!!!!!!!!!!!!ok
+[18:21:39][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:22:12][INFO ][UserController.java: 79] - 0. kcallback.don9pLX_dfB5E0QCjrl_u4a3b0dzBU0DlAieZ--Xbmn3q7ZSZME2ssJELL2LgKKcjYAAABjqNEG3n_A_o_BVb6-Q
+[18:22:12][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"023Dq__0_TnrLVpq0V0IQ1S62cqX6byuD80KPXObAAABjqNEG8nkNSpXBP-m7Q","token_type":"bearer","refresh_token":"cqdaZQV5AEm92zLpYJ94uPKI0z0YpkOk90sKPXObAAABjqNEG8TkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzYxMzMsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDMzMzMsImlhdCI6MTcxMjEzNjEzMywicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.J87jHNPCJSCbmdnOEf8Kzon3YRtZa2cUi6Jp4VwZLVk4ZaUJvJLZ08sQ57XWDKLII70Ty1gaB4IWeh9_rT59kPHb12Qe8vyT-_hLkwISxDI4jt-t_fzXfc_JrSPVdm_l6UX8kNuyxz9zFgWEvhEoV4oScaOUzSKka7ypAtG1N375B338BwCJ-zjJbic5SLnLR8yjzEi0bk2r1DjPZ92CtOJgLiB_LWdQpYa7OUSBQsuff-c-oKxI-WSJO3SmraiguMn59B94iSyy6g03AgWPTzDi7QYvpjtLgXm0lsmDfDP2oo_2qD-aKFDK3Pld6ju7wQHw74hh8DpIrXmi7UY6qQ","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:22:12][INFO ][UserController.java: 87] - 2. kcallback.do : "023Dq__0_TnrLVpq0V0IQ1S62cqX6byuD80KPXObAAABjqNEG8nkNSpXBP-m7Q"
+[18:22:12][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:22:12][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:22:12][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:22:12][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:22:12][INFO ][UserDao.java: 20] - 3420250175
+[18:22:12][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:26:05][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:26:17][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:27:02][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:27:08][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:27:48][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:37:42][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:37:59][INFO ][UserController.java: 79] - 0. kcallback.dotnTtEHVXrSHNmX38t5gG0Z-uMuaWfOmCpjx3ZfOfyeISa977b7fdo7-ZyJgKPXMXAAABjqNSj-LC3p98Pd5TpQ
+[18:37:59][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"lw49pe7cK9hp7Ju1vA6q7Cfx34G1niYPz3EKKiUOAAABjqNSkDTkNSpXBP-m7Q","token_type":"bearer","refresh_token":"w5kJalYzvZwwp60sfz_Pspvvuw1PyQ-LAWUKKiUOAAABjqNSkDDkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIxMzcwODAsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIxNDQyODAsImlhdCI6MTcxMjEzNzA4MCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.MAr9NNhmASqtstaYN4GQidIIRpp1HoHdDLBqN9f9BzWKUSRoiwkPkWTNylnx-O7pFtSyZHm6XEbBbjiy6lVQnkJzQoiOB2hKAYcFvc04mvglcgnf0b9uCP5SI_C3nxAG9lLhpMwKsHJhCZYglslLsA7un59ulwM9QsGPhUKigP9efc__yOhQiVr61fqEI8GMCtJ687zPsWwoZOwkJ6MCqgLb0KEB7L9F_Wlw2ehTd59zQASGCpvSi-KBLhjY2e6F4woImzMsTUCKQr5nk72bYSG4bf73bAKTrayQKWHNWvzApiMz13NJNt1NV8qet1Zp1yb0W-RFDpO17wv0prjUmQ","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[18:37:59][INFO ][UserController.java: 87] - 2. kcallback.do : "lw49pe7cK9hp7Ju1vA6q7Cfx34G1niYPz3EKKiUOAAABjqNSkDTkNSpXBP-m7Q"
+[18:37:59][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[18:37:59][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[18:37:59][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[18:37:59][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[18:37:59][INFO ][UserDao.java: 20] - 3420250175
+[18:37:59][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code

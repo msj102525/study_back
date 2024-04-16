@@ -1,5 +1,0 @@
-package org.myweb.first.test.model.service;
-
-public interface TestService {
-
-}

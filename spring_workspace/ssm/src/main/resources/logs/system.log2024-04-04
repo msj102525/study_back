@@ -1,0 +1,880 @@
+[09:55:47][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[09:55:48][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSession' defined in class path resource [root-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'mapper/reserve-mapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.sdm.ssm.reserve.model.vo.ScheduleDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.sdm.ssm.reserve.model.vo.ScheduleDto
+[09:55:48][ERROR][ContextLoader.java: 313] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSession' defined in class path resource [root-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'mapper/reserve-mapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.sdm.ssm.reserve.model.vo.ScheduleDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.sdm.ssm.reserve.model.vo.ScheduleDto
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4462)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4914)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'mapper/reserve-mapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.sdm.ssm.reserve.model.vo.ScheduleDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.sdm.ssm.reserve.model.vo.ScheduleDto
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:590)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 42 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'mapper/reserve-mapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.sdm.ssm.reserve.model.vo.ScheduleDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.sdm.ssm.reserve.model.vo.ScheduleDto
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:587)
+	... 45 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'mapper/reserve-mapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.sdm.ssm.reserve.model.vo.ScheduleDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.sdm.ssm.reserve.model.vo.ScheduleDto
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:377)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:120)
+	... 47 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.sdm.ssm.reserve.model.vo.ScheduleDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.sdm.ssm.reserve.model.vo.ScheduleDto
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 50 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.sdm.ssm.reserve.model.vo.ScheduleDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.sdm.ssm.reserve.model.vo.ScheduleDto
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 54 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.sdm.ssm.reserve.model.vo.ScheduleDto
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 56 more
+[09:56:39][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[09:56:39][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 777 ms
+[09:56:39][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[09:56:40][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chattingHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+[09:56:40][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chattingHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:960)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4641)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4948)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 51 more
+Caused by: java.lang.NoClassDefFoundError: WebSocketSession
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: WebSocketSession
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1141)
+	... 57 more
+[09:56:55][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[09:56:56][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 734 ms
+[09:56:56][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[09:56:57][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chattingHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+[09:56:57][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chattingHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:960)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4641)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4948)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 51 more
+Caused by: java.lang.NoClassDefFoundError: WebSocketSession
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: WebSocketSession
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1141)
+	... 57 more
+[10:01:32][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:01:33][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 744 ms
+[10:01:33][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:01:33][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chattingHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+[10:01:33][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chattingHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:960)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4641)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4948)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.sdm.ssm.chatting.ChattingHandler] from ClassLoader [ParallelWebappClassLoader
+  context: ssm
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@32e6e9c3
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 51 more
+Caused by: java.lang.NoClassDefFoundError: WebSocketSession
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: WebSocketSession
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1141)
+	... 57 more
+[10:46:05][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:46:05][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 759 ms
+[10:46:05][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:46:06][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1026 ms
+[12:38:53][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:38:54][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 754 ms
+[12:38:54][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:38:55][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1057 ms
+[12:39:09][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[12:39:40][INFO ][UserController.java: 79] - 0. kcallback.do4xinDKV8bk2n0M1_gbe9spoeY97UIInpxuvCrebfdMDhXHfgss6nQSyaq6YKKcjaAAABjqcw3i6kJA3lYdtGWQ
+[12:39:40][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"7-P7pvfjd0zKFX3_JTdpUcg-8mgP2TzGN1UKPXTbAAABjqcw36zkNSpXBP-m7Q","token_type":"bearer","refresh_token":"KUPqb7UKdRGgg-5wMrxBfvo6mFtytavK53gKPXTbAAABjqcw36jkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMDE5ODEsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMDkxODEsImlhdCI6MTcxMjIwMTk4MSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.J-_mKUJQKBokrQshcZVSJXXBd75rbJkJe5bosKlwsnfiAYdm12wSwXLzXF0CBO5RWFhhqgzBt2wbGy835ojXvzteWyaGDkt0ZMuyGr3Og8fPv0LHwzfMem78HRSyofmCpTEAGCCk6kp90iueQXC6Jxta6mi5Gr8loxaj0olYjn_RJwMSHo-n-cBEkFDySPXmCI8cNo7LEFWdwsDvawN1B64y4JarPmHGAHNNF0WDwqyN_UFigD6pxs6HCzOwMvTedmQAVohBbauwyDYZnk4zsxWPluwbrK7UM2wzy_doaI7JNEV1qdjOGZngTdMKlStF5TTD5dNSC1yGt2RIaO7PvA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[12:39:40][INFO ][UserController.java: 87] - 2. kcallback.do : "7-P7pvfjd0zKFX3_JTdpUcg-8mgP2TzGN1UKPXTbAAABjqcw36zkNSpXBP-m7Q"
+[12:39:40][INFO ][KakaoLoginAuth.java: 85] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[12:39:40][INFO ][UserController.java: 90] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[12:39:40][INFO ][UserController.java: 95] - 4. kcallback.do : null
+[12:39:40][INFO ][UserController.java: 99] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[12:39:40][INFO ][UserDao.java: 20] - 3420250175
+[12:39:40][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[12:49:17][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:49:18][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 794 ms
+[12:49:18][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:49:19][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1097 ms
+[12:49:19][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[12:49:28][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[12:50:03][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[12:51:23][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[12:52:04][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[13:11:07][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[13:11:08][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 794 ms
+[13:11:08][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[13:11:09][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1112 ms
+[13:19:02][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[13:19:03][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 741 ms
+[13:19:03][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[13:19:04][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1006 ms
+[13:20:20][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[15:18:54][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[15:18:55][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 755 ms
+[15:18:55][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[15:18:56][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1069 ms
+[16:18:02][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:18:02][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 797 ms
+[16:18:02][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:18:03][INFO ][FrameworkServlet.java: 547] - Completed initialization in 869 ms
+[16:18:09][INFO ][KakaoLoginAuth.java: 39] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[16:18:09][INFO ][UserController.java: 79] - 0. kcallback.donoh4GHiWwLdY4x8vp_JW2tTv563XRfQ3gYHhFoiyLha9fBisaDv9z3-uAx0KPXPsAAABjqf45e_7Ewsnpgvovw
+[16:18:10][INFO ][UserController.java: 83] - 1. kcallback.do : {"access_token":"6bgR99Z1P85-HAlMs8DqQYwDqUWHh5dDwTkKPXRpAAABjqf45yXkNSpXBP-m7Q","token_type":"bearer","refresh_token":"D7irRCVyKpwO_qFBeOf8370F1mEdY3fKwjsKPXRpAAABjqf45yDkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMTUwOTAsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMjIyOTAsImlhdCI6MTcxMjIxNTA5MSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.PMriq1OKFI62LNba4KuQ3w-kEE5Sk5QLxv2f3fyLQYZ3AOWgKJezv3y9KzdbAkh6Xe_0txuj9eYKfthUp4qKGtC0PJ9eHF8j9vdkQxoAnOU5fXY3UAlyBsHUfgsObpQLNRicE0yP4N-2WG4Tuorb8LYOZEIVpCzFDMKQMRdBXveVg6ki9nne1EhUrIbeYRkeBM_-AJnuVZiPAkROIAPYVrnNnW6mJ_h5BPRpiDIAsmB0rYeu0tKBJoncwyQ5gfyJ0wvgy9xLA_WPRXYO-HDqrI-lm65POk2MQVWwX7pLnyUkx6uq9UlOn8va_UaEforW3Df_VyIKyoDC5kHq2kqnJQ","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[16:29:18][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:29:19][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 817 ms
+[16:29:19][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:29:20][INFO ][FrameworkServlet.java: 547] - Completed initialization in 891 ms
+[16:29:22][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[16:29:24][INFO ][UserController.java: 80] - 0. kcallback.do88OreRcB8W2ng0eBo-JlKLv1FvijMzQMqSXBey4ThkxzYKd-96JpxXoMpiEKPXWcAAABjqgDL22UJG13ldIf8A
+[16:29:24][INFO ][UserController.java: 84] - 1. kcallback.do : {"access_token":"F-mX7FJwn81uO7P1grq5bpLwaxCBRqh1fHoKKiUNAAABjqgDMI3kNSpXBP-m7Q","token_type":"bearer","refresh_token":"2mkcZFl9qj5fNYnLsr5vMxw8clnFJvq2XpEKKiUNAAABjqgDMIrkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMTU3NjUsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMjI5NjUsImlhdCI6MTcxMjIxNTc2NSwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.LhxwyyAXQINadj1VSRIOBwDUbxITaG8DZ3jCib3DE0lH4rTLh_1Gtqbat9sUdJ2TfRxtNArXdAVbGjTjZqQLx84BLsuUTDlt25UHyAMW8mN25dZDIDvP7q-S0Xsoqs-N5ReMQvEgOsurJGV33LbrzWCNHlOtUr6vJP-IpngfaPq_DuZtQG3Vu4J8Re9Wn2rww6hdJM4bMnRnQCB7yzZQVomKYeZtgpC-AM7_XAeEFEmlN84Ec8gJ-QuIq7Y_VehDxmEY-eT_WAEt_AFCr2p30QBjy7kXGONa7tqZioVFRDCGTnrt8Qz5-AqGP4Fj8Cz2P8RSX2rjdECZH2nzq4eoBA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[16:29:24][INFO ][UserController.java: 88] - 2. kcallback.do : "F-mX7FJwn81uO7P1grq5bpLwaxCBRqh1fHoKKiUNAAABjqgDMI3kNSpXBP-m7Q"
+[16:29:24][INFO ][KakaoLoginAuth.java: 90] - jsonPrimitive!!! : F-mX7FJwn81uO7P1grq5bpLwaxCBRqh1fHoKKiUNAAABjqgDMI3kNSpXBP-m7Q
+[16:29:24][INFO ][KakaoLoginAuth.java: 93] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[16:29:24][INFO ][UserController.java: 91] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[16:29:24][INFO ][UserController.java: 96] - 4. kcallback.do : null
+[16:29:24][INFO ][UserController.java: 100] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[16:29:24][INFO ][UserDao.java: 20] - 3420250175
+[16:29:24][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[16:29:39][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[16:29:41][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[16:30:04][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:30:05][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 761 ms
+[16:30:05][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:30:06][INFO ][FrameworkServlet.java: 547] - Completed initialization in 890 ms
+[16:30:09][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[16:50:59][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:51:00][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 794 ms
+[16:51:00][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:51:01][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1037 ms
+[16:53:23][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:53:24][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 759 ms
+[16:53:24][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:53:25][INFO ][FrameworkServlet.java: 547] - Completed initialization in 848 ms
+[17:01:49][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:01:50][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 743 ms
+[17:01:50][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:01:51][INFO ][FrameworkServlet.java: 547] - Completed initialization in 840 ms
+[17:02:07][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:02:08][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 773 ms
+[17:02:08][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:02:09][INFO ][FrameworkServlet.java: 547] - Completed initialization in 900 ms
+[17:02:20][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:02:21][INFO ][UserController.java: 84] - 0. kcallback.do1skW4wVISXmdTHPIFTlzUFIeUPhRbyxoPfFSzjr-n4d10qavPdwWpb_kEKMKKiURAAABjqghXNtAPV-WDrAHcw
+[17:02:22][INFO ][UserController.java: 88] - 1. kcallback.do : {"access_token":"k4aDqkM46-gFwjcRH1CEnFsX9YheSt4EHb0KPXOaAAABjqghXg7kNSpXBP-m7Q","token_type":"bearer","refresh_token":"0yr3RlTnTPRyaArVYPSFMcoXU89iVF6PqlkKPXOaAAABjqghXgfkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMTc3NDIsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMjQ5NDIsImlhdCI6MTcxMjIxNzc0MiwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.ey1maLQJ_p6VwLq5710KqWckBVZf8rK-5Ka5sAgir2RqnLcHgRwXDL58sAEi9pmbalyhBIURMKuVQXahnuOxurKGsM2qjA5zpX_e2gwlIa8zmOXaq44EC67jL51u2vospVs5Z3egQpvey3KC0GBmqlvKfqnjISChdIaddPskABKfrjuithOfDNw7CR0kJhkWQnnOm8aXCGT-XMvLKYX29jkx6-8wXokENG5mmrPuJL_V1jbY6y2BuJWjmFTIY3M8g9aiqfM6D2YUE-1M94hNtbmgIcd9l-5ImzXVhykR_o10b4R45BS5UBpWTUrh-0ER0ZJsuMgIO23N7-wdUiKaAA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:02:22][INFO ][UserController.java: 92] - 2. kcallback.do : "k4aDqkM46-gFwjcRH1CEnFsX9YheSt4EHb0KPXOaAAABjqghXg7kNSpXBP-m7Q"
+[17:02:22][INFO ][KakaoLoginAuth.java: 90] - jsonPrimitive!!! : k4aDqkM46-gFwjcRH1CEnFsX9YheSt4EHb0KPXOaAAABjqghXg7kNSpXBP-m7Q
+[17:02:22][INFO ][KakaoLoginAuth.java: 93] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:02:22][INFO ][UserController.java: 95] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:02:22][INFO ][UserController.java: 100] - 4. kcallback.do : null
+[17:02:22][INFO ][UserController.java: 104] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:02:22][INFO ][UserDao.java: 20] - 3420250175
+[17:02:22][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:02:32][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:02:32][INFO ][UserController.java: 84] - 0. kcallback.doYGGrZK9svliuprYJo0Z_ec7jldT-6AQ-cJfMeNIZovHWJDobfdQlJG1SQVgKPXKYAAABjqghiPnSDh85zpcCzQ
+[17:02:33][INFO ][UserController.java: 88] - 1. kcallback.do : {"access_token":"9aQCeJuWl7O0EeDzf4KBlg_DtpNGghAK9L4KPXPsAAABjqghiUTkNSpXBP-m7Q","token_type":"bearer","refresh_token":"vvE7gnHa3iG8QtxCTN_MVljo5ik1ZM6TktsKPXPsAAABjqghiT_kNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMTc3NTMsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMjQ5NTMsImlhdCI6MTcxMjIxNzc1MywicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.YuaoKUcHbG8YNSbkSEMDmvSR_5BM6UPQaDXsbB0vBYF2FWxn1MVN2lAzmaLVdLNLaCC7Znfw8wDsYS4Ioya_3bOa0JZNeodUjGElFvOaon8T6XHAe2xhMZLqN6VjOHdfU0xza80a7fWjVTTfx-p1vDbNhxr9OUp2O1iuchuo5hbYdacspDy1n2PxQP_OAbVsOi3KldsMchdd9jlkMHBDIRNTfuWqEGGscfDHcgOknxjctNv2Ui6qZApx-ne0731StoV0TW_ses3kQeqJsJciXdGiZvjzZVgavJbQE_PaO-hDiLoHj9HDyxGJJfhe4dG8i1BhWEKv9OVRpVzsdwTEPQ","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:02:33][INFO ][UserController.java: 92] - 2. kcallback.do : "9aQCeJuWl7O0EeDzf4KBlg_DtpNGghAK9L4KPXPsAAABjqghiUTkNSpXBP-m7Q"
+[17:02:33][INFO ][KakaoLoginAuth.java: 90] - jsonPrimitive!!! : 9aQCeJuWl7O0EeDzf4KBlg_DtpNGghAK9L4KPXPsAAABjqghiUTkNSpXBP-m7Q
+[17:02:33][INFO ][KakaoLoginAuth.java: 93] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:02:33][INFO ][UserController.java: 95] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:02:33][INFO ][UserController.java: 100] - 4. kcallback.do : null
+[17:02:33][INFO ][UserController.java: 104] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:02:33][INFO ][UserDao.java: 20] - 3420250175
+[17:02:33][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:02:42][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:02:46][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:02:59][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:12:56][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:12:57][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 743 ms
+[17:12:57][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:12:58][INFO ][FrameworkServlet.java: 547] - Completed initialization in 847 ms
+[17:13:39][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:13:40][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 754 ms
+[17:13:40][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:13:41][INFO ][FrameworkServlet.java: 547] - Completed initialization in 829 ms
+[17:16:45][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:16:48][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:17:52][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:17:53][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 755 ms
+[17:17:53][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:17:54][INFO ][FrameworkServlet.java: 547] - Completed initialization in 860 ms
+[17:18:01][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:36:49][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:36:50][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 765 ms
+[17:36:50][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:36:51][INFO ][FrameworkServlet.java: 547] - Completed initialization in 889 ms
+[17:36:51][INFO ][UserController.java: 85] - 0. kcallback.do-7pYv5plEET-sZ2aRLgGaaI7UYymJNlATemfgnabUuE3UlhRrV7sW6PmF1QKKiVSAAABjqhA3VP-oZq-Jypvmw
+[17:36:51][INFO ][UserController.java: 89] - 1. kcallback.do : {"access_token":"4aUnyaqE1cDWepGWiTMyljHAViXKxbUI_PUKPXNOAAABjqhA81bkNSpXBP-m7Q","token_type":"bearer","refresh_token":"zPldCEtqjg5r1WFSpoqws_S7eyPK536kly0KPXNOAAABjqhA81DkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMTk4MTIsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMjcwMTIsImlhdCI6MTcxMjIxOTgxMiwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.XzyIADfJNtYte6exCT60erkcmzAkXApDEnbuP86ebLANbMk8vdO29Pbv4Q7HXU4EkxPJTn4OBAKojxsHYxO1S-QXFO-27CE8VVBcyZmBU-aKOEW2dyMs4LJTlAKM2loC_ojcZEq-ktVCIY708lENM8wW7TKiFgzXHDvxkjKmpNc5mE8oMp5P9KwYsS76umN7af7aauukdB3JZYz9aYyvohE1PDCKSwjLijIVpwW4nKaw0vf7MdXlX_FqtbaYozODrJZq6BtoWFZi6TLk3VLVCqSBbG_AnobPjotGkg9rv50BS9b8NeNf43kXElI4236aHjepHckARjE2Z_H0050RZA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:36:51][INFO ][UserController.java: 93] - 2. kcallback.do : "4aUnyaqE1cDWepGWiTMyljHAViXKxbUI_PUKPXNOAAABjqhA81bkNSpXBP-m7Q"
+[17:36:51][INFO ][KakaoLoginAuth.java: 90] - jsonPrimitive!!! : 4aUnyaqE1cDWepGWiTMyljHAViXKxbUI_PUKPXNOAAABjqhA81bkNSpXBP-m7Q
+[17:36:51][INFO ][KakaoLoginAuth.java: 93] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:36:51][INFO ][UserController.java: 96] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:36:51][INFO ][UserController.java: 101] - 4. kcallback.do : null
+[17:36:51][INFO ][UserController.java: 105] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:36:51][INFO ][UserController.java: 85] - 0. kcallback.do-7pYv5plEET-sZ2aRLgGaaI7UYymJNlATemfgnabUuE3UlhRrV7sW6PmF1QKKiVSAAABjqhA3VP-oZq-Jypvmw
+[17:36:51][INFO ][UserController.java: 89] - 1. kcallback.do : {"error":"invalid_grant","error_description":"authorization code not found for code=-7pYv5plEET-sZ2aRLgGaaI7UYymJNlATemfgnabUuE3UlhRrV7sW6PmF1QKKiVSAAABjqhA3VP-oZq-Jypvmw","error_code":"KOE320"}
+[17:36:51][INFO ][UserController.java: 93] - 2. kcallback.do : null
+[17:36:51][INFO ][UserDao.java: 20] - 3420250175
+[17:36:56][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:36:56][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 750 ms
+[17:36:56][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:36:57][INFO ][FrameworkServlet.java: 547] - Completed initialization in 848 ms
+[17:37:21][INFO ][UserController.java: 85] - 0. kcallback.do-7pYv5plEET-sZ2aRLgGaaI7UYymJNlATemfgnabUuE3UlhRrV7sW6PmF1QKKiVSAAABjqhA3VP-oZq-Jypvmw
+[17:37:21][INFO ][UserController.java: 85] - 0. kcallback.do-7pYv5plEET-sZ2aRLgGaaI7UYymJNlATemfgnabUuE3UlhRrV7sW6PmF1QKKiVSAAABjqhA3VP-oZq-Jypvmw
+[17:37:21][INFO ][UserController.java: 89] - 1. kcallback.do : {"error":"invalid_grant","error_description":"authorization code not found for code=-7pYv5plEET-sZ2aRLgGaaI7UYymJNlATemfgnabUuE3UlhRrV7sW6PmF1QKKiVSAAABjqhA3VP-oZq-Jypvmw","error_code":"KOE320"}
+[17:37:21][INFO ][UserController.java: 89] - 1. kcallback.do : {"error":"invalid_grant","error_description":"authorization code not found for code=-7pYv5plEET-sZ2aRLgGaaI7UYymJNlATemfgnabUuE3UlhRrV7sW6PmF1QKKiVSAAABjqhA3VP-oZq-Jypvmw","error_code":"KOE320"}
+[17:37:21][INFO ][UserController.java: 93] - 2. kcallback.do : null
+[17:37:21][INFO ][UserController.java: 93] - 2. kcallback.do : null
+[17:38:41][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:38:42][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 743 ms
+[17:38:42][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:38:43][INFO ][FrameworkServlet.java: 547] - Completed initialization in 854 ms
+[17:38:49][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:38:49][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@15cc060a
+[17:38:50][INFO ][UserController.java: 85] - 0. kcallback.dogJf-W9u0hKKEEq3Yzo4mFsajauT3pqbzshVXhhk7P_M98xK8GlyHCOSXeh0KKcjZAAABjqhCxEeQgW3aWXatGQ
+[17:38:50][INFO ][UserController.java: 89] - 1. kcallback.do : {"access_token":"cn28h3FNCXGdpmGTw-HgnsimcdCdB9TdlpkKKwynAAABjqhCxYnkNSpXBP-m7Q","token_type":"bearer","refresh_token":"Ceu2HlqNpC82splJPUtOB2njftsWa2_ZvCoKKwynAAABjqhCxYTkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMTk5MzIsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMjcxMzIsImlhdCI6MTcxMjIxOTkzMiwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.a3L6-tyfai1GpiqzLkkFsS2zr59I1tzR1aNJjerGu10pbGIpZw98Ws0GdHceF6NXhVDmYswejej-cvz3rUoDGZhO4Idwo34GVY8bupsOb0DYaW0kdQeiyWbxvpq5kWMeYOc-4IQ7iPptaopMoMA7hXscpnroI4Robw8pccN6_aX1jLxrY6T0-H8DELo-r2g2FIPs0sacwLPeGh0RPSwRA3F-wXhAF9XW7Q1_RTLp2lTl08n8_FxcH1WbMONL-yeWEHoPnACuCa5YsCwak0gOULsWTQfxkMXQBsEw81SNbzxTKMUs8nFc28vY_73Jf7Dxsf_T5sim3IEGnkyMmmUGmg","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:38:50][INFO ][UserController.java: 93] - 2. kcallback.do : "cn28h3FNCXGdpmGTw-HgnsimcdCdB9TdlpkKKwynAAABjqhCxYnkNSpXBP-m7Q"
+[17:38:50][INFO ][KakaoLoginAuth.java: 90] - jsonPrimitive!!! : cn28h3FNCXGdpmGTw-HgnsimcdCdB9TdlpkKKwynAAABjqhCxYnkNSpXBP-m7Q
+[17:38:50][INFO ][KakaoLoginAuth.java: 93] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:38:50][INFO ][UserController.java: 96] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:38:50][INFO ][UserController.java: 101] - 4. kcallback.do : null
+[17:38:50][INFO ][UserController.java: 105] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:38:50][INFO ][UserDao.java: 20] - 3420250175
+[17:38:50][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:38:50][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@e97a8d
+[17:38:59][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:38:59][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5e2079ad
+[17:39:12][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:39:12][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3bb25705
+[17:41:27][INFO ][UserController.java: 85] - 0. kcallback.doLzeUptmFlCJUC_lqEKSuUEFvlE_P6D3huHJFfByrM2dh43QuWaOt9ipvNtwKPXQRAAABjqhFKcXOkqTnJF629A
+[17:41:27][INFO ][UserController.java: 89] - 1. kcallback.do : {"access_token":"8umQ6kqvTFjdteFoFSDhSxrWF3HAIZAtzL8KPXSYAAABjqhFKhTkNSpXBP-m7Q","token_type":"bearer","refresh_token":"kn1nVv9T6ZIertf63fuqf2RTq2d05ggpedEKPXSYAAABjqhFKg_kNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMjAwODgsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMjcyODgsImlhdCI6MTcxMjIyMDA4OCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.lF5zZ33nZkERhEEReb6wOdhVBNrjqHxF7ZzsR-m94fMTEknN2orynZVpfPst1pX20EXXFuMzYt4Ic0p3sAFoSlKVP5PJK1SlbR_kwsrPB3H5V6T-P9oPgYPGpvIZl1uOIow-Rhn26i07HkqK-cOxoC5iGmTCXL6AeMIqqVStF1vKfu9FMqKI8uJXmOdGKu6EVm4_GsWZ0KsqPr-w5m8c7Wp-Irv_MRdlQBBAdDZ2uvuU_bIADYCiigIaNE12CLtxwyP1kBjtI9Hgh3Bslo_DYPu1Kgc1KOPwDKLr3uKzjg2DXjCOpoT3-6iv5Qxqk4e3TeEiK3MkXPE_IQDWjyR5jA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:41:27][INFO ][UserController.java: 93] - 2. kcallback.do : "8umQ6kqvTFjdteFoFSDhSxrWF3HAIZAtzL8KPXSYAAABjqhFKhTkNSpXBP-m7Q"
+[17:41:27][INFO ][KakaoLoginAuth.java: 90] - jsonPrimitive!!! : 8umQ6kqvTFjdteFoFSDhSxrWF3HAIZAtzL8KPXSYAAABjqhFKhTkNSpXBP-m7Q
+[17:41:27][INFO ][KakaoLoginAuth.java: 93] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:41:27][INFO ][UserController.java: 96] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:41:27][INFO ][UserController.java: 101] - 4. kcallback.do : null
+[17:41:27][INFO ][UserController.java: 105] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:41:27][INFO ][UserDao.java: 20] - 3420250175
+[17:41:27][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:41:27][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7b969941
+[17:41:32][INFO ][UserController.java: 176] - result!!!!!!!!!!!!!!ok
+[17:42:03][INFO ][UserController.java: 85] - 0. kcallback.doDfxlOcYVIUzL4j_aXSwFpKhviuoykip4Ml3eD4alNWddiF9RZskcGZbZklUKPXLqAAABjqhFtXfkNSpXBP-m7Q
+[17:42:03][INFO ][UserController.java: 89] - 1. kcallback.do : {"access_token":"O1BUgvf8UUlKcSfp74buumi7AIqtxYJwtQoKPXWcAAABjqhFtdHkNSpXBP-m7Q","token_type":"bearer","refresh_token":"YXhnybZStUSveGJjDsUfWbHsFLRlYIeDEFcKPXWcAAABjqhFtczkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTIyMjAxMjQsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTIyMjczMjQsImlhdCI6MTcxMjIyMDEyNCwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.A4t9HB4J3kljcv_J6oLjZaPIuAI0XIjOshtPdJHmsmVfjUb05JFeTIjTxdtRTmx_RVfMz2DeR_PHrl0L-hHIaLSryWBvh3cAjqC2H6zFbUaPYEdefxm5GjsLSNI_x76WR4-WcwTNEwzsklpTxH4-PAuKmRPIOWBvoCVjM242zuGYtpKliBuKt7Kt6zFTJ6uTtWAGXmKwwCgKqqZO-b3af7lr4cYl3PkxU-rwJH_67iPJYAG6HHlsSNLNfVXTb3iOR821XNmTFt0O6BajChmYu60i57kBITRriihBvj1ohxyHP0WI3KteK-aE_P4OITjALNl500mPFlWG5edKoD7Vow","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[17:42:03][INFO ][UserController.java: 93] - 2. kcallback.do : "O1BUgvf8UUlKcSfp74buumi7AIqtxYJwtQoKPXWcAAABjqhFtdHkNSpXBP-m7Q"
+[17:42:03][INFO ][KakaoLoginAuth.java: 90] - jsonPrimitive!!! : O1BUgvf8UUlKcSfp74buumi7AIqtxYJwtQoKPXWcAAABjqhFtdHkNSpXBP-m7Q
+[17:42:03][INFO ][KakaoLoginAuth.java: 93] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[17:42:03][INFO ][UserController.java: 96] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[17:42:03][INFO ][UserController.java: 101] - 4. kcallback.do : null
+[17:42:03][INFO ][UserController.java: 105] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[17:42:03][INFO ][UserDao.java: 20] - 3420250175
+[17:42:03][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:42:03][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7553e90a
+[17:42:26][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:42:26][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@63eae9d
+[17:43:26][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:43:26][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7079db69
+[17:43:35][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:43:35][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 742 ms
+[17:43:35][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:43:36][INFO ][FrameworkServlet.java: 547] - Completed initialization in 872 ms
+[17:43:53][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:43:54][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 750 ms
+[17:43:54][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:43:55][INFO ][FrameworkServlet.java: 547] - Completed initialization in 864 ms
+[17:44:01][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:44:01][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6493c2a8
+[17:47:56][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:47:56][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@32d5ad76
+[17:48:05][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:48:05][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 814 ms
+[17:48:05][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:48:06][INFO ][FrameworkServlet.java: 547] - Completed initialization in 902 ms
+[17:48:10][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:48:10][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@284bffab
+[17:59:10][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:59:11][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 754 ms
+[17:59:11][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:59:12][INFO ][FrameworkServlet.java: 547] - Completed initialization in 868 ms
+[17:59:34][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:59:34][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3272c641
+[17:59:43][INFO ][UserController.java: 125] - 0. kcallback.dootrP4icvbgG0D86ofx
+[17:59:43][INFO ][UserController.java: 130] - 1. kcallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:03:11][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:03:12][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 760 ms
+[18:03:12][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:03:13][INFO ][FrameworkServlet.java: 547] - Completed initialization in 834 ms
+[18:03:14][INFO ][UserController.java: 126] - 0. ncallback.do3NMN0X1rjIQbgg5qsa
+[18:03:14][INFO ][UserController.java: 131] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:03:14][INFO ][UserController.java: 135] - 2. ncallback.do : AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM
+[18:03:15][INFO ][UserController.java: 126] - 0. ncallback.do8GF4xIOqIKnJUILh9I
+[18:03:15][INFO ][UserController.java: 131] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:03:15][INFO ][UserController.java: 135] - 2. ncallback.do : AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM
+[18:03:18][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:03:18][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7da16c69
+[18:03:20][INFO ][UserController.java: 126] - 0. ncallback.do0aup250d1ebwtFA8NQ
+[18:03:20][INFO ][UserController.java: 131] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:03:20][INFO ][UserController.java: 135] - 2. ncallback.do : AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM
+[18:04:57][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:04:57][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@711e3619
+[18:05:00][INFO ][UserController.java: 126] - 0. ncallback.doK0d6yFrNloCLNTXxEL
+[18:05:01][INFO ][UserController.java: 131] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:05:01][INFO ][UserController.java: 135] - 2. ncallback.do : AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM
+[18:11:55][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:11:56][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 789 ms
+[18:11:56][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:11:57][INFO ][FrameworkServlet.java: 547] - Completed initialization in 878 ms
+[18:11:59][INFO ][UserController.java: 128] - 0. ncallback.doK0d6yFrNloCLNTXxEL
+[18:12:09][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:12:10][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 752 ms
+[18:12:10][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:12:11][INFO ][FrameworkServlet.java: 547] - Completed initialization in 844 ms
+[18:12:19][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:12:19][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@14ce0128
+[18:12:20][INFO ][UserController.java: 128] - 0. ncallback.doEd6qRKGT7D1Pm2Cft5
+[18:12:20][INFO ][UserController.java: 133] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:14:26][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:14:26][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 751 ms
+[18:14:26][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:14:27][INFO ][FrameworkServlet.java: 547] - Completed initialization in 855 ms
+[18:14:30][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:14:30][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@35411377
+[18:14:34][INFO ][UserController.java: 128] - 0. ncallback.dofwx5JOZ4DRcuW7h93D
+[18:14:35][INFO ][UserController.java: 133] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:15:11][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:15:11][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 763 ms
+[18:15:12][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:15:12][INFO ][FrameworkServlet.java: 547] - Completed initialization in 862 ms
+[18:15:12][INFO ][UserController.java: 128] - 0. ncallback.dofwx5JOZ4DRcuW7h93D
+[18:15:23][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:15:23][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7b5bbec9
+[18:15:27][INFO ][UserController.java: 128] - 0. ncallback.douikWTFg65HwMTll3sU
+[18:15:28][INFO ][UserController.java: 133] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:21:38][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:21:39][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 758 ms
+[18:21:39][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:21:40][INFO ][FrameworkServlet.java: 547] - Completed initialization in 886 ms
+[18:21:58][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:21:58][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@42d05abb
+[18:22:00][INFO ][UserController.java: 133] - 0. ncallback.dofdEU9kKe46KAk304XR
+[18:22:00][INFO ][UserController.java: 138] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:22:00][INFO ][UserController.java: 142] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[18:26:57][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:26:58][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 751 ms
+[18:26:58][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:26:59][INFO ][FrameworkServlet.java: 547] - Completed initialization in 871 ms
+[18:27:02][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:27:02][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@e0a9796
+[18:27:04][INFO ][UserController.java: 135] - 0. ncallback.doWCkZY1E5GwaCHN0vqX
+[18:27:05][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:27:05][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[18:27:05][INFO ][UserController.java: 155] - 3. nickname : 문승종
+[18:36:11][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:36:11][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 805 ms
+[18:36:11][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:36:12][INFO ][FrameworkServlet.java: 547] - Completed initialization in 873 ms
+[18:36:16][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:36:16][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6cb102b
+[18:36:19][INFO ][UserController.java: 135] - 0. ncallback.doJ58uWkK57Ggzz7Ipzm
+[18:36:19][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:36:19][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[18:36:19][INFO ][UserController.java: 156] - 3. nickname : 문승종
+[18:36:19][INFO ][UserController.java: 157] - 3. email : msj102525@naver.com
+[18:38:50][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:38:51][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 775 ms
+[18:38:51][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:38:52][INFO ][FrameworkServlet.java: 547] - Completed initialization in 839 ms
+[18:38:54][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:38:54][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@661cd336
+[18:38:57][INFO ][UserController.java: 135] - 0. ncallback.doo4CtVkoLIBkTOVGFgl
+[18:38:58][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:38:58][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[18:38:58][INFO ][UserController.java: 156] - 3. nickname : 문승종
+[18:38:58][INFO ][UserController.java: 157] - 3. email : msj102525@naver.com
+[18:38:58][INFO ][UserDao.java: 20] - msj102525@naver.com
+[18:38:58][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:38:58][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6483b718
+[18:39:03][INFO ][UserController.java: 214] - result!!!!!!!!!!!!!!ok
+[18:44:45][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:44:46][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 749 ms
+[18:44:46][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:44:47][INFO ][FrameworkServlet.java: 547] - Completed initialization in 851 ms
+[18:44:49][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:44:49][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@48b7ac9e
+[18:47:18][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:47:19][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 752 ms
+[18:47:19][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:47:20][INFO ][FrameworkServlet.java: 547] - Completed initialization in 853 ms
+[18:47:21][INFO ][UserController.java: 135] - 0. ncallback.doEc0FsZqYoPiNsf7yqc
+[18:47:22][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:47:22][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[18:47:22][INFO ][UserController.java: 156] - 3. nickname : 문승종
+[18:47:22][INFO ][UserController.java: 157] - 3. email : msj102525@naver.com
+[18:47:22][INFO ][UserDao.java: 20] - msj102525@naver.com
+[18:47:22][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:47:22][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5b24d550
+[18:53:27][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:53:28][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 764 ms
+[18:53:28][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:53:29][INFO ][FrameworkServlet.java: 547] - Completed initialization in 849 ms
+[18:53:31][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:53:31][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@12ef9a72
+[18:53:32][INFO ][UserController.java: 135] - 0. ncallback.do98IpYORW3WbfG5998e
+[18:53:32][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:53:32][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[18:53:32][INFO ][UserController.java: 159] - 3. nickname : 문승종
+[18:53:32][INFO ][UserController.java: 160] - 3. email : msj102525@naver.com
+[18:53:32][INFO ][UserController.java: 161] - 3. birthyear : 1998
+[18:53:32][INFO ][UserController.java: 162] - 3. birthday : 07-11
+[18:53:32][INFO ][UserController.java: 163] - 3. mobile : 010-7288-5366
+[18:53:32][INFO ][UserDao.java: 20] - msj102525@naver.com
+[18:53:32][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:53:32][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3b782f54
+[18:53:35][INFO ][UserController.java: 135] - 0. ncallback.doibjTnRhgG8vQURGmMD
+[18:53:35][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:53:35][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[18:53:35][INFO ][UserController.java: 159] - 3. nickname : 문승종
+[18:53:35][INFO ][UserController.java: 160] - 3. email : msj102525@naver.com
+[18:53:35][INFO ][UserController.java: 161] - 3. birthyear : 1998
+[18:53:35][INFO ][UserController.java: 162] - 3. birthday : 07-11
+[18:53:35][INFO ][UserController.java: 163] - 3. mobile : 010-7288-5366
+[18:53:35][INFO ][UserDao.java: 20] - msj102525@naver.com
+[18:53:35][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:53:35][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@4d222b9
+[18:53:53][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:53:53][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5930acea
+[18:53:55][INFO ][UserController.java: 135] - 0. ncallback.doYFPKZS1iutHfj8bnpk
+[18:53:55][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[18:53:55][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[18:53:55][INFO ][UserController.java: 159] - 3. nickname : 문승종
+[18:53:55][INFO ][UserController.java: 160] - 3. email : msj102525@naver.com
+[18:53:55][INFO ][UserController.java: 161] - 3. birthyear : 1998
+[18:53:55][INFO ][UserController.java: 162] - 3. birthday : 07-11
+[18:53:55][INFO ][UserController.java: 163] - 3. mobile : 010-7288-5366
+[18:53:55][INFO ][UserDao.java: 20] - msj102525@naver.com
+[18:53:55][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[18:53:55][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@804cba5
+[19:01:47][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:01:48][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 761 ms
+[19:01:48][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:01:49][INFO ][FrameworkServlet.java: 547] - Completed initialization in 894 ms
+[19:03:30][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:03:31][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 744 ms
+[19:03:31][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:03:32][INFO ][FrameworkServlet.java: 547] - Completed initialization in 848 ms
+[19:03:35][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:03:35][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@175ea02b
+[19:03:38][INFO ][UserController.java: 135] - 0. ncallback.dovm0nIPWoifYIuroGkV
+[19:03:38][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[19:03:38][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[19:03:38][INFO ][UserController.java: 162] - 3. nickname : 문승종
+[19:03:38][INFO ][UserController.java: 163] - 3. email : msj102525@naver.com
+[19:03:38][INFO ][UserController.java: 164] - 3. birthyear : 1998
+[19:03:38][INFO ][UserController.java: 165] - 3. birthday : 07-11
+[19:03:38][INFO ][UserController.java: 166] - 3. phone : 010-7288-5366
+[19:03:38][INFO ][UserController.java: 167] - 3. birth : 19980711
+[19:03:38][INFO ][UserDao.java: 20] - msj102525@naver.com
+[19:03:38][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:03:38][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3163d01b
+[19:06:52][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:06:52][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1c049060
+[19:07:26][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:07:26][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 746 ms
+[19:07:26][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:07:27][INFO ][FrameworkServlet.java: 547] - Completed initialization in 870 ms
+[19:08:11][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:08:11][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@c87d1b0
+[19:08:13][INFO ][UserController.java: 135] - 0. ncallback.doY2gaRvPnpr5YRqDx7n
+[19:08:14][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[19:08:14][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[19:08:14][INFO ][UserController.java: 162] - 3. nickname : 문승종
+[19:08:14][INFO ][UserController.java: 163] - 3. email : msj102525@naver.com
+[19:08:14][INFO ][UserController.java: 164] - 3. birthyear : 1998
+[19:08:14][INFO ][UserController.java: 165] - 3. birthday : 07-11
+[19:08:14][INFO ][UserController.java: 166] - 3. phone : 010-7288-5366
+[19:08:14][INFO ][UserController.java: 167] - 3. birth : 19980711
+[19:08:14][INFO ][UserDao.java: 20] - msj102525@naver.com
+[19:08:14][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:08:14][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5037a9ad
+[19:10:15][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:10:15][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5e4d874d
+[19:10:20][INFO ][UserController.java: 135] - 0. ncallback.doANCcLoq2d35HY8AxQR
+[19:10:20][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[19:10:21][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[19:10:21][INFO ][UserController.java: 162] - 3. nickname : 문승종
+[19:10:21][INFO ][UserController.java: 163] - 3. email : msj102525@naver.com
+[19:10:21][INFO ][UserController.java: 164] - 3. birthyear : 1998
+[19:10:21][INFO ][UserController.java: 165] - 3. birthday : 07-11
+[19:10:21][INFO ][UserController.java: 166] - 3. phone : 010-7288-5366
+[19:10:21][INFO ][UserController.java: 167] - 3. birth : 19980711
+[19:10:21][INFO ][UserDao.java: 20] - msj102525@naver.com
+[19:10:21][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:10:21][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@4deb8813
+[19:10:44][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:10:44][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3db66f46
+[19:12:56][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:12:56][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@166da8af
+[19:13:03][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:13:04][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 770 ms
+[19:13:04][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:13:05][INFO ][FrameworkServlet.java: 547] - Completed initialization in 853 ms
+[19:13:07][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:13:07][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6243c0a0
+[19:17:45][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:17:45][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1d5c9d5d
+[19:17:59][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:17:59][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3b782f54
+[19:19:21][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:19:21][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@501dda03
+[19:19:30][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:19:30][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 752 ms
+[19:19:30][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:19:31][INFO ][FrameworkServlet.java: 547] - Completed initialization in 855 ms
+[19:19:31][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:19:31][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@361ed3af
+[19:19:35][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:19:35][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@4dcdee79
+[19:20:09][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:20:09][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@2b6eb39
+[19:21:24][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:21:24][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6b7a8aa4
+[19:21:25][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:21:25][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@248260cb
+[19:21:26][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:21:26][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1f2ae4fc
+[19:21:26][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:21:26][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1da32124
+[19:21:26][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:21:26][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1957575d
+[19:21:26][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:21:26][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1679949c
+[19:21:27][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:21:27][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@11b30da1
+[19:21:37][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:21:37][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@78ed9a3b
+[19:22:05][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:22:06][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 767 ms
+[19:22:06][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:22:07][INFO ][FrameworkServlet.java: 547] - Completed initialization in 862 ms
+[19:22:07][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:22:07][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:22:07][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@4b369d53
+[19:22:07][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@738bf3f0
+[19:22:13][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:22:13][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6aa9ae08
+[19:22:43][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:22:43][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@179bbf9b
+[19:23:07][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:23:07][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@4ff56476
+[19:23:23][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:23:24][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 750 ms
+[19:23:24][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:23:24][INFO ][FrameworkServlet.java: 547] - Completed initialization in 865 ms
+[19:23:27][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:23:27][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3595adc3
+[19:25:33][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:25:33][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@20bebc6b
+[19:26:19][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:26:19][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@8fc202c
+[19:26:51][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:26:51][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@636e413b
+[19:27:06][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:27:06][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@67b83b8
+[19:27:11][INFO ][UserController.java: 135] - 0. ncallback.do02dABDZCW2OGB5B8WG
+[19:27:11][INFO ][UserController.java: 140] - 1. ncallback.do : OAuth2AccessToken{access_token=AAAAOeOOOinW77-gpJrK3W9KlX98qU6Dp--iA1aGZc59TdBiB76Q3r1tmKaQISUAVsylGoTOnpsOUOEv_-Xps32xdGM, token_type=bearer, expires_in=3600, refresh_token=Ur27RpeOS0bxis7RXQmOaisKP5isvlwlWWja50QLHhlgydB5juVtcJG2CfXkX9xDlZSo0ucKocHOZ1Q9ismisfeUTyep8bZmyzXkpw178hFqoS80lCUNLxnYuXlpOV4LxYOQC, scope=null}
+[19:27:11][INFO ][UserController.java: 144] - 2. ncallback.do : {"resultcode":"00","message":"success","response":{"id":"j_bnIVcHI314kvYWdhjjuhVRkMLM9BS2miBjTOzmQ1Q","nickname":"\ubb38\uc2b9\uc885","profile_image":"https:\/\/phinf.pstatic.net\/contact\/20210527_213\/1622093325302Epotc_JPEG\/image.jpg","age":"20-29","gender":"M","email":"msj102525@naver.com","mobile":"010-7288-5366","mobile_e164":"+821072885366","name":"\ubb38\uc2b9\uc885","birthday":"07-11","birthyear":"1998"}}
+[19:27:11][INFO ][UserController.java: 162] - 3. nickname : 문승종
+[19:27:11][INFO ][UserController.java: 163] - 3. email : msj102525@naver.com
+[19:27:11][INFO ][UserController.java: 164] - 3. birthyear : 1998
+[19:27:11][INFO ][UserController.java: 165] - 3. birthday : 07-11
+[19:27:11][INFO ][UserController.java: 166] - 3. phone : 010-7288-5366
+[19:27:11][INFO ][UserController.java: 167] - 3. birth : 19980711
+[19:27:11][INFO ][UserDao.java: 20] - msj102525@naver.com
+[19:27:11][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:27:11][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@21231e50
+[19:28:22][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:28:22][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@71d7f877
+[19:30:10][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:30:11][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 780 ms
+[19:30:11][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:30:12][INFO ][FrameworkServlet.java: 547] - Completed initialization in 825 ms
+[19:37:53][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:37:54][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 749 ms
+[19:37:54][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:37:55][INFO ][FrameworkServlet.java: 547] - Completed initialization in 857 ms
+[20:59:19][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[20:59:20][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 739 ms
+[20:59:20][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[20:59:21][INFO ][FrameworkServlet.java: 547] - Completed initialization in 824 ms
+[20:59:35][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:59:35][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5a2a67d2
+[20:59:35][INFO ][GoogleLoginAuth.java: 56] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@586370d3

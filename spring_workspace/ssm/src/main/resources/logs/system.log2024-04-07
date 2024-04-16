@@ -1,0 +1,1387 @@
+[16:01:16][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:01:17][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 989 ms
+[16:01:17][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:01:18][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1525 ms
+[16:01:30][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[16:01:30][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@39efe54d
+[16:01:30][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@441c7586
+[16:01:40][INFO ][UserDao.java: 20] - doorwinbell
+[16:01:40][INFO ][UserController.java: 281] - userID!!!!!!!!!!!!!!!doorwinbell
+[16:01:40][INFO ][UserController.java: 283] - user.getPassWd() : Tmdwhd0711!
+[16:01:40][INFO ][UserController.java: 284] - loginUser.getPassWd() : $2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX.
+[16:01:40][INFO ][UserController.java: 290] - 성공!!!!!!!!!!!!!!!
+[16:01:40][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[16:01:42][INFO ][UserDao.java: 20] - doorwinbell
+[16:01:42][INFO ][UserController.java: 262] - goMypage!!!!
+[16:01:42][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:03:54][INFO ][UserDao.java: 20] - doorwinbell
+[16:03:54][INFO ][UserController.java: 262] - goMypage!!!!
+[16:03:54][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:04:22][INFO ][UserDao.java: 20] - doorwinbell
+[16:04:22][INFO ][UserController.java: 262] - goMypage!!!!
+[16:04:22][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:04:28][INFO ][UserDao.java: 20] - doorwinbell
+[16:04:28][INFO ][UserController.java: 262] - goMypage!!!!
+[16:04:28][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:04:57][INFO ][UserDao.java: 20] - doorwinbell
+[16:04:57][INFO ][UserController.java: 262] - goMypage!!!!
+[16:04:57][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:05:02][INFO ][UserDao.java: 20] - doorwinbell
+[16:05:02][INFO ][UserController.java: 262] - goMypage!!!!
+[16:05:02][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:06:00][INFO ][UserDao.java: 20] - doorwinbell
+[16:06:00][INFO ][UserController.java: 262] - goMypage!!!!
+[16:06:00][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:06:03][INFO ][UserDao.java: 20] - doorwinbell
+[16:06:03][INFO ][UserController.java: 262] - goMypage!!!!
+[16:06:03][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:06:04][INFO ][UserDao.java: 20] - doorwinbell
+[16:06:04][INFO ][UserController.java: 262] - goMypage!!!!
+[16:06:04][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:06:05][INFO ][UserDao.java: 20] - doorwinbell
+[16:06:05][INFO ][UserController.java: 262] - goMypage!!!!
+[16:06:05][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:06:08][INFO ][UserDao.java: 20] - doorwinbell
+[16:06:08][INFO ][UserController.java: 262] - goMypage!!!!
+[16:06:08][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:07:09][INFO ][UserDao.java: 20] - doorwinbell
+[16:07:09][INFO ][UserController.java: 262] - goMypage!!!!
+[16:07:09][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:07:34][INFO ][UserDao.java: 20] - doorwinbell
+[16:07:34][INFO ][UserController.java: 262] - goMypage!!!!
+[16:07:34][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:08:01][INFO ][UserDao.java: 20] - doorwinbell
+[16:08:01][INFO ][UserController.java: 262] - goMypage!!!!
+[16:08:01][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:08:23][INFO ][UserDao.java: 20] - doorwinbell
+[16:08:23][INFO ][UserController.java: 262] - goMypage!!!!
+[16:08:23][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:08:38][INFO ][UserDao.java: 20] - doorwinbell
+[16:08:38][INFO ][UserController.java: 262] - goMypage!!!!
+[16:08:38][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:11:14][INFO ][UserDao.java: 20] - doorwinbell
+[16:11:14][INFO ][UserController.java: 262] - goMypage!!!!
+[16:11:14][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:11:16][INFO ][UserDao.java: 20] - doorwinbell
+[16:11:16][INFO ][UserController.java: 262] - goMypage!!!!
+[16:11:16][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:11:17][INFO ][UserDao.java: 20] - doorwinbell
+[16:11:17][INFO ][UserController.java: 262] - goMypage!!!!
+[16:11:17][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:11:18][INFO ][UserDao.java: 20] - doorwinbell
+[16:11:18][INFO ][UserController.java: 262] - goMypage!!!!
+[16:11:18][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:11:28][INFO ][UserDao.java: 20] - doorwinbell
+[16:11:28][INFO ][UserController.java: 262] - goMypage!!!!
+[16:11:28][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:11:41][INFO ][UserDao.java: 20] - doorwinbell
+[16:11:41][INFO ][UserController.java: 262] - goMypage!!!!
+[16:11:41][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:12:11][INFO ][UserDao.java: 20] - doorwinbell
+[16:12:11][INFO ][UserController.java: 262] - goMypage!!!!
+[16:12:11][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:13:18][INFO ][UserDao.java: 20] - doorwinbell
+[16:13:18][INFO ][UserController.java: 262] - goMypage!!!!
+[16:13:18][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:13:20][INFO ][UserDao.java: 20] - doorwinbell
+[16:13:20][INFO ][UserController.java: 262] - goMypage!!!!
+[16:13:20][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:13:21][INFO ][UserDao.java: 20] - doorwinbell
+[16:13:21][INFO ][UserController.java: 262] - goMypage!!!!
+[16:13:21][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:15:20][INFO ][UserDao.java: 20] - doorwinbell
+[16:15:20][INFO ][UserController.java: 262] - goMypage!!!!
+[16:15:20][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:16:01][INFO ][UserDao.java: 20] - doorwinbell
+[16:16:01][INFO ][UserController.java: 262] - goMypage!!!!
+[16:16:01][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:16:03][INFO ][UserDao.java: 20] - doorwinbell
+[16:16:03][INFO ][UserController.java: 262] - goMypage!!!!
+[16:16:03][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:18:30][INFO ][UserDao.java: 20] - doorwinbell
+[16:18:30][INFO ][UserController.java: 262] - goMypage!!!!
+[16:18:30][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:20:35][INFO ][UserDao.java: 20] - doorwinbell
+[16:20:35][INFO ][UserController.java: 262] - goMypage!!!!
+[16:20:35][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:21:45][INFO ][UserDao.java: 20] - doorwinbell
+[16:21:45][INFO ][UserController.java: 262] - goMypage!!!!
+[16:21:45][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:23:20][INFO ][UserDao.java: 20] - doorwinbell
+[16:23:20][INFO ][UserController.java: 262] - goMypage!!!!
+[16:23:20][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:23:51][INFO ][UserDao.java: 20] - doorwinbell
+[16:23:51][INFO ][UserController.java: 262] - goMypage!!!!
+[16:23:51][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:24:27][INFO ][UserDao.java: 20] - doorwinbell
+[16:24:27][INFO ][UserController.java: 262] - goMypage!!!!
+[16:24:27][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:40:23][INFO ][UserDao.java: 20] - doorwinbell
+[16:40:23][INFO ][UserController.java: 262] - goMypage!!!!
+[16:40:23][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:40:33][INFO ][UserDao.java: 20] - doorwinbell
+[16:40:33][INFO ][UserController.java: 262] - goMypage!!!!
+[16:40:33][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:41:50][INFO ][UserDao.java: 20] - doorwinbell
+[16:41:50][INFO ][UserController.java: 262] - goMypage!!!!
+[16:41:50][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:42:03][INFO ][UserDao.java: 20] - doorwinbell
+[16:42:03][INFO ][UserController.java: 262] - goMypage!!!!
+[16:42:03][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:42:31][INFO ][UserDao.java: 20] - doorwinbell
+[16:42:31][INFO ][UserController.java: 262] - goMypage!!!!
+[16:42:31][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:42:44][INFO ][UserDao.java: 20] - doorwinbell
+[16:42:44][INFO ][UserController.java: 262] - goMypage!!!!
+[16:42:44][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:43:10][INFO ][UserDao.java: 20] - doorwinbell
+[16:43:10][INFO ][UserController.java: 262] - goMypage!!!!
+[16:43:10][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:43:26][INFO ][UserDao.java: 20] - doorwinbell
+[16:43:26][INFO ][UserController.java: 262] - goMypage!!!!
+[16:43:26][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:43:34][INFO ][UserDao.java: 20] - doorwinbell
+[16:43:34][INFO ][UserController.java: 262] - goMypage!!!!
+[16:43:34][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:43:35][INFO ][UserDao.java: 20] - doorwinbell
+[16:43:35][INFO ][UserController.java: 262] - goMypage!!!!
+[16:43:35][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:43:48][INFO ][UserDao.java: 20] - doorwinbell
+[16:43:48][INFO ][UserController.java: 262] - goMypage!!!!
+[16:43:48][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:49:42][INFO ][UserDao.java: 20] - doorwinbell
+[16:49:42][INFO ][UserController.java: 262] - goMypage!!!!
+[16:49:42][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:52:38][INFO ][UserDao.java: 20] - doorwinbell
+[16:52:38][INFO ][UserController.java: 262] - goMypage!!!!
+[16:52:38][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:56:36][INFO ][UserDao.java: 20] - doorwinbell
+[16:56:36][INFO ][UserController.java: 262] - goMypage!!!!
+[16:56:36][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:58:31][INFO ][UserDao.java: 20] - doorwinbell
+[16:58:32][INFO ][UserController.java: 262] - goMypage!!!!
+[16:58:32][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[16:58:39][INFO ][UserDao.java: 20] - doorwinbell
+[16:58:39][INFO ][UserController.java: 262] - goMypage!!!!
+[16:58:39][INFO ][UserController.java: 263] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:15:28][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:15:29][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 805 ms
+[17:15:29][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:15:30][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1274 ms
+[17:28:36][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:28:37][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 780 ms
+[17:28:37][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:28:38][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1285 ms
+[17:28:47][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:28:47][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1734e178
+[17:28:47][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@7cc2bfab
+[17:28:48][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:28:48][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@19398c6d
+[17:28:48][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@4e794c75
+[17:29:00][INFO ][UserController.java: 315] - result!!!!!!!!!!!!!!ok
+[17:29:08][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[17:29:08][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6a477005
+[17:29:08][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@3bf9f59c
+[17:29:18][INFO ][UserDao.java: 20] - doorwinbell
+[17:29:18][INFO ][UserController.java: 284] - userID!!!!!!!!!!!!!!!doorwinbell
+[17:29:18][INFO ][UserController.java: 286] - user.getPassWd() : Tmdwhd0711!
+[17:29:18][INFO ][UserController.java: 287] - loginUser.getPassWd() : $2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX.
+[17:29:18][INFO ][UserController.java: 293] - 성공!!!!!!!!!!!!!!!
+[17:29:18][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[17:29:19][INFO ][UserDao.java: 20] - doorwinbell
+[17:29:19][INFO ][UserController.java: 265] - goMypage!!!!
+[17:29:19][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:34:30][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:34:30][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 781 ms
+[17:34:30][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:34:32][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1281 ms
+[17:42:36][INFO ][UserDao.java: 20] - doorwinbell
+[17:42:37][INFO ][UserController.java: 265] - goMypage!!!!
+[17:42:37][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:42:39][INFO ][UserDao.java: 20] - doorwinbell
+[17:42:39][INFO ][UserController.java: 265] - goMypage!!!!
+[17:42:39][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:46:54][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:46:55][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 821 ms
+[17:46:55][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:46:56][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1287 ms
+[17:46:59][INFO ][UserDao.java: 20] - doorwinbell
+[17:46:59][INFO ][UserController.java: 265] - goMypage!!!!
+[17:46:59][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:48:12][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:48:13][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 769 ms
+[17:48:13][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:48:14][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1330 ms
+[17:48:15][INFO ][UserDao.java: 20] - doorwinbell
+[17:48:15][INFO ][UserController.java: 265] - goMypage!!!!
+[17:48:15][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:48:37][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'profileUrl': rejected value [MultipartFile[field="profileUrl", filename=kakaoLB.png, contentType=image/png, size=17685]]; codes [typeMismatch.user.profileUrl,typeMismatch.profileUrl,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.profileUrl,profileUrl]; arguments []; default message [profileUrl]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl': no matching editors or conversion strategy found]]
+[17:51:54][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:51:55][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 833 ms
+[17:51:55][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:51:56][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1259 ms
+[17:51:57][INFO ][UserDao.java: 20] - doorwinbell
+[17:51:57][INFO ][UserController.java: 265] - goMypage!!!!
+[17:51:57][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:52:12][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'profileUrl': rejected value [MultipartFile[field="profileUrl", filename=kakaoLB.png, contentType=image/png, size=17685]]; codes [typeMismatch.user.profileUrl,typeMismatch.profileUrl,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.profileUrl,profileUrl]; arguments []; default message [profileUrl]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl': no matching editors or conversion strategy found]]
+[17:53:49][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:53:50][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 802 ms
+[17:53:50][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:53:52][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1346 ms
+[17:53:55][INFO ][UserDao.java: 20] - doorwinbell
+[17:53:55][INFO ][UserController.java: 265] - goMypage!!!!
+[17:53:55][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:54:15][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'profileUrl': rejected value [MultipartFile[field="profileUrl", filename=kakaoLB.png, contentType=image/png, size=17685]]; codes [typeMismatch.user.profileUrl,typeMismatch.profileUrl,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.profileUrl,profileUrl]; arguments []; default message [profileUrl]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl': no matching editors or conversion strategy found]]
+[17:58:04][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[17:58:05][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 773 ms
+[17:58:05][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[17:58:06][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1302 ms
+[17:58:16][INFO ][UserDao.java: 20] - doorwinbell
+[17:58:16][INFO ][UserController.java: 265] - goMypage!!!!
+[17:58:16][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[17:58:29][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'profileUrl': rejected value [MultipartFile[field="profileUrl", filename=kakaoLB.png, contentType=image/png, size=17685]]; codes [typeMismatch.user.profileUrl,typeMismatch.profileUrl,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.profileUrl,profileUrl]; arguments []; default message [profileUrl]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl': no matching editors or conversion strategy found]]
+[18:03:46][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:03:46][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 797 ms
+[18:03:46][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:03:48][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1299 ms
+[18:04:25][INFO ][UserDao.java: 20] - doorwinbell
+[18:04:25][INFO ][UserController.java: 265] - goMypage!!!!
+[18:04:25][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[18:04:38][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'profileUrl': rejected value [MultipartFile[field="profileUrl", filename=kakaoLB.png, contentType=image/png, size=17685]]; codes [typeMismatch.user.profileUrl,typeMismatch.profileUrl,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.profileUrl,profileUrl]; arguments []; default message [profileUrl]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl': no matching editors or conversion strategy found]]
+[18:08:30][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:08:31][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 950 ms
+[18:08:31][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:08:32][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1561 ms
+[18:08:49][INFO ][UserDao.java: 20] - doorwinbell
+[18:08:49][INFO ][UserController.java: 265] - goMypage!!!!
+[18:08:49][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[18:08:50][INFO ][UserDao.java: 20] - doorwinbell
+[18:08:50][INFO ][UserController.java: 265] - goMypage!!!!
+[18:08:50][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[18:09:08][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'profileUrl': rejected value [MultipartFile[field="profileUrl", filename=kakaoLB.png, contentType=image/png, size=17685]]; codes [typeMismatch.user.profileUrl,typeMismatch.profileUrl,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.profileUrl,profileUrl]; arguments []; default message [profileUrl]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl': no matching editors or conversion strategy found]]
+[18:16:16][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:16:16][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 925 ms
+[18:16:17][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:16:18][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1476 ms
+[18:16:44][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[18:16:44][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 841 ms
+[18:16:44][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[18:16:46][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1532 ms
+[18:16:48][INFO ][UserDao.java: 20] - doorwinbell
+[18:16:48][INFO ][UserController.java: 265] - goMypage!!!!
+[18:16:48][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$Blh.zf653CzbR0Sr7jx8Dux5H52SuojDUsrznLMUFjTSgaYoZJXX., email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-05, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[18:17:01][INFO ][UserController.java: 444] - 첨부 파일명 변경 확인 : kakaoLB.png, 20240407181701.png
+[18:17:01][INFO ][UserController.java: 458] - 새로운 암호 : Tmdwhd0711!, 11
+[18:17:01][WARN ][BCryptPasswordEncoder.java: 130] - Encoded password does not look like BCrypt
+[18:18:02][INFO ][UserDao.java: 20] - doorwinbell
+[18:18:02][INFO ][UserController.java: 265] - goMypage!!!!
+[18:18:02][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$bGI5QNtLN4yAsb2YNvr4wO4CedeaqoJWChbHGh7aNLYwqoFnr2W02, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407181701.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[19:07:47][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:07:48][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 778 ms
+[19:07:48][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:07:49][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1285 ms
+[19:07:51][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[19:07:51][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@10733947
+[19:07:51][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@4528ecbf
+[19:07:57][INFO ][UserDao.java: 20] - doorwinbell
+[19:07:57][INFO ][UserController.java: 284] - userID!!!!!!!!!!!!!!!doorwinbell
+[19:07:57][INFO ][UserController.java: 286] - user.getPassWd() : Tmdwhd0711!
+[19:07:57][INFO ][UserController.java: 287] - loginUser.getPassWd() : $2a$10$bGI5QNtLN4yAsb2YNvr4wO4CedeaqoJWChbHGh7aNLYwqoFnr2W02
+[19:07:57][INFO ][UserController.java: 293] - 성공!!!!!!!!!!!!!!!
+[19:07:57][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[19:07:59][INFO ][UserDao.java: 20] - doorwinbell
+[19:07:59][INFO ][UserController.java: 265] - goMypage!!!!
+[19:07:59][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$bGI5QNtLN4yAsb2YNvr4wO4CedeaqoJWChbHGh7aNLYwqoFnr2W02, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407181701.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[19:09:11][INFO ][UserDao.java: 20] - doorwinbell
+[19:09:11][INFO ][UserController.java: 265] - goMypage!!!!
+[19:09:11][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$bGI5QNtLN4yAsb2YNvr4wO4CedeaqoJWChbHGh7aNLYwqoFnr2W02, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[19:09:34][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'profileUrl': rejected value [MultipartFile[field="profileUrl", filename=kakaoLB.png, contentType=image/png, size=17685]]; codes [typeMismatch.user.profileUrl,typeMismatch.profileUrl,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.profileUrl,profileUrl]; arguments []; default message [profileUrl]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl': no matching editors or conversion strategy found]]
+[19:21:04][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:21:05][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 779 ms
+[19:21:05][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:21:06][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+[19:21:06][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:960)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4641)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4948)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 50 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.sdm.ssm.user.controller.UserController.<init>(UserController.java:426)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 52 more
+[19:21:06][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:21:06][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+[19:21:06][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:747)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:116)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 37 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.sdm.ssm.user.controller.UserController.<init>(UserController.java:426)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 39 more
+[19:21:06][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:21:06][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+[19:21:06][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:747)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:116)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 37 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.sdm.ssm.user.controller.UserController.<init>(UserController.java:426)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 39 more
+[19:21:30][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:21:30][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+[19:21:30][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:747)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:116)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 37 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	renameFileName cannot be resolved to a variable
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.sdm.ssm.user.controller.UserController.<init>(UserController.java:426)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 39 more
+[19:21:34][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:21:35][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 777 ms
+[19:21:35][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:21:36][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+[19:21:36][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:960)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4641)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4948)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 50 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.sdm.ssm.user.controller.UserController.<init>(UserController.java:463)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 52 more
+[19:21:36][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:21:36][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+[19:21:36][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:747)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:116)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 37 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.sdm.ssm.user.controller.UserController.<init>(UserController.java:463)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 39 more
+[19:21:43][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:21:43][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+[19:21:43][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:747)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:116)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 37 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.sdm.ssm.user.controller.UserController.<init>(UserController.java:463)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 39 more
+[19:21:57][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:21:57][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+[19:21:57][ERROR][FrameworkServlet.java: 534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\spring_workspace_project\ssm\target\classes\com\sdm\ssm\user\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:143)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1106)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1063)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:747)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:116)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sdm.ssm.user.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 37 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.sdm.ssm.user.controller.UserController.<init>(UserController.java:463)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 39 more
+[19:22:00][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:22:01][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 772 ms
+[19:22:01][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:22:02][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1265 ms
+[19:22:04][INFO ][UserDao.java: 20] - doorwinbell
+[19:22:04][INFO ][UserController.java: 265] - goMypage!!!!
+[19:22:04][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$bGI5QNtLN4yAsb2YNvr4wO4CedeaqoJWChbHGh7aNLYwqoFnr2W02, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[19:22:17][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'profileUrl': rejected value [MultipartFile[field="profileUrl", filename=kakaoLB.png, contentType=image/png, size=17685]]; codes [typeMismatch.user.profileUrl,typeMismatch.profileUrl,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.profileUrl,profileUrl]; arguments []; default message [profileUrl]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.commons.CommonsMultipartFile' to required type 'java.lang.String' for property 'profileUrl': no matching editors or conversion strategy found]]
+[19:23:03][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:23:03][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 785 ms
+[19:23:03][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:23:05][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1299 ms
+[19:23:06][INFO ][UserDao.java: 20] - doorwinbell
+[19:23:06][INFO ][UserController.java: 265] - goMypage!!!!
+[19:23:06][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$bGI5QNtLN4yAsb2YNvr4wO4CedeaqoJWChbHGh7aNLYwqoFnr2W02, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[19:23:24][INFO ][UserController.java: 426] - 첨부 파일명 변경 확인 : kakaoLB.png
+[19:23:24][INFO ][UserController.java: 440] - 새로운 암호 : Tmdwhd0711!, 11
+[19:23:24][WARN ][BCryptPasswordEncoder.java: 130] - Encoded password does not look like BCrypt
+[19:25:47][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:25:48][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 778 ms
+[19:25:48][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:25:50][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1332 ms
+[19:38:06][INFO ][UserDao.java: 20] - doorwinbell
+[19:38:06][INFO ][UserController.java: 265] - goMypage!!!!
+[19:38:06][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$RAi.iuGkrDpaouhD8JEMmeSIyWZZfpndcjhTczdz5yp0rU7DVFH2i, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=kakaoLB.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[19:38:30][INFO ][UserDao.java: 20] - doorwinbell
+[19:38:30][INFO ][UserController.java: 265] - goMypage!!!!
+[19:38:30][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$RAi.iuGkrDpaouhD8JEMmeSIyWZZfpndcjhTczdz5yp0rU7DVFH2i, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=kakaoLB.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[19:40:05][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[19:40:06][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 812 ms
+[19:40:06][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[19:40:07][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1330 ms
+[19:40:09][INFO ][UserDao.java: 20] - doorwinbell
+[19:40:09][INFO ][UserController.java: 265] - goMypage!!!!
+[19:40:09][INFO ][UserController.java: 266] - loginUser : User [id=22, userId=doorwinbell, passWd=$2a$10$RAi.iuGkrDpaouhD8JEMmeSIyWZZfpndcjhTczdz5yp0rU7DVFH2i, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=kakaoLB.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-05, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[19:40:35][INFO ][UserController.java: 425] - 첨부 파일명 변경 확인 : kakaoLB.png, 20240407194035.png
+[19:40:35][INFO ][UserController.java: 439] - 새로운 암호 : tMDWHD0711!, 11
+[19:40:35][WARN ][BCryptPasswordEncoder.java: 130] - Encoded password does not look like BCrypt
+[20:02:24][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[20:02:25][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 801 ms
+[20:02:25][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[20:02:26][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1371 ms
+[20:02:30][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:02:30][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@225222d6
+[20:02:30][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@322d2ac7
+[20:03:04][INFO ][UserController.java: 108] - 0. kcallback.doSmc3lr5T0y_r7YSZ4djrU-SZun1cgi9pIKsPWSx25aQQjXhhU66tiDkozHUKPXVbAAABjrg56FDRDLJpR7eCqA
+[20:03:04][INFO ][UserController.java: 112] - 1. kcallback.do : {"access_token":"3hQIOkTJyAasVgiIZQkyuU8dVP_WmyquRgEKPXUbAAABjrg56azkNSpXBP-m7Q","token_type":"bearer","refresh_token":"-VtYl1Sz9EGSrsmPxvgDrxMi8Cn5V-dFrU4KPXUbAAABjrg56ajkNSpXBP-m7Q","id_token":"eyJraWQiOiI5ZjI1MmRhZGQ1ZjIzM2Y5M2QyZmE1MjhkMTJmZWEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MTZlYjJmOWFlMTc2NTdhMzQ4MjY4ZmEyYzI5NmU3NyIsInN1YiI6IjM0MjAyNTAxNzUiLCJhdXRoX3RpbWUiOjE3MTI0ODc3ODYsImlzcyI6Imh0dHBzOi8va2F1dGgua2FrYW8uY29tIiwibmlja25hbWUiOiLrrLjsirnsooUiLCJleHAiOjE3MTI0OTQ5ODYsImlhdCI6MTcxMjQ4Nzc4NiwicGljdHVyZSI6Imh0dHA6Ly9rLmtha2FvY2RuLm5ldC9kbi9ZWk9EZC9idHJWZmpSRU9JUi9rcE03d0R1ZjdSbE83akZDWmRjVk0xL2ltZ18xMTB4MTEwLmpwZyJ9.EuPQ_MTIhgPZGV_lgoBmAt7h_qsitWStFPZghWaNStgBnPrlTGq2Pywj6LYRGWgA-2zxjQjF-_SL7ts0iukFFgJ1VzqwaVvYjvqz5ORNy811X87vuvBf4MZ6ufmwE-yH3PKHM23KSs7DcogXv-_dzaHQRuxlgZWx382hn_LjqhONjwaY8WgNnFxLpdWxqNKqs1ITDdJTCGqx7mUeIa5xbdaInU0z3TE3mkzHJd1ONCsc2Fbe_9IFeOFcsg4Du07ePpSj_5Bns9Uj3rDRMJWl1Uyai2bogRWeUva6xaF68ePiMBtr6t_wu2MESxUHgG9sR7GrNH2RlmwvWP18_mPboA","expires_in":7199,"scope":"profile_image openid profile_nickname","refresh_token_expires_in":5183999}
+[20:03:04][INFO ][UserController.java: 116] - 2. kcallback.do : "3hQIOkTJyAasVgiIZQkyuU8dVP_WmyquRgEKPXUbAAABjrg56azkNSpXBP-m7Q"
+[20:03:04][INFO ][KakaoLoginAuth.java: 90] - jsonPrimitive!!! : 3hQIOkTJyAasVgiIZQkyuU8dVP_WmyquRgEKPXUbAAABjrg56azkNSpXBP-m7Q
+[20:03:04][INFO ][KakaoLoginAuth.java: 93] - post!!! : POST https://kapi.kakao.com/v2/user/me HTTP/1.1
+[20:03:05][INFO ][UserController.java: 120] - 3. kcallback.do : {"id":3420250175,"connected_at":"2024-04-03T08:15:19Z","properties":{"nickname":"문승종","profile_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg"},"kakao_account":{"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}}
+[20:03:05][INFO ][UserController.java: 125] - 4. kcallback.do : null
+[20:03:05][INFO ][UserController.java: 129] - 5. kcallback.do : {"profile_nickname_needs_agreement":false,"profile_image_needs_agreement":false,"profile":{"nickname":"문승종","thumbnail_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_110x110.jpg","profile_image_url":"http://k.kakaocdn.net/dn/YZODd/btrVfjREOIR/kpM7wDuf7RlO7jFCZdcVM1/img_640x640.jpg","is_default_image":false,"is_default_nickname":false}}
+[20:03:05][INFO ][UserDao.java: 20] - 3420250175
+[20:03:31][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:03:31][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@57426129
+[20:03:31][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@382872e9
+[20:03:37][INFO ][UserDao.java: 20] - doorwinbell
+[20:03:37][INFO ][UserController.java: 284] - userID!!!!!!!!!!!!!!!doorwinbell
+[20:03:37][INFO ][UserController.java: 286] - user.getPassWd() : Tmdwhd0711!
+[20:03:37][INFO ][UserController.java: 287] - loginUser.getPassWd() : $2a$10$HlTGl0lSzI6tLR2G98ozRurMoomMyR1iLMOX0FbfTeLCqEegdJIOy
+[20:03:42][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:03:42][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@67aec767
+[20:03:42][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@7633ef66
+[20:03:52][INFO ][UserDao.java: 20] - doorwinbell
+[20:03:52][INFO ][UserController.java: 284] - userID!!!!!!!!!!!!!!!doorwinbell
+[20:03:52][INFO ][UserController.java: 286] - user.getPassWd() : Tmdwhd0711!
+[20:03:52][INFO ][UserController.java: 287] - loginUser.getPassWd() : $2a$10$HlTGl0lSzI6tLR2G98ozRurMoomMyR1iLMOX0FbfTeLCqEegdJIOy
+[20:03:57][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:03:57][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3fe0e682
+[20:03:57][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@3780e5df
+[20:04:06][INFO ][UserDao.java: 20] - doorwinbell
+[20:04:06][INFO ][UserController.java: 284] - userID!!!!!!!!!!!!!!!doorwinbell
+[20:04:06][INFO ][UserController.java: 286] - user.getPassWd() : Tmdwhd0711!
+[20:04:06][INFO ][UserController.java: 287] - loginUser.getPassWd() : $2a$10$HlTGl0lSzI6tLR2G98ozRurMoomMyR1iLMOX0FbfTeLCqEegdJIOy
+[20:05:48][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:05:48][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6fc01ae5
+[20:05:48][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5c674498
+[20:05:49][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:05:49][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3a78fe50
+[20:05:49][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@15e2a7d1
+[20:05:53][INFO ][UserController.java: 315] - result!!!!!!!!!!!!!!ok
+[20:06:03][INFO ][UserController.java: 359] - 랜덤숫자 : 350323
+[20:06:18][INFO ][UserController.java: 371] - 입력 : Tmdwhd0711!
+[20:06:18][INFO ][UserController.java: 373] - enroll.do : User [id=0, userId=doorwinbell, passWd=$2a$10$HSIFnWWGc3sveI8bT08xyuKMSIIIP6djtey8LaqsP0zLi2dWrFddG, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=null, serviceDate=null, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:06:18][INFO ][UserController.java: 375] - 암호화 : $2a$10$HSIFnWWGc3sveI8bT08xyuKMSIIIP6djtey8LaqsP0zLi2dWrFddG
+[20:06:18][INFO ][UserDao.java: 30] - User [id=0, userId=doorwinbell, passWd=$2a$10$HSIFnWWGc3sveI8bT08xyuKMSIIIP6djtey8LaqsP0zLi2dWrFddG, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=null, serviceDate=null, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:06:24][INFO ][UserDao.java: 20] - doorwinbell
+[20:06:24][INFO ][UserController.java: 284] - userID!!!!!!!!!!!!!!!doorwinbell
+[20:06:24][INFO ][UserController.java: 286] - user.getPassWd() : Tmdwhd0711!
+[20:06:24][INFO ][UserController.java: 287] - loginUser.getPassWd() : $2a$10$HSIFnWWGc3sveI8bT08xyuKMSIIIP6djtey8LaqsP0zLi2dWrFddG
+[20:06:24][INFO ][UserController.java: 293] - 성공!!!!!!!!!!!!!!!
+[20:06:27][INFO ][UserDao.java: 20] - doorwinbell
+[20:06:27][INFO ][UserController.java: 265] - goMypage!!!!
+[20:06:27][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$HSIFnWWGc3sveI8bT08xyuKMSIIIP6djtey8LaqsP0zLi2dWrFddG, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=null, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:06:39][INFO ][UserController.java: 425] - 첨부 파일명 변경 확인 : kakaoLB.png, 20240407200639.png
+[20:06:39][INFO ][UserController.java: 439] - 새로운 암호 : Tmdwhd0711!, 11
+[20:06:39][WARN ][BCryptPasswordEncoder.java: 130] - Encoded password does not look like BCrypt
+[20:06:47][INFO ][UserDao.java: 20] - doorwinbell
+[20:06:47][INFO ][UserController.java: 265] - goMypage!!!!
+[20:06:47][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$yncbLtwN9PHD3RROp3H11.80BlzofxvH2Kd4ux5yUz9VdtXw9L0ve, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407200639.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:07:09][INFO ][UserDao.java: 20] - doorwinbell
+[20:07:09][INFO ][UserController.java: 265] - goMypage!!!!
+[20:07:09][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$yncbLtwN9PHD3RROp3H11.80BlzofxvH2Kd4ux5yUz9VdtXw9L0ve, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407200639.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:08:47][INFO ][UserDao.java: 20] - doorwinbell
+[20:08:47][INFO ][UserController.java: 265] - goMypage!!!!
+[20:08:47][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$yncbLtwN9PHD3RROp3H11.80BlzofxvH2Kd4ux5yUz9VdtXw9L0ve, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407200639.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:08:53][INFO ][UserDao.java: 20] - doorwinbell
+[20:08:53][INFO ][UserController.java: 265] - goMypage!!!!
+[20:08:53][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$yncbLtwN9PHD3RROp3H11.80BlzofxvH2Kd4ux5yUz9VdtXw9L0ve, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407200639.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:11:14][INFO ][UserDao.java: 20] - doorwinbell
+[20:11:14][INFO ][UserController.java: 265] - goMypage!!!!
+[20:11:14][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$yncbLtwN9PHD3RROp3H11.80BlzofxvH2Kd4ux5yUz9VdtXw9L0ve, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407200639.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:13:18][INFO ][UserDao.java: 20] - doorwinbell
+[20:13:18][INFO ][UserController.java: 265] - goMypage!!!!
+[20:13:18][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$yncbLtwN9PHD3RROp3H11.80BlzofxvH2Kd4ux5yUz9VdtXw9L0ve, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407200639.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:13:32][INFO ][UserController.java: 425] - 첨부 파일명 변경 확인 : naverLB.png, 20240407201332.png
+[20:13:32][INFO ][UserController.java: 439] - 새로운 암호 : Tmdwhd0711!, 11
+[20:13:32][WARN ][BCryptPasswordEncoder.java: 130] - Encoded password does not look like BCrypt
+[20:13:36][INFO ][UserDao.java: 20] - doorwinbell
+[20:13:36][INFO ][UserController.java: 265] - goMypage!!!!
+[20:13:36][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$5b/lk3Abcj4pxRhcbRYrRObZelQi/./PGJSFJ3y5xy3RZ38V2Id2q, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407201332.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:31:48][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[20:31:49][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 828 ms
+[20:31:49][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[20:31:50][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1337 ms
+[20:31:51][INFO ][UserDao.java: 20] - doorwinbell
+[20:31:51][INFO ][UserDao.java: 20] - doorwinbell
+[20:31:51][INFO ][UserDao.java: 20] - doorwinbell
+[20:31:51][INFO ][UserController.java: 265] - goMypage!!!!
+[20:31:51][INFO ][UserController.java: 265] - goMypage!!!!
+[20:31:51][INFO ][UserController.java: 265] - goMypage!!!!
+[20:31:51][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$5b/lk3Abcj4pxRhcbRYrRObZelQi/./PGJSFJ3y5xy3RZ38V2Id2q, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407201332.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:31:51][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$5b/lk3Abcj4pxRhcbRYrRObZelQi/./PGJSFJ3y5xy3RZ38V2Id2q, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407201332.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:31:51][INFO ][UserController.java: 266] - loginUser : User [id=23, userId=doorwinbell, passWd=$2a$10$5b/lk3Abcj4pxRhcbRYrRObZelQi/./PGJSFJ3y5xy3RZ38V2Id2q, email=msj102525@ssm.com, userNo=19980711, phone=010-1234-5366, accountNumber=1002158415759, bankName=null, profileUrl=20240407201332.png, isQuit=N, adminOk=N, loginOk=Y, lastModified=2024-04-07, serviceDate=2024-04-07, businessNo=608  25  41865, businessStoreName=장어의힘터]
+[20:32:04][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:32:04][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@12570eb
+[20:32:04][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@57fef8f3
+[20:32:10][INFO ][UserDao.java: 20] - doorwinbell
+[20:32:10][INFO ][UserController.java: 284] - userID!!!!!!!!!!!!!!!doorwinbell
+[20:32:10][INFO ][UserController.java: 286] - user.getPassWd() : Tmdwhd0711!
+[20:32:10][INFO ][UserController.java: 287] - loginUser.getPassWd() : $2a$10$5b/lk3Abcj4pxRhcbRYrRObZelQi/./PGJSFJ3y5xy3RZ38V2Id2q
+[20:32:10][INFO ][UserController.java: 293] - 성공!!!!!!!!!!!!!!!
+[20:32:42][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:32:42][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@46c9f0b3
+[20:32:42][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@3c3cd75e
+[20:37:01][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[20:37:02][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 787 ms
+[20:37:02][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[20:37:04][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1339 ms
+[20:37:10][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:37:10][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@360f102b
+[20:37:10][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@41e0567a
+[20:37:11][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:37:11][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@44dcc85a
+[20:37:11][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5e1c261
+[20:37:41][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:37:41][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7991cf76
+[20:37:41][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@66ad6ba8
+[20:37:55][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:37:55][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@41039df5
+[20:37:55][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@60fe1365
+[20:38:06][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:38:06][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@124f8887
+[20:38:06][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@69d303db
+[20:39:30][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:39:30][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@6e371843
+[20:39:30][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@65f2c019
+[20:40:19][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:40:19][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@154d626e
+[20:40:19][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@5a7f7a53
+[20:41:01][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:41:01][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5626f160
+[20:41:01][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@6d8ff569
+[20:46:14][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:46:14][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@3823237f
+[20:46:14][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@53025287
+[20:50:41][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[20:50:42][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 776 ms
+[20:50:42][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[20:50:43][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1307 ms
+[20:50:45][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:50:45][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@7a9e0ddf
+[20:50:45][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@4d7e3c23
+[20:52:43][INFO ][UserController.java: 365] - 랜덤숫자 : 485143
+[20:53:02][INFO ][UserDao.java: 20] - 
+[20:53:58][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[20:53:59][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 766 ms
+[20:53:59][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[20:54:00][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1236 ms
+[20:54:21][INFO ][UserController.java: 365] - 랜덤숫자 : 563982
+[20:55:32][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:55:32][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@1ef3aa2c
+[20:55:32][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@2d80e773
+[20:55:40][INFO ][UserController.java: 365] - 랜덤숫자 : 663045
+[20:57:19][INFO ][UserController.java: 365] - 랜덤숫자 : 569043
+[20:59:15][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[20:59:15][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@5cb7aa0f
+[20:59:15][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@61bd9842
+[20:59:49][INFO ][UserController.java: 365] - 랜덤숫자 : 397822
+[21:02:17][INFO ][UserController.java: 365] - 랜덤숫자 : 425579
+[21:02:28][INFO ][UserController.java: 365] - 랜덤숫자 : 524549
+[21:03:08][INFO ][UserController.java: 365] - 랜덤숫자 : 903016
+[21:05:31][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:05:31][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 776 ms
+[21:05:32][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:05:33][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1328 ms
+[21:05:35][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[21:05:35][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@2b21c039
+[21:05:35][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@65921f09
+[21:34:18][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:34:19][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSession' defined in class path resource [root-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+[21:34:19][ERROR][ContextLoader.java: 313] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSession' defined in class path resource [root-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4462)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4914)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:590)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 42 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:587)
+	... 45 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:376)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:120)
+	... 47 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1923)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:865)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 51 more
+[21:34:33][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:34:34][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSession' defined in class path resource [root-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+[21:34:34][ERROR][ContextLoader.java: 313] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSession' defined in class path resource [root-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4462)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4914)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:590)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 42 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:587)
+	... 45 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:376)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:120)
+	... 47 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1923)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:865)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 51 more
+[21:34:47][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:34:47][WARN ][AbstractApplicationContext.java: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSession' defined in class path resource [root-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+[21:34:47][ERROR][ContextLoader.java: 313] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSession' defined in class path resource [root-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4462)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4914)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:590)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 42 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:587)
+	... 45 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:376)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:120)
+	... 47 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 77; columnNumber: 10; 요소 유형 "mapper"의 콘텐츠는 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"과(와) 일치해야 합니다.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1923)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:865)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 51 more
+[21:36:43][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:36:43][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 813 ms
+[21:36:43][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:36:45][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1372 ms
+[21:38:52][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:38:53][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 783 ms
+[21:38:53][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:38:54][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1295 ms
+[21:38:57][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[21:38:57][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@604cc16e
+[21:38:57][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@6f42d607
+[21:39:06][INFO ][UserController.java: 365] - 랜덤숫자 : 564612
+[21:39:34][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[21:39:34][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@12211255
+[21:39:34][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@26a3d71d
+[21:39:51][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:39:52][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 787 ms
+[21:39:52][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:39:53][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1263 ms
+[21:39:57][INFO ][UserController.java: 365] - 랜덤숫자 : 714461
+[21:41:14][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:41:15][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 802 ms
+[21:41:15][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:41:16][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1326 ms
+[21:41:19][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=null, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:42:17][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=null, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:42:28][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:42:29][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 820 ms
+[21:42:29][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:42:30][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1316 ms
+[21:42:37][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=null, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:43:17][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:43:18][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 764 ms
+[21:43:18][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:43:19][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1301 ms
+[21:43:21][INFO ][KakaoLoginAuth.java: 41] - kakaoURL : https://kauth.kakao.com/oauth/authorize?client_id=416eb2f9ae17657a348268fa2c296e77&redirect_uri=http://127.0.0.1:8080/ssm/kcallback.do&response_type=code
+[21:43:21][INFO ][NaverLoginAuth.java: 63] - naverURL : com.github.scribejava.core.oauth.OAuth20Service@54f5ed54
+[21:43:21][INFO ][GoogleLoginAuth.java: 63] - googleURL : com.github.scribejava.core.oauth.OAuth20Service@a0d68ce
+[21:43:27][INFO ][UserController.java: 365] - 랜덤숫자 : 473306
+[21:43:33][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=null, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:45:10][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:45:11][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 766 ms
+[21:45:11][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:45:12][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1262 ms
+[21:45:15][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:49:36][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[21:49:37][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 791 ms
+[21:49:37][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[21:49:38][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1395 ms
+[21:49:40][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:51:25][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:51:45][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:52:07][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:53:58][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:55:41][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:55:42][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:55:42][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:55:42][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:55:42][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:55:43][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:55:43][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:56:01][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:56:32][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:57:51][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:58:16][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:59:33][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[21:59:50][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[22:04:10][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]
+[22:05:09][INFO ][UserController.java: 444] - User [id=0, userId=doorwinbell, passWd=null, email=null, userNo=null, phone=null, accountNumber=null, bankName=null, profileUrl=null, isQuit=null, adminOk=null, loginOk=null, lastModified=2024-04-07, serviceDate=null, businessNo=null, businessStoreName=null]

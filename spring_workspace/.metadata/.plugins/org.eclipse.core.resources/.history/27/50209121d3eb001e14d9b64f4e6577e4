@@ -1,6 +1,0 @@
-package org.myweb.first.test.model.vo;
-
-public class TestVO implements java.io.Serializable{
-	
-	
-}
