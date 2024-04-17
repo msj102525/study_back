@@ -1,0 +1,78 @@
+[09:39:39][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[09:39:41][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1243 ms
+[09:39:41][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[09:39:42][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1155 ms
+[09:40:10][INFO ][MemberController.java: 95] - login.do : Member [userId=user03, userPwd=pass03, userName=null, gender=null, age=0, phone=null, email=null, enrollDate=null, lastModified=null, signType=null, adminYN=null, loginOk=null, photoFileName=null]
+[09:41:00][INFO ][LoginCheckIntercepter.java: 29] - 로그인 상태 : /first/bwform.do 요청
+[09:45:07][INFO ][BoardController.java: 247] - binsert.do : Board [boardNum=0, boardWriter=user03, boardTitle=수정을 위한 원글 등록, boardContent=수정을 위한 파일첨부 및 원글 등록 테스트글입니다., boardOriginalFileName=null, boardRenameFileName=null, boardRef=0, boardReplyRef=0, boardLev=0, boardReplySeq=0, boardReadCount=0, boardDate=null]
+[09:45:07][INFO ][BoardController.java: 265] - 첨부 파일명 변경 확인 : git주의사항.txt, 20240326094507.txt
+[10:10:31][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[10:10:32][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1164 ms
+[10:10:32][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[10:10:33][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1118 ms
+[10:11:12][INFO ][BoardController.java: 121] - 첨부 파일명 변경 확인 : 이클립스_→_github_연동_및_업로드.pdf, 20240326101112.pdf
+[10:11:46][INFO ][BoardController.java: 121] - 첨부 파일명 변경 확인 : github_→_eclipse로_연동_및_불러오기.pdf, 20240326101146.pdf
+[10:17:43][INFO ][MemberController.java: 95] - login.do : Member [userId=user02, userPwd=pass02, userName=null, gender=null, age=0, phone=null, email=null, enrollDate=null, lastModified=null, signType=null, adminYN=null, loginOk=null, photoFileName=null]
+[12:32:07][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:32:09][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1175 ms
+[12:32:09][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:32:10][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1136 ms
+[12:32:33][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:32:34][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1189 ms
+[12:32:34][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:32:35][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1120 ms
+[12:34:09][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[12:36:52][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:36:53][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1233 ms
+[12:36:53][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:36:54][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1148 ms
+[12:37:25][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'limit' for method parameter type int is not present]
+[12:43:06][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[12:43:07][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1175 ms
+[12:43:07][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[12:43:08][INFO ][FrameworkServlet.java: 547] - Completed initialization in 1171 ms
+[13:15:03][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[13:15:04][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1018 ms
+[13:15:04][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[13:15:05][INFO ][FrameworkServlet.java: 547] - Completed initialization in 960 ms
+[13:15:34][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[13:15:35][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1015 ms
+[13:15:35][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[13:15:36][INFO ][FrameworkServlet.java: 547] - Completed initialization in 957 ms
+[13:19:24][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[13:19:25][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1032 ms
+[13:19:25][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[13:19:26][INFO ][FrameworkServlet.java: 547] - Completed initialization in 939 ms
+[13:19:43][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'noticeno' for method parameter type int is not present]
+[16:10:33][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:10:34][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1024 ms
+[16:10:34][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:10:35][INFO ][FrameworkServlet.java: 547] - Completed initialization in 963 ms
+[16:10:52][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'noticeno' for method parameter type int is not present]
+[16:13:44][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:13:45][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1007 ms
+[16:13:45][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:13:46][INFO ][FrameworkServlet.java: 547] - Completed initialization in 971 ms
+[16:14:48][WARN ][AbstractHandlerExceptionResolver.java: 208] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[16:16:41][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:16:42][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1028 ms
+[16:16:42][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:16:43][INFO ][FrameworkServlet.java: 547] - Completed initialization in 960 ms
+[16:17:39][INFO ][MemberController.java: 95] - login.do : Member [userId=admin, userPwd=admin, userName=null, gender=null, age=0, phone=null, email=null, enrollDate=null, lastModified=null, signType=null, adminYN=null, loginOk=null, photoFileName=null]
+[16:18:26][INFO ][NoticeController.java: 150] - ninsert.do : Notice [noticeNo=0, noticeTitle=관리자가 올리는 공지글 테스트, noticeDate=null, noticeWriter=admin, noticeContent=공지글 등록 테스트 글입니다., originalFilePath=null, renameFilePath=null, importance=Y, impEndDate=2024-03-31, readCount=0]
+[16:18:26][INFO ][NoticeController.java: 167] - 첨부파일명 확인 : 이클립스_→_github_연동_및_업로드.pdf, 20240326161826.pdf
+[16:18:49][INFO ][NoticeController.java: 251] - nupdate.do : Notice [noticeNo=13, noticeTitle=관리자가 올리는 공지글 테스트 수정, noticeDate=null, noticeWriter=admin, noticeContent=공지글 등록 테스트 글입니다., originalFilePath=이클립스_→_github_연동_및_업로드.pdf, renameFilePath=20240326161826.pdf, importance=Y, impEndDate=2024-03-31, readCount=0]
+[16:19:09][INFO ][NoticeController.java: 251] - nupdate.do : Notice [noticeNo=13, noticeTitle=관리자가 올리는 공지글 테스트 수정, noticeDate=null, noticeWriter=admin, noticeContent=공지글 등록 테스트 글입니다., originalFilePath=이클립스_→_github_연동_및_업로드.pdf, renameFilePath=20240326161826.pdf, importance=Y, impEndDate=2024-03-31, readCount=0]
+[16:19:09][INFO ][NoticeController.java: 280] - 첨부파일명 확인 : git주의사항.txt, 20240326161909.txt
+[16:23:44][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:23:45][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1016 ms
+[16:23:45][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:23:46][INFO ][FrameworkServlet.java: 547] - Completed initialization in 974 ms
+[16:31:14][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:31:15][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1018 ms
+[16:31:15][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:31:16][INFO ][FrameworkServlet.java: 547] - Completed initialization in 948 ms
+[16:32:25][INFO ][ContextLoader.java: 271] - Root WebApplicationContext: initialization started
+[16:32:26][INFO ][ContextLoader.java: 307] - Root WebApplicationContext initialized in 1021 ms
+[16:32:26][INFO ][FrameworkServlet.java: 525] - Initializing Servlet 'appServlet'
+[16:32:27][INFO ][FrameworkServlet.java: 547] - Completed initialization in 975 ms

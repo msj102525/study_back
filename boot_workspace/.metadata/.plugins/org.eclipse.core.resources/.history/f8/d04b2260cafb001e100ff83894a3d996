@@ -1,0 +1,24 @@
+# server port
+server.port=8888
+
+# contextpath
+# spring.application.name=first
+server.servlet.context-path=/first
+
+# encoding
+server.servlet.encoding.charset=UTF-8
+server.servlet.encoding.force=true
+server.servlet.encoding.enabled=true
+
+#dbms 연결
+spring.datasource.url=jdbc:oracle:thin:@127.0.0.1:1521:xe
+spring.datasource.dbcp2.driver-class-name=oracle.jdbc.OracleDriver
+spring.datasource.username=C##testweb
+spring.datasource.password=testweb
+
+# mybatis 연결 설정
+# mybatis.config-location=classpath:mybatis-config.xml
+mybatis.mapper-locations=classpath:mappers/*-mapper.xml
+mybatis.type-aliases-package=org.myweb.first.memeber.model.vo, org.myweb.first.board.model.vo, org.myweb.first.notice.model.vo, org.myweb.first.common
+
+
