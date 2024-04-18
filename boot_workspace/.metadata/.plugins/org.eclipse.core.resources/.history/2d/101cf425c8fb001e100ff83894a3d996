@@ -1,6 +1,0 @@
-# server port
-server.port=8888
-
-# contextpath
-# spring.application.name=first
-server.servlet.context-path=/first
