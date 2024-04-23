@@ -34,4 +34,16 @@ public class TestController {
 		mv.setViewName("home");
 		return mv;
 	}
+	
+	@GetMapping("/movepage")
+	public ModelAndView moveBoardPage(ModelAndView mv) {
+		mv.setViewName("board/boardWritePage");
+		return mv;
+	}
 }
+
+
+
+
+
+
