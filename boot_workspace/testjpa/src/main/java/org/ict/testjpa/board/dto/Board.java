@@ -11,7 +11,7 @@ import java.sql.Date;
 @Entity	//jpa 에서는 dto클래스를 반드시 Entity로 등록해야 함
 @Table(name="board")
 @SequenceGenerator(
-		name = "board_seq_bnum", sequenceName = "seq_bnum", initialValue = 21, allocationSize = 1)
+		name = "board_seq_bnum", sequenceName = "seq_bnum", initialValue = 14, allocationSize = 1)
 public class Board{
 	@Id //board테이블의 primary key 와 연결 매핑되는 property에 지정해야 함 (반드시)
 	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "board_seq_bnum")

@@ -18,33 +18,32 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/boards")
 public class BoardController {
-    // @Autowired
     private final BoardService service;
 
     @GetMapping
     public ResponseEntity<List<Board>> selectAll() {
         log.info("selectAll()");
-        return new ResponseEntity<>(service.selectList(), HttpStatus.OK);
+        return new ResponseEntity<>(service.selectList(),HttpStatus.OK);
     }
 
     @GetMapping("/{boardNum}")
     public ResponseEntity<Board> selectOne(@PathVariable("boardNum") long boardNum) {
         log.info("selectOne()");
-        Optional<Board> board = service.selectBoard(boardNum);
-        return new ResponseEntity<>(board.get(), HttpStatus.OK);
+        Optional<Board> optionalBoard = service.selectBoard(boardNum);
+        return new ResponseEntity<>(optionalBoard.get(), HttpStatus.OK);
     }
 
     @PostMapping
     public ResponseEntity<Board> insert(@RequestBody Board board) {
-        log.info("insert");
+        log.info("insert()");
         board.setBoardDate(new Date(Calendar.getInstance().getTimeInMillis()));
         service.insertBoard(board);
         return new ResponseEntity<>(board, HttpStatus.OK);
     }
 
-    @PutMapping
+    @PutMapping("/{boardNum}") // 요청 경로에 반드시 pk 에 해당하는 값을 전송(안보내면 에러)
     public ResponseEntity<Board> update(@RequestBody Board board) {
-        log.info("update");
+        log.info("update()");
         board.setBoardDate(new Date(Calendar.getInstance().getTimeInMillis()));
         service.updateBoard(board);
         return new ResponseEntity<>(board, HttpStatus.OK);
@@ -52,7 +51,7 @@ public class BoardController {
 
     @DeleteMapping("/{boardNum}")
     public ResponseEntity<Void> delete(@PathVariable("boardNum") long boardNum) {
-        log.info("delete");
+        log.info("delete()");
         service.deleteBoard(boardNum);
         return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
     }
