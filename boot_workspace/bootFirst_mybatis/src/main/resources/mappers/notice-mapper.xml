@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+"-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.ict.first.notice.mapper.NoticeMapper">
+
+	<resultMap type="Notice" id="resultNotice">
+		<result column="NOTICENO" property="noticeNo" />
+		<result column="NOTICETITLE" property="noticeTitle" />
+		<result column="NOTICEDATE" property="noticeDate" />
+		<result column="NOTICEWRITER" property="noticeWriter" />
+		<result column="NOTICECONTENT" property="noticeContent" />
+		<result column="ORIGINAL_FILEPATH" property="originalFilePath" />
+		<result column="RENAME_FILEPATH" property="renameFilePath" />
+		<result column="IMPORTANCE" property="importance" />
+		<result column="IMP_END_DATE" property="impEndDate" />
+		<result column="READCOUNT" property="readCount" />
+	</resultMap>
+	
+	<resultMap type="Notice" id="resultTop3">
+		<result column="NOTICENO" property="noticeNo" />
+		<result column="NOTICETITLE" property="noticeTitle" />
+		<result column="NOTICEDATE" property="noticeDate" />		
+	</resultMap>
+	
+	<select id="selectNewTop3" resultMap="resultTop3">
+		<![CDATA[
+		SELECT * 
+		FROM (SELECT ROWNUM RNUM, NOTICENO, NOTICETITLE, NOTICEDATE 
+		FROM ( SELECT * FROM NOTICE 		        
+		        ORDER BY NOTICEDATE DESC)) 
+		WHERE RNUM >= 1 AND RNUM <= 3
+		]]>
+	</select>
+	
+	<select id="selectList" parameterType="Paging" resultMap="resultNotice">
+		select * from (select rownum rnum, noticeno, noticetitle, noticedate, 
+				            noticewriter, noticecontent, original_filepath, rename_filepath, 
+				            importance, imp_end_date, readcount 
+				      from (select * from notice 
+				            order by importance desc, noticedate desc, noticeno desc)
+				     ) 
+		where rnum between #{ startRow } and #{ endRow }
+	</select>
+
+	<select id="selectOne" parameterType="_int" resultMap="resultNotice">
+		select * from notice where noticeno = #{ no }
+	</select>	
+	
+	<select id="getListCount" resultType="_int">
+		select count(*) from notice
+	</select>
+	
+	<select id="getSearchTitleCount" parameterType="string" resultType="_int">
+		select count(*) from notice where noticetitle like '%' || #{ keyword } || '%'
+	</select>
+	
+	<select id="getSearchContentCount" parameterType="string" resultType="_int">
+		select count(*) from notice where noticecontent like '%' || #{ keyword } || '%'
+	</select>
+	
+	<select id="getSearchDateCount" parameterType="SearchDate" resultType="_int">
+		select count(*) from notice where noticedate between #{ begin } and #{ end }
+	</select>
+	
+	<select id="selectSearchTitle" parameterType="Search" resultMap="resultNotice">
+		select * 
+		from (select rownum rnum, noticeno, noticetitle, noticedate, 
+		            noticewriter, noticecontent, original_filepath, rename_filepath, 
+		            importance, imp_end_date, readcount 
+		      from (select * from notice 
+		           where noticetitle like '%' || #{ keyword } || '%' 
+		           order by importance desc, noticeno desc)
+		     ) 
+		where rnum between #{ startRow } and #{ endRow }
+	</select>
+	
+	<select id="selectSearchTitleKeyword" parameterType="string" resultMap="resultNotice">
+	     select * from notice 
+	           where noticetitle like '%' || #{ keyword } || '%' 
+	           order by importance desc, noticeno desc
+	</select>
+	
+	<select id="selectSearchContent" parameterType="Search" resultMap="resultNotice">
+		select * 
+		from (select rownum rnum, noticeno, noticetitle, noticedate, 
+		            noticewriter, noticecontent, original_filepath, rename_filepath, 
+		            importance, imp_end_date, readcount 
+		      from (select * from notice 
+		           where noticecontent like '%' || #{ keyword } || '%' 
+		           order by importance desc, noticeno desc)
+		     ) 
+		where rnum between #{ startRow } and #{ endRow }
+	</select>
+	
+	<select id="selectSearchDate" parameterType="Search" resultMap="resultNotice">
+		select * 
+		from (select rownum rnum, noticeno, noticetitle, noticedate, 
+		            noticewriter, noticecontent, original_filepath, rename_filepath, 
+		            importance, imp_end_date, readcount 
+		      from (select * from notice 
+		           where noticedate between #{ begin } and #{ end } 
+		           order by importance desc, noticeno desc)
+		     ) 
+		where rnum between #{ startRow } and #{ endRow }
+	</select>
+	
+	<update id="addReadCount" parameterType="_int">
+		update notice 
+		set readcount = readcount + 1 
+		where noticeno = #{ no }
+	</update>
+	
+	<insert id="insertNotice" parameterType="Notice">
+		insert into notice 
+		<if test="importance != null">
+		values ((select max(noticeno) + 1 from notice), 
+				#{noticeTitle}, sysdate, #{noticeWriter}, #{noticeContent}, 
+				#{originalFilePath}, #{renameFilePath}, #{importance}, #{impEndDate}, default)
+		</if>
+		<if test="importance == null">
+		values ((select max(noticeno) + 1 from notice), 
+				#{noticeTitle}, sysdate, #{noticeWriter}, #{noticeContent}, 
+				#{originalFilePath}, #{renameFilePath}, default, sysdate, default)
+		</if>
+	</insert>
+	
+	<update id="updateNotice" parameterType="Notice">
+		update notice 
+		<if test="originalFilePath == null">
+		set noticetitle = #{noticeTitle}, noticewriter = #{noticeWriter}, 
+			noticecontent = #{noticeContent}, noticedate = sysdate, 
+			original_filepath = null, rename_filepath = null,
+			importance = #{importance}, imp_end_date = #{impEndDate} 
+		where noticeno = #{noticeNo}
+		</if>
+		<if test="originalFilePath != null">
+		set noticetitle = #{noticeTitle}, noticewriter = #{noticeWriter}, 
+			noticecontent = #{noticeContent}, noticedate = sysdate, 
+			original_filepath = #{originalFilePath}, rename_filepath = #{renameFilePath}, 
+			importance = #{importance}, imp_end_date = #{impEndDate}
+		where noticeno = #{noticeNo}
+		</if>
+	</update>
+	
+	<delete id="deleteNotice" parameterType="_int">
+		delete from notice where noticeno = #{ no }
+	</delete>
+	
+	<select id="selectLast" resultMap="resultNotice">
+		SELECT * 
+		FROM 	(SELECT rownum rnum, noticeno, noticetitle, noticedate, 
+				            noticewriter, noticecontent, original_filepath, rename_filepath, 
+				            importance, imp_end_date, readcount  
+				FROM ( SELECT * FROM NOTICE 		        
+				        ORDER BY NOTICEDATE DESC)) 
+		WHERE RNUM = 1
+	</select>
+	
+</mapper>
+
+
+
+
+

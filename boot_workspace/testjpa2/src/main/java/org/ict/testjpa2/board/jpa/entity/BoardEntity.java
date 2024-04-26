@@ -17,9 +17,11 @@ import java.util.GregorianCalendar;
 @Builder
 @Table(name = "BOARD")
 @Entity     // jpa 가 관리함, repository와 연결됨
+//@SequenceGenerator(name = "board_seq_bnum", sequenceName = "seq_bnum", initialValue = 14, allocationSize = 1)
 public class BoardEntity {
     @Id     // JPA 가 객체를 관리할 때 식벽할 기본키 저장
     // @GeneratedValue(strategy = GenerationType.IDENTITY)     // primary key 지정
+    // @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "board_seq_bnum")
     // 사용시 무조건 default 로 입력되므로 주석 처리할 것
     @Column(name = "BOARD_NUM", nullable = false)
     private int boardNum;
