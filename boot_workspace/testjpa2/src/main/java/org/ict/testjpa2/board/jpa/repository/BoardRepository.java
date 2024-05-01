@@ -42,6 +42,9 @@ public interface BoardRepository extends JpaRepository<BoardEntity, Integer> {
     @Query(value = "select count(*) from board b where b.board_date between :begin and :end", nativeQuery = true)
     Long countSearchDate(@Param("begin") java.sql.Date begin, @Param("end") java.sql.Date end);
 
+    @Query(value = "select count(*) from board b", nativeQuery = true)
+    Long countBoards();
+
     @Query(value = "select max(board_num) from board b", nativeQuery = true)
     int findLastBoardNum();
 

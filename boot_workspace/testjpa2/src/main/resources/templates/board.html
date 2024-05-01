@@ -6,6 +6,7 @@
     <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript">
         $(() => {
+            // top3 게시물 가져오기
             $.ajax({
                 url: "/boards/btop3",
                 type: "GET",
@@ -13,8 +14,11 @@
                 contentType: "application/json; charset=utf-8",
                 success: function (json) {
                     /*console.log("success : " + data);
+                    // object --> string
                     var str = JSON.stringify(data);
+                    // string --> json
                     var json = JSON.parse(str);*/
+
                     values = "";
                     for (var i in json) {
                         values += "<tr><td>" + json[i].boardNum
@@ -32,28 +36,83 @@
                 }
             });  //ajax
 
-            $('#deleteBtn').on('click', function (){
+            // 페이지 관련 버튼 클릭시 해당 페이지 요청 처리 *************************
+            // currentPage = 1
+            //
+            // $(".page").on('click', (event)=> {
+            //     console.log(event.target.id);
+            //     currentPage = event.target.id;
+            //     // window.location.reload(); // 페이지 새로고침
+            // }); // 페이지 버튼 클릭
+            // console.log(currentPage)
+            // currentPage = 1
+
+            // 게시글 조회 출력 처리 ************************************************
+            $.ajax({
+                url: "/boards/list",
+                type: "GET",
+                data: {page: 1, limit: 10},
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    /*console.log("success : " + data);
+                    var str = JSON.stringify(data);
+                    var json = JSON.parse(str);*/
+                    console.log(json)
+                    values = "";
+                    for (var i in json) {
+                        if (json[i].boardOriginalFileName != null && json[i].boardOriginalFileName.length > 0) {
+                            values += "<tr><td>" + json[i].boardNum
+                                + "</td><td><a href='javascript:void(0)' onclick= 'detailCall(" + json[i].boardNum + ");'>"
+                                + json[i].boardTitle + " "
+                                + "<img src='/images/file.png' width='15px'> "
+                                + "</a></td><td>"
+                                + json[i].boardWriter + "</td><td>"
+                                + json[i].boardDate + "</td><td>"
+                                + json[i].boardReadCount
+                                + "</td></tr>";
+                        } else {
+                            values += "<tr><td>" + json[i].boardNum
+                                + "</td><td><a href='javascript:void(0)' onclick= 'detailCall(" + json[i].boardNum + ");'>"
+                                + json[i].boardTitle
+                                + "</a></td><td>"
+                                + json[i].boardWriter + "</td><td>"
+                                + json[i].boardDate + "</td><td>"
+                                + json[i].boardReadCount
+                                + "</td></tr>";
+                        }
+                    }
+                    ;
+                    $('#pagelist').html($('#pagelist').html() + values);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("error : " + jqXHR + ", " + textStatus + ", " + errorThrown);
+                }
+            });  //ajax
+
+            // 삭제 *****************************************************
+            $('#deleteBtn').on('click', function () {
                 var boardNumValue = $('#bnum').val();
 
                 $.ajax({
                     type: "DELETE",
                     url: "/boards/" + boardNumValue,
                     contentType: "application/json; charset=UTF-8",
-                    success: function (){
+                    success: function () {
                         alert("Deleted");
                         window.location.reload(true);  //새로고침
                     },
-                    error: function(jqXHR, textStatus, errorThrown){
+                    error: function (jqXHR, textStatus, errorThrown) {
                         console.log("error : " + jqXHR + ", " + textStatus + ", " + errorThrown);
                     }
                 });  //글삭제 ajax
             });  //삭제 버튼 클릭
-
-            $('#modifyBtn').on('click', function (){
+            // 수정 ***************************************************
+            $('#modifyBtn').on('click', function () {
                 //각 input 태그에 기록된 값 추출
                 const boardNumValue = $("#bnum").val()
                 const boardObject = {
-                    boardNum : boardNumValue,
+                    boardNum: boardNumValue,
                     boardTitle: $("#btitle").val(),
                     boardContent: $("#bcontent").val()
                 }
@@ -64,11 +123,11 @@
                     //pathvariable 에 대한 값이 없으면, 자동 post 로 전송이 감
                     data: JSON.stringify(boardObject),
                     contentType: "application/json; charset=UTF-8",
-                    success: function (){
+                    success: function () {
                         alert("Modified");
                         window.location.reload(true);  //새로고침
                     },
-                    error: function(jqXHR, textStatus, errorThrown){
+                    error: function (jqXHR, textStatus, errorThrown) {
                         console.log("error : " + jqXHR + ", " + textStatus + ", " + errorThrown);
                     }
                 });  //글수정 ajax
@@ -101,7 +160,7 @@
 
         const insertBoard = () => {
             const boardObject = {
-                boardTitle : $("#btitle").val(),
+                boardTitle: $("#btitle").val(),
                 boardWriter: $("#bwriter").val(),
                 boardContent: $("#bcontent").val()
             }
@@ -111,7 +170,7 @@
                 type: "POST",
                 data: JSON.stringify(boardObject),
                 contentType: "application/json; charset=utf-8",
-                success: (data, textStatus, jqXHR ) => {
+                success: (data, textStatus, jqXHR) => {
                     // window.location.reload(true);
                     console.log("성공!" + data);
                     console.log("성공!" + textStatus);
@@ -131,7 +190,7 @@
             padding: 0;
         }
 
-        table#toplist td {
+        table tr, td {
             text-align: center;
         }
 
@@ -142,16 +201,29 @@
             margin: 0 auto;
         }
 
-        #wrap {
-            display: flex;
-            flex-direction: column;
+        div#inputarea input {
+            border: 1px solid #000;
+            line-height: 25px;
         }
 
+        #wrap {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
         .top3-box .inner-box {
             max-width: 400px;
             margin: 0 auto;
             padding-bottom: 50px;
+        }
+
+        #pagearea span {
+            border: 1px solid #000;
+        }
+
+        #pagearea button, span {
+            padding: 5px;
         }
     </style>
 </head>
@@ -170,42 +242,142 @@
                 </tr>
             </table>
         </div>
-    </div>
 
-    <div id="inputarea">
-        <table>
+        <div id="inputarea">
+            <table>
+                <tr>
+                    <td><label for="bnum">번호</label></td>
+                    <td><input type="text" name="boardNum" id="bnum" value=""></td>
+                </tr>
+                <tr>
+                    <th><label for="btitle">제목</label></th>
+                    <td><input type="text" name="boardNum" id="btitle" value=""></td>
+                </tr>
+                <tr>
+                    <th><label for="bwriter">작성자</label></th>
+                    <td><input type="text" name="boardNum" id="bwriter" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="bcontent">내용</label></td>
+                    <td><textarea name="boardNum" id="bcontent"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="breadcount">조회수</label></td>
+                    <td><input type="text" name="boardReadCount " id="breadcount" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="bdate">날짜</label></td>
+                    <td><input type="date" name="boardDate " id="bdate" readonly></td>
+                </tr>
+            </table>
+            <hr>
+            <button id="registerBtn" onclick="insertBoard();">등록</button> &nbsp;
+            <button id="readBtn">조회</button> &nbsp;
+            <button id="modifyBtn">수정</button> &nbsp;
+            <button id="deleteBtn">삭제</button>
+        </div>
+    </div>
+    <hr style="clear:both;">
+    <div id="listarea" align="center">
+        <div id="searcharea">
+            <select id="category">
+                <option value="title">제목</option>
+                <option value="writer">작성자</option>
+                <option value="date">날짜</option>
+            </select> &nbsp; &nbsp;
+            <input type="search" id="search"> &nbsp;
+            <button onclick="fn_search();">검색</button>
+        </div>
+        <script type="text/javascript">
+            const fn_search = () => {
+                var category = $('#category').val()
+                var keyword = $("#search").val()
+                var url = "";
+                var dataObj = {};
+                if (category == "title") {
+                    url = "/boards/title";
+                    dataObj.keyword = keyword;
+                    dataObj.page = 1;
+                    dataObj.limit = 10;
+                }
+                if (category == "writer") {
+                    url = "/boards/writer";
+                    dataObj.keyword = keyword;
+                    dataObj.page = 1;
+                    dataObj.limit = 10;
+                }
+                if (category == "date") {
+                    url = "/boards/writer";
+                    dataObj.begin = keyword;
+                    dataObj.end = keyword;
+                    dataObj.page = 1;
+                    dataObj.limit = 10;
+                }
+
+                $.ajax({
+                    url: url,
+                    type: "GET",
+                    data: dataObj,
+                    dataType: "JSON",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (json) {
+                        console.log(json)
+                        values = "";
+                        for (var i in json) {
+                            if (json[i].boardOriginalFileName != null && json[i].boardOriginalFileName.length > 0) {
+                                values += "<tr><td>" + json[i].boardNum
+                                    + "</td><td><a href='javascript:void(0)' onclick= 'detailCall(" + json[i].boardNum + ");'>"
+                                    + json[i].boardTitle + " "
+                                    + "<img src='/images/file.png' width='15px'> "
+                                    + "</a></td><td>"
+                                    + json[i].boardWriter + "</td><td>"
+                                    + json[i].boardDate + "</td><td>"
+                                    + json[i].boardReadCount
+                                    + "</td></tr>";
+                            } else {
+                                values += "<tr><td>" + json[i].boardNum
+                                    + "</td><td><a href='javascript:void(0)' onclick= 'detailCall(" + json[i].boardNum + ");'>"
+                                    + json[i].boardTitle
+                                    + "</a></td><td>"
+                                    + json[i].boardWriter + "</td><td>"
+                                    + json[i].boardDate + "</td><td>"
+                                    + json[i].boardReadCount
+                                    + "</td></tr>";
+                            }
+                        }
+                        ;
+                        $('#pagelist').html(values);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log("error : " + jqXHR + ", " + textStatus + ", " + errorThrown);
+                    }
+                }); // ajax
+
+            }
+
+        </script>
+        <table id="pagelist" width="550" border="1" cellspacing="0">
             <tr>
-                <td><label for="bnum">번호</label></td>
-                <td><input type="text" name="boardNum" id="bnum" value=""></td>
-            </tr>
-            <tr>
-                <th><label for="btitle">제목</label></th>
-                <td><input type="text" name="boardNum" id="btitle" value=""></td>
-            </tr>
-            <tr>
-                <th><label for="bwriter">작성자</label></th>
-                <td><input type="text" name="boardNum" id="bwriter" value=""></td>
-            </tr>
-            <tr>
-                <td><label for="bcontent">내용</label></td>
-                <td><textarea name="boardNum" id="bcontent"></textarea></td>
-            </tr>
-            <tr>
-                <td><label for="breadcount">조회수</label></td>
-                <td><input type="text" name="boardReadCount " id="breadcount" readonly></td>
-            </tr>
-            <tr>
-                <td><label for="bdate">날짜</label></td>
-                <td><input type="date" name="boardDate " id="bdate" readonly></td>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>등록일</th>
+                <th>조회수</th>
             </tr>
         </table>
         <hr>
-        <button id="registerBtn" onclick="insertBoard();">등록</button> &nbsp;
-        <button id="readBtn">조회</button> &nbsp;
-        <button id="modifyBtn">수정</button> &nbsp;
-        <button id="deleteBtn">삭제</button>
+        <div id="pagearea">
+            <button id="first" class="page">처음</button>
+            <button id="prev" class="page">이전그룹</button>
+            <span class="page" id="1" onclick="paging()"> 1 </span>
+            <span class="page" id="2" onclick="paging()"> 2 </span>
+            <button id="next" class="page">다음그룹</button>
+            <button id="last" class="page">마지막</button>
+        </div>
     </div>
 </div>
+
 
 </body>
 </html>

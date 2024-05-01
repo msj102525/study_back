@@ -6,10 +6,14 @@ import org.ict.testjpa2.board.jpa.entity.BoardEntity;
 import org.ict.testjpa2.board.model.dto.BoardDto;
 import org.ict.testjpa2.board.model.service.BoardService;
 import org.ict.testjpa2.board.model.service.ReplyService;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,6 +32,78 @@ public class BoardController {
         return new ResponseEntity<>(boardService.selectTop3(), HttpStatus.OK);
     }
 
+    @GetMapping("/list")
+    public ResponseEntity<List<BoardDto>> selectList(@RequestParam(name = "page") int page,
+                                                     @RequestParam(name = "limit") int limit) {
+        log.info("/boards/list : " + page + ", " + limit);
+        // JPA 가 제공하는 Pageable 객체를 사용함
+        Pageable pageable = PageRequest.of(page - 1, limit, Sort.by(Sort.Direction.DESC, "boardNum"));
+        // 페이지에 출력할 목록 조회해 옴
+        return new ResponseEntity<>(boardService.selectList(pageable), HttpStatus.OK);
+    }
+
+    @GetMapping("/title")
+    public ResponseEntity<List<BoardDto>> selectSearchTitle(
+            @RequestParam(name = "keyword") String keyword,
+            @RequestParam(name = "page") int page,
+            @RequestParam(name = "limit") int limit) {
+        log.info("/boards/list : " + keyword + page + ", " + limit);
+        // JPA 가 제공하는 Pageable 객체를 사용함
+        Pageable pageable = PageRequest.of(page - 1, limit, Sort.by(Sort.Direction.DESC, "boardNum"));
+        // 페이지에 출력할 목록 조회해 옴
+        return new ResponseEntity<>(boardService.selectSearchTitle(keyword, pageable), HttpStatus.OK);
+    }
+
+    @GetMapping("/writer")
+    public ResponseEntity<List<BoardDto>> selectSearchWriter(
+            @RequestParam(name = "keyword") String keyword,
+            @RequestParam(name = "page") int page,
+            @RequestParam(name = "limit") int limit) {
+        log.info("/boards/list : " + page + ", " + limit);
+        // JPA 가 제공하는 Pageable 객체를 사용함
+        Pageable pageable = PageRequest.of(page - 1, limit, Sort.by(Sort.Direction.DESC, "boardNum"));
+        // 페이지에 출력할 목록 조회해 옴
+        return new ResponseEntity<>(boardService.selectSearchWriter(keyword, pageable), HttpStatus.OK);
+    }
+
+    @GetMapping("/date")
+    public ResponseEntity<List<BoardDto>> selectSearchDate(
+            @RequestParam(name = "begin") java.sql.Date begin,
+            @RequestParam(name = "end") java.sql.Date end,
+            @RequestParam(name = "page") int page,
+            @RequestParam(name = "limit") int limit) {
+        log.info("/boards/list : " + page + ", " + limit);
+        // JPA 가 제공하는 Pageable 객체를 사용함
+        Pageable pageable = PageRequest.of(page - 1, limit, Sort.by(Sort.Direction.DESC, "boardNum"));
+        // 페이지에 출력할 목록 조회해 옴
+        return new ResponseEntity<>(boardService.selectSearchDate(begin, end, pageable), HttpStatus.OK);
+    }
+
+    // 목록 갯수 조회용
+    @GetMapping("/countBoards")
+    public ResponseEntity<Long> getCountBoards() {
+        return new ResponseEntity<>(boardService.getCountBoards(), HttpStatus.OK);
+    }
+
+    // 제목 검색 목록 갯수 조회용
+    @GetMapping("/countSearchTitle")
+    public ResponseEntity<Long> getCountSearchTitle(@RequestParam(name = "keyword") String keyword) {
+        return new ResponseEntity<>(boardService.getCountSearchTitle(keyword), HttpStatus.OK);
+    }
+
+    // 작성자 검색 목록 갯수 조회용
+    @GetMapping("/countSearchWriter")
+    public ResponseEntity<Long> getCountSearchWriter(@RequestParam(name = "keyword") String keyword) {
+        return new ResponseEntity<>(boardService.getCountSearchWriter(keyword), HttpStatus.OK);
+    }
+
+    // 목록 갯수 조회용
+    @GetMapping("/countSearchDate")
+    public ResponseEntity<Long> getCountSearchDate(
+            @RequestParam(name = "begin") java.sql.Date begin, @RequestParam(name = "end") java.sql.Date end) {
+        return new ResponseEntity<>(boardService.getCountBoards(), HttpStatus.OK);
+    }
+
     @GetMapping("/{boardNum}")
     public ResponseEntity<BoardDto> selectBoardDetail(@PathVariable("boardNum") int boardNum) {
         log.info("/boards/" + boardNum + "요청");
@@ -43,14 +119,14 @@ public class BoardController {
 
     @PutMapping("/{boardNum}")  //요청 경로에 반드시 pk 에 해당하는 값을 전송해야 함 (안 보내면 에러)
     public ResponseEntity<Void> updateBoard(
-            @PathVariable("boardNum") int boardNum, @RequestBody BoardDto boardDto){
+            @PathVariable("boardNum") int boardNum, @RequestBody BoardDto boardDto) {
         log.info("updateBoard : " + boardDto);
         boardService.updateBoard(boardDto);
         return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
     }
 
     @DeleteMapping("/{boardNum}")
-    public ResponseEntity<Void> deleteBoard(@PathVariable("boardNum") int boardNum){
+    public ResponseEntity<Void> deleteBoard(@PathVariable("boardNum") int boardNum) {
         log.info("update");
         boardService.deleteBoard(boardNum);
         return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);

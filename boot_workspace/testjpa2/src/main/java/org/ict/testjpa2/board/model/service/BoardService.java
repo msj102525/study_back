@@ -6,9 +6,12 @@ import org.ict.testjpa2.board.jpa.entity.BoardEntity;
 import org.ict.testjpa2.board.jpa.repository.BoardNativeVo;
 import org.ict.testjpa2.board.jpa.repository.BoardRepository;
 import org.ict.testjpa2.board.model.dto.BoardDto;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -37,6 +40,69 @@ public class BoardService {
 
         return list;
     }
+
+    public ArrayList<BoardDto> selectList(Pageable pageable) {
+        Page<BoardEntity> pages = boardRepository.findAll(pageable);
+        ArrayList<BoardDto> list = new ArrayList<>();
+
+        for(BoardEntity entity : pages) {
+            BoardDto boardDto = entity.toDto();
+            list.add(boardDto);
+        }
+
+        return list;
+    }
+
+    // board 테이블 총 목록 갯수 리턴
+    public long getCountBoards(){
+        return boardRepository.count();
+    }
+
+    // 제목 검색에 대한 목록 갯수
+    public long getCountSearchTitle(String keyword) {
+        return boardRepository.countSearchTitle(keyword);
+    }
+
+    // 작성자 검색에 대한 목록 갯수
+    public long getCountSearchWriter(String keyword) {
+        return boardRepository.countSearchWriter(keyword);
+    }
+
+    // 제목 검색에 대한 목록 갯수
+    public long getCountSearchTitle(java.sql.Date begin, java.sql.Date end) {
+        return boardRepository.countSearchDate(begin, end);
+    }
+
+    public List<BoardDto> selectSearchTitle(String keyword, Pageable pageable) {
+        Page<BoardEntity> pages = boardRepository.findSearchTitle(keyword, pageable);
+        List<BoardDto> list = new ArrayList<>();
+        for(BoardEntity entity : pages) {
+            BoardDto boardDto = entity.toDto();
+            list.add(boardDto);
+        }
+        return list;
+    }
+
+    public List<BoardDto> selectSearchWriter(String keyword, Pageable pageable) {
+        Page<BoardEntity> pages = boardRepository.findSearchWriter(keyword, pageable);
+        List<BoardDto> list = new ArrayList<>();
+        for(BoardEntity entity : pages) {
+            BoardDto boardDto = entity.toDto();
+            list.add(boardDto);
+        }
+        return list;
+    }
+
+    public List<BoardDto> selectSearchDate(java.sql.Date begin, java.sql.Date end,Pageable pageable) {
+        Page<BoardEntity> pages = boardRepository.findSearchDate(begin, end, pageable);
+        List<BoardDto> list = new ArrayList<>();
+        for(BoardEntity entity : pages) {
+            BoardDto boardDto = entity.toDto();
+            list.add(boardDto);
+        }
+        return list;
+    }
+
 
     // 게시글 상세 조회 처리용
     public BoardDto selectBoard(int boardNum) {
@@ -76,5 +142,6 @@ public class BoardService {
     public void deleteBoard(int boardNum){
         boardRepository.deleteById(boardNum);
     }
+
 
 }
