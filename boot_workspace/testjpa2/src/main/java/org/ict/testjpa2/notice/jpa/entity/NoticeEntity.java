@@ -43,8 +43,10 @@ public class NoticeEntity {
     @PrePersist     //jpa 로 넘어가기 전에 작동하라는 어노테이션임
     public void prePersist(){        
         noticeDate = new Date(System.currentTimeMillis());   //현재 날짜, 시간 적용
+        impEndDate = new Date(System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 3));   //현재 날짜 + 3 일
+
     }
-    
+
     //entity -> dto 로 변환하는 메소드 추가
     public NoticeDto toDto(){
         return NoticeDto.builder()

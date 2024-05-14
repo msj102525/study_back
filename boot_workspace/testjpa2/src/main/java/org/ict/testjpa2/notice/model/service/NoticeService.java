@@ -69,6 +69,9 @@ public class NoticeService {
     public void insertNotice(NoticeDto noticeDto) {
         //save(entity) : Entity
         //jpa 제공, insert 문과 update문 처리용 메서드
+        // 마지막 글번호 조회해옴
+        NoticeDto notice = noticeQueryRepository.findLast().toDto();
+        noticeDto.setNoticeNo(noticeDto.getNoticeNo() + 1); // 새로 등록할 글 번호로 추가함
         noticeRepository.save(noticeDto.toEntity());
     }
 
