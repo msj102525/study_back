@@ -61,6 +61,7 @@ public class NoticeController {
                 .status("activated")
                 .build();
 
+
         List<NoticeFile> noticeFiles = null;
         if (noticeInput.getFileIds() != null && !noticeInput.getFileIds().isEmpty()) {
             noticeFiles = noticeInput.getFileIds().stream()
